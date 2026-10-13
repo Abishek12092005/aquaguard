@@ -1,0 +1,59 @@
+﻿url        http://localhost:5173/location
+http       200
+load       5722ms
+title      "AquaGuard AI — Water Quality Monitoring & Prediction"
+bodyChars  8
+patchright C:\Users\abishek\.vscode\extensions\danielsanmedium.dscodegpt-3.24.75\standalone/
+text       Loading…
+script     {
+ "before": {
+  "buttonText": "",
+  "hasSvg": true,
+  "pinParts": 3,
+  "pulseAnim": "aqua-pin-pulse",
+  "pulseDur": "2.4s",
+  "pulseIter": "infinite",
+  "glowAnim": "aqua-pin-glow",
+  "glowDur": "2.4s",
+  "bodyAnim": "aqua-pin-bob",
+  "bodyDur": "2.4s",
+  "pulseTransform": "matrix(0.647407, 0, 0, 0.647407, 0, 0)",
+  "bodyTransform": "matrix(1, 0, 0, 1, 0, -0.0622917)",
+  "glowTransform": "matrix(0.943115, 0, 0, 0.943115, 0, 0)",
+  "stroke": "rgb(51, 65, 85)",
+  "svgSize": 20,
+  "ariaLabel": "Pick a location on the map",
+  "title": "Pick a location on the map"
+ },
+ "noEmojiText": true,
+ "isVector": true,
+ "allThreePartsPresent": true,
+ "pulseAnimating": true,
+ "glowAnimating": true,
+ "bobAnimating": true,
+ "infinite": true,
+ "subtleDuration": true,
+ "transformsChanged": true,
+ "transformSampleA": {
+  "pulse": "matrix(0.647407, 0, 0, 0.647407, 0, 0)",
+  "body": "matrix(1, 0, 0, 1, 0, -0.0622917)",
+  "glow": "matrix(0.943115, 0, 0, 0.943115, 0, 0)"
+ },
+ "transformSampleB": {
+  "pulse": "matrix(1.37268, 0, 0, 1.37268, 0, 0)",
+  "body": "matrix(1, 0, 0, 1, 0, -1.71164)",
+  "glow": "matrix(1.02558, 0, 0, 1.02558, 0, 0)"
+ },
+ "pulseOpacityNow": 0.259756,
+ "inheritsColor": true,
+ "popupOpened": true,
+ "popupTitle": "Select Your Location",
+ "isManualPicker": true,
+ "mapPresent": true,
+ "searchBarStillThere": true,
+ "popupClosed": true
+}
+
+console errors/warnings (0):
+
+requests failed (0):

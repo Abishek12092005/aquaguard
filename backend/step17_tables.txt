@@ -1,0 +1,113 @@
+﻿====================================================================== Assam 21510
+  0| {{Short description|List containing the districts of the Indian state of Assam}}
+  1| {{Use dmy dates|date=December 2024}}
+  2| {{Use Indian English|date=December 2024}}
+  3| {{for|co-districts in Assam|Co-districts of Assam}}
+  4| 
+  5| [[Assam]], a [[Northeast India|northeastern]] [[States and territories of India|state]] of [[India]], is divided into 35 administrative geographical u
+  6| 
+  7| ==List of districts by divisions==
+  8| [[File:Assam districts map.svg|thumb|400px|Map of districts of Assam, by division: 
+  9| {{Legend-col|
+ 10| {{Legend|#00D654|[[Lower Assam division|Lower Assam]]}}
+ 11| |{{Legend|#CE88E0|[[North Assam Division|North Assam]]}}
+ 12| |{{Legend|#FF8182|[[Upper Assam division|Upper Assam]]}}
+ 13| |{{Legend|#FFCD00|[[Central Assam division|Central Assam]]}}
+ 14| |{{Legend|#FE8029|[[Barak Valley]]}}
+ 15| }}]]
+ 16| 
+ 17| {| class="wikitable"
+ 18| ! [[Lower Assam division]] <br>(HQ � [[Guwahati]])
+ 19| ! [[North Assam division]] <br>(HQ �[[Tezpur]])
+ 20| ! [[Upper Assam division]] <br>(HQ �[[Jorhat]])
+ 21| ! [[Central Assam division]] <br>(HQ �[[Nagaon]])
+ 22| ! [[Barak Valley|Barak Valley division]] <br>(HQ � [[Silchar]])
+ 23| |- style="vertical-align:top;"|
+ 24| | 
+ 25| * [[Baksa district|Baksa]]  
+ 26| * [[Bajali district|Bajali]]  
+ 27| * [[Barpeta district|Barpeta]]  
+ 28| * [[Bongaigaon district|Bongaigaon]]  
+ 29| * [[Chirang district|Chirang]] 
+ 30| * [[Dhubri district|Dhubri]]  
+ 31| * [[Goalpara district|Goalpara]]  
+ 32| * [[Kamrup district|Kamrup]]  
+ 33| * [[Kamrup Metropolitan district|Kamrup Metropolitan]]  
+ 34| * [[Kokrajhar district|Kokrajhar]] 
+ 35| * [[Nalbari district|Nalbari]]  
+ 36| * [[South Salmara-Mankachar district|South Salmara-Mankachar]]  
+ 37| * [[Tamulpur district|Tamulpur]]
+ 38| |
+ 39| * [[Biswanath district|Biswanath]]  
+ 40| * [[Darrang district|Darrang]]
+ 41| * [[Sonitpur district|Sonitpur]]  
+ 42| * [[Udalguri district|Udalguri]]
+ 43| |
+ 44| * [[Charaideo district|Charaideo]] 
+ 45| * [[Dhemaji district|Dhemaji]] 
+ 46| * [[Dibrugarh district|Dibrugarh]]  
+ 47| * [[Golaghat district|Golaghat]]  
+ 48| * [[Jorhat district|Jorhat]]  
+ 49| * [[Lakhimpur district|Lakhimpur]]  
+ 50| * [[Majuli district|Majuli]]  
+ 51| * [[Sivasagar district|Sivasagar]]  
+ 52| * [[Tinsukia district|Tinsukia]]
+ 53| |
+ 54| * [[Dima Hasao district|Dima Hasao]]
+ 55| * [[Hojai district|Hojai]]  
+ 56| * [[Morigaon district|Morigaon]]  
+ 57| * [[Nagaon district|Nagaon]]
+ 58| * [[Karbi Anglong district|Karbi Anglong]]
+ 59| * [[West Karbi Anglong district|West Karbi Anglong]]
+ 60| |
+ 61| * [[Cachar district|Cachar]]  
+ 62| * [[Hailakandi district|Hailakandi]]  
+ 63| * [[Sribhumi district|Sribhumi]]
+ 64| |}
+ 65| 
+ 66| ==Administrations ==
+ 67| A district of an Indian state is an administrative geographical unit, headed by the District Commissioner (DC), which combines the offices of the Dist
+ 68| 
+ 69| The districts of Assam are grouped together in [Divisions of Assam, five regional divisions], headed by a Commissioner. A superintendent of Police, an
+====================================================================== Ladakh 15704
+  0| {{Short description|Districts of Ladakh, Indian-administered Kashmir}}
+  1| 
+  2| As of 2026, the [[India|Indian]]-administered [[union territory]] of [[Ladakh]] in the [[Kashmir conflict|disputed]] [[Kashmir]] region consists of 7 
+  3| 
+  4| Ladakh has no union territory level [[legislature]], but sends a single [[Ladakh Lok Sabha constituency|member of parliament]].<ref name=rev1/> There 
+  5| 
+  6| ==History==
+  7| {{see also | History of Ladakh }}
+  8| 
+  9| === 1846-1947: Princely state of Jammu and Kashmir ===
+ 10| {{anchor | 1846 }}
+ 11| {{Main|Jammu and Kashmir (princely state)}}
+ 12| 
+ 13| Prior to 1947, Ladakh was part of [[Kashmir]] when Jammu and Kashmir was a [[princely state]] under the [[British Paramountcy|paramountcy]] of the [[B
+ 14| 
+ 15| * Jammu and Kashmir core
+ 16| ** Jammu province: Districts of [[Jammu district|Jammu]], [[Udhampur district|Udhampur]] and [[Mirpur District|Mirpur]] (later became part of Azad Kas
+ 17| 
+ 18| ** Kashmir province: Districts of [[Anantnag district|Anantnag]], [[Baramulla district|Baramulla]] and [[Muzaffarabad District|Muzaffarabad]]  (Muzzaf
+ 19| 
+ 20| ** Internal jagirs within Jammu and Kashmir: [[Poonch jagir|Poonch]] (half of it later became part of Azad Kashmir), [[Chenani]] and [[Bhaderwah]].<re
+ 21| 
+ 22| * Frontier districts:
+ 23| ** [[Ladakh district]] with three sub-districts: [[Leh district|Leh]], [[Kargil district|Kargil]] and [[Baltistan|Skardu]] (Skardu later became part o
+ 24| 
+ 25| ** [[Gilgit|Gilgit district]] with two sub-districts: [[Gilgit District|Gilgit]] and [[Astore District|Astore]]. (Both later became part of Gilgit-Bal
+ 26| 
+python.exe : Traceback (most recent call last):
+At line:1 char:163
++ ... rd\backend; & ".\.venv\Scripts\python.exe" probe_step17_tables.py *>& ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\probe_step17_tables.py", line 21, in <module>
+    print("%3d| %s" % (i, line[:150]), flush=True)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 24-29: character maps to <undefined>

@@ -1,0 +1,41 @@
+﻿HTTP 429 - waiting
+ROWS: 824
+distinct units: 822  single-state: 821  multi-state: 1
+units: 821
+  Andaman and Nicobar Islands                4
+  Andhra Pradesh                            28
+  Arunachal Pradesh                         28
+  Assam                                     35
+  Bihar                                     39
+  Chandigarh                                 1
+  Chhattisgarh                              33
+  Dadra and Nagar Haveli and Daman and Diu   3
+  Goa                                        2
+  Gujarat                                   34
+  Haryana                                   22
+  Himachal Pradesh                          12
+  Jammu and Kashmir                         20
+  Jharkhand                                 24
+  Karnataka                                 32
+  Kerala                                    14
+  Ladakh                                     6
+  Lakshadweep                                1
+  Madhya Pradesh                            55
+  Maharashtra                               37
+  Manipur                                   17
+  Meghalaya                                 13
+  Mizoram                                   10
+  Nagaland                                  17
+  National Capital Territory of Delhi       14
+  Odisha                                    30
+  Puducherry                                 2
+  Punjab                                    23
+  Rajasthan                                 51
+  Sikkim                                     7
+  Tamil Nadu                                39
+  Telangana                                 35
+  Tripura                                    8
+  Uttar Pradesh                             76
+  Uttarakhand                               13
+  West Bengal                               34
+states: 36 districts: 819

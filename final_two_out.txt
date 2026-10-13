@@ -1,0 +1,10 @@
+login ok
+=== TEST3: /locations/district?q=Sivaganga ===
+places=3
+  Kalaiyarkovil | town | water=n/a
+  V.Pudukkulam | village | water=n/a
+  Vittaneri | village | water=n/a
+TEST3_RESULT: PASS
+=== TEST4-water: /locations/water?lat=10.0740&lon=78.7800 ===
+available=False primary=None nearby=0
+TEST4W_RESULT: FAIL

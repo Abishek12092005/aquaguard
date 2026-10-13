@@ -1,0 +1,16 @@
+PASS  AUTH register + login + JWT  -> token_len=331
+FAIL  TEST1 country overview  -> TimeoutError('timed out')
+FAIL  TEST2 state overview  -> KeyError('districts')
+FAIL  TEST3 district places  -> TimeoutError('timed out')
+FAIL  TEST4 place context  -> TimeoutError('timed out')
+FAIL  TEST6 Random Forest verdict + confidence + risk  -> prediction=safe confidence=0.773 risk_level=None id=5217
+PASS  TEST5 location echoed on prediction  -> district=Sivaganga pincode=630001
+FAIL  TEST7 famous place found  -> name=None kind=None label=None
+PASS  TEST8 reverse geocode -> place  -> name=Karaikudi label=Karaikudi, Karaikkudi, Sivagangai, Tamil Nadu, 623001, India pincode=623001
+FAIL  TEST9 manual pin  -> TimeoutError('timed out')
+FAIL  TEST10 history  -> TypeError('list indices must be integers or slices, not str')
+FAIL  TEST11 admin reports  -> AttributeError("'list' object has no attribute 'get'")
+PASS  ALERTS endpoint  -> True
+
+SUMMARY: 4/13 passed
+FAILED: TEST1 country overview, TEST2 state overview, TEST3 district places, TEST4 place context, TEST6 Random Forest verdict + confidence + risk, TEST7 famous place found, TEST9 manual pin, TEST10 history, TEST11 admin reports

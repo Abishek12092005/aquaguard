@@ -1,0 +1,211 @@
+[2026-09-29 21:50:05,814] INFO in tools: Aqua AI default tool handlers registered
+[2026-09-29 21:50:05,818] INFO in __init__: AquaGuard AI backend initialised (env=development)
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+[2026-09-29 21:50:08,354] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-09-29 21:50:29,675] INFO in country_service: Neither geocoder answered for 'Tamil Nadu'; answering from bundled administrative data, which lists districts for it.
+127.0.0.1 - - [29/Sep/2026 21:50:29] "GET /api/v1/locations/state?q=Tamil%20Nadu&risk=false HTTP/1.1" 200 -
+[2026-09-29 21:50:39,911] INFO in country_service: Neither geocoder answered for 'Kerala'; answering from bundled administrative data, which lists districts for it.
+127.0.0.1 - - [29/Sep/2026 21:50:39] "GET /api/v1/locations/state?q=Kerala&risk=false HTTP/1.1" 200 -
+[2026-09-29 21:50:49,761] INFO in country_service: Neither geocoder answered for 'Uttar Pradesh'; answering from bundled administrative data, which lists districts for it.
+127.0.0.1 - - [29/Sep/2026 21:50:49] "GET /api/v1/locations/state?q=Uttar%20Pradesh&risk=false HTTP/1.1" 200 -
+[2026-09-29 21:50:59,893] INFO in country_service: Neither geocoder answered for 'Delhi'; answering from bundled administrative data, which lists districts for it.
+127.0.0.1 - - [29/Sep/2026 21:50:59] "GET /api/v1/locations/state?q=Delhi&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:52:19] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:52:19] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:52:22] "GET /api/v1/locations/country?q=Tamil+Nadu&risk=false HTTP/1.1" 200 -
+[2026-09-29 21:52:32,670] INFO in country_service: Neither geocoder answered for 'Tamil Nadu'; answering from bundled administrative data, which lists districts for it.
+127.0.0.1 - - [29/Sep/2026 21:52:32] "GET /api/v1/locations/state?q=Tamil+Nadu&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:52:33] "GET /api/v1/locations/search?q=Tamil+Nadu&limit=8&autocomplete=true HTTP/1.1" 200 -
+[2026-09-29 21:52:43,542] INFO in country_service: Neither geocoder answered for 'Tamil Nadu'; answering from bundled administrative data, which lists districts for it.
+[2026-09-29 21:52:46,130] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x24961c01a90>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=2.5)'))
+[2026-09-29 21:52:46,501] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=2.5)
+[2026-09-29 21:52:46,534] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=2.5)
+[2026-09-29 21:52:49,062] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=2.5)
+127.0.0.1 - - [29/Sep/2026 21:52:51] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:52:51] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:52:54] "GET /api/v1/locations/country?q=Tamil+Nadu&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:52:57] "GET /api/v1/locations/search?q=Tamil+Nadu&limit=8&autocomplete=true HTTP/1.1" 200 -
+[2026-09-29 21:52:59,058] INFO in location_service: Overpass outage breaker OPEN - skipping query (110s left)
+[2026-09-29 21:53:05,857] INFO in location_service: Overpass outage breaker OPEN - skipping query (103s left)
+[2026-09-29 21:53:06,087] INFO in location_service: Overpass outage breaker OPEN - skipping query (103s left)
+[2026-09-29 21:53:06,389] INFO in country_service: Neither geocoder answered for 'Tamil Nadu'; answering from bundled administrative data, which lists districts for it.
+127.0.0.1 - - [29/Sep/2026 21:53:06] "GET /api/v1/locations/state?q=Tamil+Nadu&risk=false HTTP/1.1" 200 -
+[2026-09-29 21:53:06,954] INFO in location_service: Overpass outage breaker OPEN - skipping query (102s left)
+[2026-09-29 21:53:07,014] INFO in location_service: Overpass outage breaker OPEN - skipping query (102s left)
+[2026-09-29 21:53:07,023] INFO in location_service: Overpass outage breaker OPEN - skipping query (102s left)
+[2026-09-29 21:53:07,954] INFO in location_service: Overpass outage breaker OPEN - skipping query (101s left)
+[2026-09-29 21:53:08,481] INFO in location_service: Overpass outage breaker OPEN - skipping query (101s left)
+[2026-09-29 21:53:08,484] INFO in location_service: Overpass outage breaker OPEN - skipping query (101s left)
+[2026-09-29 21:53:08,636] INFO in location_service: Overpass outage breaker OPEN - skipping query (101s left)
+[2026-09-29 21:53:08,737] INFO in location_service: Overpass outage breaker OPEN - skipping query (101s left)
+[2026-09-29 21:53:09,694] INFO in location_service: Overpass outage breaker OPEN - skipping query (100s left)
+[2026-09-29 21:53:09,946] INFO in location_service: Overpass outage breaker OPEN - skipping query (99s left)
+[2026-09-29 21:53:12,934] INFO in location_service: Overpass outage breaker OPEN - skipping query (96s left)
+[2026-09-29 21:53:15,928] INFO in location_service: Overpass outage breaker OPEN - skipping query (93s left)
+[2026-09-29 21:53:17,169] INFO in location_service: Overpass outage breaker OPEN - skipping query (92s left)
+[2026-09-29 21:53:17,403] INFO in location_service: Overpass outage breaker OPEN - skipping query (92s left)
+[2026-09-29 21:53:18,155] INFO in location_service: Overpass outage breaker OPEN - skipping query (91s left)
+[2026-09-29 21:53:18,162] INFO in location_service: Overpass outage breaker OPEN - skipping query (91s left)
+[2026-09-29 21:53:18,911] INFO in location_service: Overpass outage breaker OPEN - skipping query (90s left)
+[2026-09-29 21:53:19,737] INFO in location_service: Overpass outage breaker OPEN - skipping query (90s left)
+[2026-09-29 21:53:21,521] INFO in location_service: Overpass outage breaker OPEN - skipping query (88s left)
+[2026-09-29 21:53:21,558] INFO in location_service: Overpass outage breaker OPEN - skipping query (88s left)
+[2026-09-29 21:53:22,544] INFO in location_service: Overpass outage breaker OPEN - skipping query (87s left)
+[2026-09-29 21:53:25,025] INFO in location_service: Overpass outage breaker OPEN - skipping query (84s left)
+[2026-09-29 21:53:27,591] INFO in location_service: Overpass outage breaker OPEN - skipping query (82s left)
+[2026-09-29 21:53:27,801] INFO in location_service: Overpass outage breaker OPEN - skipping query (82s left)
+[2026-09-29 21:53:28,811] INFO in location_service: Overpass outage breaker OPEN - skipping query (80s left)
+[2026-09-29 21:53:29,053] INFO in location_service: Overpass outage breaker OPEN - skipping query (80s left)
+[2026-09-29 21:53:29,303] INFO in location_service: Overpass outage breaker OPEN - skipping query (80s left)
+[2026-09-29 21:53:29,558] INFO in location_service: Overpass outage breaker OPEN - skipping query (80s left)
+[2026-09-29 21:53:31,065] INFO in location_service: Overpass outage breaker OPEN - skipping query (78s left)
+[2026-09-29 21:53:31,074] INFO in location_service: Overpass outage breaker OPEN - skipping query (78s left)
+[2026-09-29 21:53:31,319] INFO in location_service: Overpass outage breaker OPEN - skipping query (78s left)
+[2026-09-29 21:53:31,560] INFO in location_service: Overpass outage breaker OPEN - skipping query (78s left)
+[2026-09-29 21:53:31,804] INFO in location_service: Overpass outage breaker OPEN - skipping query (78s left)
+[2026-09-29 21:53:32,057] INFO in location_service: Overpass outage breaker OPEN - skipping query (77s left)
+[2026-09-29 21:53:36,064] INFO in location_service: Overpass outage breaker OPEN - skipping query (73s left)
+127.0.0.1 - - [29/Sep/2026 21:53:37] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:53:37] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+[2026-09-29 21:53:37,817] INFO in location_service: Overpass outage breaker OPEN - skipping query (71s left)
+[2026-09-29 21:53:38,071] INFO in location_service: Overpass outage breaker OPEN - skipping query (71s left)
+[2026-09-29 21:53:38,582] INFO in location_service: Overpass outage breaker OPEN - skipping query (71s left)
+[2026-09-29 21:53:38,816] INFO in location_service: Overpass outage breaker OPEN - skipping query (70s left)
+[2026-09-29 21:53:39,567] INFO in location_service: Overpass outage breaker OPEN - skipping query (70s left)
+127.0.0.1 - - [29/Sep/2026 21:53:40] "GET /api/v1/locations/country?q=Tamil+Nadu&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:53:40] "GET /api/v1/locations/state?q=Tamil+Nadu&risk=false HTTP/1.1" 200 -
+[2026-09-29 21:53:40,240] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,284] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,288] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,300] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,303] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,327] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,338] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,342] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,347] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,362] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,370] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,376] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,382] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,394] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,398] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,413] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,428] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,432] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,439] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,454] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,465] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,467] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,495] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,499] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+127.0.0.1 - - [29/Sep/2026 21:53:40] "GET /api/v1/locations/search?q=Tamil+Nadu&limit=8&autocomplete=true HTTP/1.1" 200 -
+[2026-09-29 21:53:40,597] INFO in location_service: Overpass outage breaker OPEN - skipping query (69s left)
+[2026-09-29 21:53:40,828] INFO in location_service: Overpass outage breaker OPEN - skipping query (68s left)
+[2026-09-29 21:53:41,076] INFO in location_service: Overpass outage breaker OPEN - skipping query (68s left)
+[2026-09-29 21:53:41,324] INFO in location_service: Overpass outage breaker OPEN - skipping query (68s left)
+[2026-09-29 21:53:41,578] INFO in location_service: Overpass outage breaker OPEN - skipping query (68s left)
+[2026-09-29 21:53:42,125] INFO in location_service: Overpass outage breaker OPEN - skipping query (67s left)
+[2026-09-29 21:53:47,146] INFO in location_service: Overpass outage breaker OPEN - skipping query (62s left)
+127.0.0.1 - - [29/Sep/2026 21:53:53] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:53:53] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:53:53] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:53:53] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:53:56] "GET /api/v1/locations/country?q=Tamil+Nadu&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:53:56] "GET /api/v1/locations/state?q=Tamil+Nadu&risk=false HTTP/1.1" 200 -
+[2026-09-29 21:53:56,586] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,632] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,639] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,650] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,652] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,667] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,689] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,699] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,702] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,720] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,726] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,728] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,735] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,751] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,762] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,772] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,776] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,784] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,797] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,806] INFO in location_service: Overpass outage breaker OPEN - skipping query (53s left)
+[2026-09-29 21:53:56,815] INFO in location_service: Overpass outage breaker OPEN - skipping query (52s left)
+[2026-09-29 21:53:56,829] INFO in location_service: Overpass outage breaker OPEN - skipping query (52s left)
+127.0.0.1 - - [29/Sep/2026 21:53:56] "GET /api/v1/locations/search?q=Tamil+Nadu&limit=8&autocomplete=true HTTP/1.1" 200 -
+[2026-09-29 21:53:56,836] INFO in location_service: Overpass outage breaker OPEN - skipping query (52s left)
+[2026-09-29 21:53:56,848] INFO in location_service: Overpass outage breaker OPEN - skipping query (52s left)
+[2026-09-29 21:53:56,852] INFO in location_service: Overpass outage breaker OPEN - skipping query (52s left)
+[2026-09-29 21:53:56,855] INFO in location_service: Overpass outage breaker OPEN - skipping query (52s left)
+[2026-09-29 21:54:00,620] INFO in location_service: Overpass outage breaker OPEN - skipping query (49s left)
+[2026-09-29 21:54:03,806] INFO in location_service: Overpass outage breaker OPEN - skipping query (46s left)
+[2026-09-29 21:54:06,409] INFO in location_service: Overpass outage breaker OPEN - skipping query (43s left)
+[2026-09-29 21:54:23,387] INFO in location_service: Overpass outage breaker OPEN - skipping query (26s left)
+[2026-09-29 21:54:23,486] INFO in location_service: Overpass outage breaker OPEN - skipping query (26s left)
+[2026-09-29 21:54:27,489] INFO in location_service: Overpass outage breaker OPEN - skipping query (22s left)
+[2026-09-29 21:54:27,649] INFO in location_service: Overpass outage breaker OPEN - skipping query (22s left)
+[2026-09-29 21:54:27,813] INFO in location_service: Overpass outage breaker OPEN - skipping query (21s left)
+[2026-09-29 21:54:28,489] INFO in location_service: Overpass outage breaker OPEN - skipping query (21s left)
+[2026-09-29 21:54:28,796] INFO in location_service: Overpass outage breaker OPEN - skipping query (21s left)
+[2026-09-29 21:54:28,881] INFO in location_service: Overpass outage breaker OPEN - skipping query (20s left)
+[2026-09-29 21:54:29,408] INFO in location_service: Overpass outage breaker OPEN - skipping query (20s left)
+[2026-09-29 21:54:32,567] INFO in location_service: Overpass outage breaker OPEN - skipping query (17s left)
+[2026-09-29 21:54:34,567] INFO in location_service: Overpass outage breaker OPEN - skipping query (15s left)
+[2026-09-29 21:54:35,649] INFO in location_service: Overpass outage breaker OPEN - skipping query (14s left)
+[2026-09-29 21:54:39,396] INFO in location_service: Overpass outage breaker OPEN - skipping query (10s left)
+[2026-09-29 21:54:46,652] INFO in location_service: Overpass outage breaker OPEN - skipping query (3s left)
+[2026-09-29 21:54:46,816] INFO in location_service: Overpass outage breaker OPEN - skipping query (2s left)
+[2026-09-29 21:54:52,395] INFO in location_service: Overpass budget spent - reporting unavailable
+[2026-09-29 21:54:53,310] INFO in location_service: Overpass budget spent - reporting unavailable
+[2026-09-29 21:54:53,403] INFO in location_service: Overpass budget spent - reporting unavailable
+[2026-09-29 21:54:53,661] INFO in location_service: Overpass outage breaker OPEN - skipping query (120s left)
+[2026-09-29 21:55:00,822] INFO in location_service: Overpass outage breaker OPEN - skipping query (113s left)
+[2026-09-29 21:55:07,660] INFO in location_service: Overpass outage breaker OPEN - skipping query (106s left)
+[2026-09-29 21:55:11,580] INFO in location_service: Overpass outage breaker OPEN - skipping query (102s left)
+[2026-09-29 21:55:11,581] INFO in location_service: Overpass outage breaker OPEN - skipping query (102s left)
+[2026-09-29 21:55:13,894] INFO in location_service: Overpass outage breaker OPEN - skipping query (100s left)
+[2026-09-29 21:55:16,402] INFO in location_service: Overpass outage breaker OPEN - skipping query (97s left)
+[2026-09-29 21:55:19,404] INFO in location_service: Overpass outage breaker OPEN - skipping query (94s left)
+[2026-09-29 21:55:19,643] INFO in location_service: Overpass outage breaker OPEN - skipping query (94s left)
+[2026-09-29 21:55:19,892] INFO in location_service: Overpass outage breaker OPEN - skipping query (94s left)
+[2026-09-29 21:55:20,815] INFO in location_service: Overpass outage breaker OPEN - skipping query (93s left)
+[2026-09-29 21:55:20,823] INFO in location_service: Overpass outage breaker OPEN - skipping query (93s left)
+[2026-09-29 21:55:21,404] INFO in location_service: Overpass outage breaker OPEN - skipping query (92s left)
+[2026-09-29 21:55:21,499] INFO in location_service: Overpass outage breaker OPEN - skipping query (92s left)
+[2026-09-29 21:55:22,892] INFO in location_service: Overpass outage breaker OPEN - skipping query (91s left)
+[2026-09-29 21:55:24,894] INFO in location_service: Overpass outage breaker OPEN - skipping query (89s left)
+[2026-09-29 21:55:26,500] INFO in location_service: Overpass outage breaker OPEN - skipping query (87s left)
+[2026-09-29 21:55:28,422] INFO in location_service: Overpass outage breaker OPEN - skipping query (85s left)
+[2026-09-29 21:55:31,421] INFO in location_service: Overpass outage breaker OPEN - skipping query (82s left)
+[2026-09-29 21:55:31,808] INFO in location_service: Overpass outage breaker OPEN - skipping query (82s left)
+[2026-09-29 21:55:31,809] INFO in location_service: Overpass outage breaker OPEN - skipping query (82s left)
+[2026-09-29 21:55:32,684] INFO in location_service: Overpass outage breaker OPEN - skipping query (81s left)
+[2026-09-29 21:55:36,503] INFO in location_service: Overpass outage breaker OPEN - skipping query (77s left)
+[2026-09-29 21:55:37,650] INFO in location_service: Overpass outage breaker OPEN - skipping query (76s left)
+[2026-09-29 21:55:46,735] INFO in location_service: Overpass outage breaker OPEN - skipping query (67s left)
+[2026-09-29 21:55:46,735] INFO in location_service: Overpass outage breaker OPEN - skipping query (67s left)
+[2026-09-29 21:55:46,736] INFO in location_service: Overpass outage breaker OPEN - skipping query (67s left)
+[2026-09-29 21:55:47,572] INFO in location_service: Overpass outage breaker OPEN - skipping query (66s left)
+[2026-09-29 21:55:48,599] INFO in location_service: Overpass outage breaker OPEN - skipping query (65s left)
+[2026-09-29 21:55:50,489] INFO in location_service: Overpass outage breaker OPEN - skipping query (63s left)
+[2026-09-29 21:55:50,507] INFO in location_service: Overpass outage breaker OPEN - skipping query (63s left)
+[2026-09-29 21:55:51,408] INFO in location_service: Overpass outage breaker OPEN - skipping query (62s left)
+[2026-09-29 21:55:55,407] INFO in location_service: Overpass outage breaker OPEN - skipping query (58s left)
+[2026-09-29 21:55:55,586] INFO in location_service: Overpass outage breaker OPEN - skipping query (58s left)
+[2026-09-29 21:55:56,831] INFO in location_service: Overpass outage breaker OPEN - skipping query (57s left)
+127.0.0.1 - - [29/Sep/2026 21:55:56] "GET /api/v1/locations/state?q=Tamil+Nadu HTTP/1.1" 200 -
+[2026-09-29 21:55:58,654] INFO in location_service: Overpass outage breaker OPEN - skipping query (55s left)
+127.0.0.1 - - [29/Sep/2026 21:55:58] "GET /api/v1/locations/state?q=Tamil+Nadu HTTP/1.1" 200 -
+[2026-09-29 21:56:01,408] INFO in location_service: Overpass outage breaker OPEN - skipping query (52s left)
+127.0.0.1 - - [29/Sep/2026 21:56:01] "GET /api/v1/locations/state?q=Tamil+Nadu HTTP/1.1" 200 -
+[2026-09-29 21:56:05,781] INFO in location_service: Overpass outage breaker OPEN - skipping query (48s left)
+127.0.0.1 - - [29/Sep/2026 21:56:05] "GET /api/v1/locations/state?q=Tamil+Nadu HTTP/1.1" 200 -
+[2026-09-29 21:56:29,713] INFO in location_service: Overpass outage breaker OPEN - skipping query (24s left)
+127.0.0.1 - - [29/Sep/2026 21:56:29] "GET /api/v1/locations/district?q=Cuddalore HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 21:56:40] "GET /api/v1/locations/district?q=Wayanad HTTP/1.1" 200 -
+[2026-09-29 21:56:40,362] INFO in location_service: Overpass outage breaker OPEN - skipping query (13s left)
+127.0.0.1 - - [29/Sep/2026 21:56:40] "GET /api/v1/locations/district?q=Kochi HTTP/1.1" 200 -

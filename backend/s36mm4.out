@@ -1,0 +1,31 @@
+built a sandbox ml/ tree at: C:\Users\abishek\AppData\Local\Temp\aquaguard_no_model_76txiyn1\ml
+  forest artifact present? False (real one exists: True)
+
+waiting for the model-less server to boot...
+  PASS  the model-less server boots and answers /health   -> port=52066
+
+------------------------------------------------------------------------------
+WITH NO MODEL INSTALLED
+------------------------------------------------------------------------------
+  PASS  the sandbox really has no forest artifact   -> C:\Users\abishek\AppData\Local\Temp\aquaguard_no_model_76txiyn1\ml\model\water_quality_rf.joblib
+  response: code=201 body={"data": {"confidence": 0.9892, "created_at": "2026-10-01T16:19:58", "dissolved_oxygen": 7.0, "feature_contributions": [{"contribution": 0.0743, "importance": 0.3185, "name": "ph", "value": 7.2}, {"contribution": 0.4294, "importance": 0.2525, "name": "turbidity", "value": 1.5}, {"contribution": 52.8
+  FAIL  a prediction request FAILS rather than answering   -> code=201
+  FAIL  no verdict is invented   -> prediction=safe
+  FAIL  no confidence is invented   -> confidence=0.9892
+  FAIL  the failure is reported as a model error (503), not a server crash   -> code=201
+  PASS  the message says the model is unavailable, not a verdict   -> {"data": {"confidence": 0.9892, "created_at": "2026-10-01T16:19:58", "dissolved_oxygen": 7.0, "feature_contributions": [{"contribution": 0.0743, "importance": 0
+  PASS  it failed FAST rather than hanging   -> 3.60s
+
+------------------------------------------------------------------------------
+THE ASSISTANT'S PREDICTION TOOL FAILS THE SAME WAY
+------------------------------------------------------------------------------
+  PASS  Aqua AI does not state a verdict without a model   -> code=200
+
+==============================================================================
+5/9 checks passed
+  FAILED: a prediction request FAILS rather than answering
+  FAILED: no verdict is invented
+  FAILED: no confidence is invented
+  FAILED: the failure is reported as a model error (503), not a server crash
+FAILURES PRESENT
+==============================================================================

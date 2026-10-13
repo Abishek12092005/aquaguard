@@ -1,0 +1,38 @@
+{
+  "Chennai": {
+    "https://overpass-api.de/api/interpreter": {
+      "seconds": 12.45,
+      "outcome": "None"
+    },
+    "https://overpass.kumi.systems/api/interpreter": {
+      "seconds": 11.41,
+      "outcome": "None"
+    },
+    "https://overpass.private.coffee/api/interpreter": {
+      "seconds": 11.49,
+      "outcome": "None"
+    },
+    "https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter": {
+      "seconds": 11.02,
+      "outcome": "None"
+    }
+  },
+  "Varanasi": {
+    "https://overpass-api.de/api/interpreter": {
+      "seconds": 18.11,
+      "outcome": "None"
+    },
+    "https://overpass.kumi.systems/api/interpreter": {
+      "seconds": 11.71,
+      "outcome": "None"
+    },
+    "https://overpass.private.coffee/api/interpreter": {
+      "seconds": 11.45,
+      "outcome": "None"
+    },
+    "https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter": {
+      "seconds": 11.04,
+      "outcome": "None"
+    }
+  }
+}

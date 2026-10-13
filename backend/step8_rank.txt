@@ -1,0 +1,67 @@
+==============================================================================
+'Anna Nagar'
+==============================================================================
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=Spain
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=Russia
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=United States
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=United States
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=United States
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=Ivory Coast
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=Estonia
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=Latvia
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=Russia
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=United States
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=United States
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=United States
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=Polska
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=Slovensko
+  Anna                                   | strength=0.0 | sim=0.42 | kind=place country=Papua Niugini
+  Annaba                                 | strength=0.0 | sim=0.00 | kind=place country=Algeria
+  Anna küla                              | strength=0.0 | sim=0.00 | kind=place country=Eesti
+  Tiruvannamalai                         | strength=0.0 | sim=0.00 | kind=place country=India
+  Nnak                                   | strength=0.0 | sim=0.00 | kind=place country=Pakistan
+  Nnabi                                  | strength=0.0 | sim=0.00 | kind=place country=Nigeria
+  Nnamg                                  | strength=0.0 | sim=0.00 | kind=place country=Nigeria
+  Nnage                                  | strength=0.0 | sim=0.00 | kind=place country=Nigeria
+  Nnadi                                  | strength=0.0 | sim=0.00 | kind=place country=Nigeria
+  Nnama                                  | strength=0.0 | sim=0.00 | kind=place country=Uganda
+  Nnawoye                                | strength=0.0 | sim=0.00 | kind=place country=Nigeria
+  Nama                                   | strength=0.0 | sim=0.00 | kind=place country=Ghana
+  Kenitra                                | strength=0.0 | sim=0.00 | kind=place country=Morocco
+  Kenitra AB                             | strength=0.0 | sim=0.00 | kind=place country=Morocco
+  Анна                                   | strength=0.0 | sim=0.00 | kind=place country=Россия
+
+==============================================================================
+'Karaikudi Main Street'
+==============================================================================
+  Udi                                    | strength=0.0 | sim=0.13 | kind=place country=Nigeria
+  Udi                                    | strength=0.0 | sim=0.13 | kind=place country=Russia
+  Udi                                    | strength=0.0 | sim=0.13 | kind=place country=Pakistan
+  Ūdī                                    | strength=0.0 | sim=0.13 | kind=place country=India
+  Udi                                    | strength=0.0 | sim=0.13 | kind=place country=Pakistan
+  Ūdī                                    | strength=0.0 | sim=0.13 | kind=place country=Afghanistan
+  Udi                                    | strength=0.0 | sim=0.13 | kind=place country=Nigeria
+  Udi                                    | strength=0.0 | sim=0.13 | kind=place country=Nigeria
+  Karaikudi                              | strength=0.0 | sim=0.45 | kind=place country=India
+  Kāraikāl                               | strength=0.0 | sim=0.00 | kind=place country=India
+  Karaike                                | strength=0.0 | sim=0.00 | kind=landmark country=Japan
+  Karaike                                | strength=0.0 | sim=0.00 | kind=landmark country=Japan
+  Karaike                                | strength=0.0 | sim=0.00 | kind=landmark country=Japan
+  Karaike                                | strength=0.0 | sim=0.00 | kind=landmark country=Japan
+  Karaikha                               | strength=0.0 | sim=0.00 | kind=place country=Russia
+  Karaikkal                              | strength=0.0 | sim=0.00 | kind=place country=Sri Lanka
+  Karaikelā                              | strength=0.0 | sim=0.00 | kind=place country=India
+  Karaikove                              | strength=0.0 | sim=0.00 | kind=place country=Ukraine
+  Strée                                  | strength=0.0 | sim=0.22 | kind=place country=Belgium
+  Strée-lez-Huy                          | strength=0.0 | sim=0.00 | kind=place country=Belgium
+  Strem                                  | strength=0.0 | sim=0.00 | kind=place country=Austria
+  Střeň                                  | strength=0.0 | sim=0.00 | kind=place country=Czechia
+  Strei                                  | strength=0.0 | sim=0.00 | kind=place country=Romania
+  Streu                                  | strength=0.0 | sim=0.00 | kind=place country=Germany
+  Streu                                  | strength=0.0 | sim=0.00 | kind=place country=Germany
+  Stren                                  | strength=0.0 | sim=0.00 | kind=place country=Indonesia
+  Stren                                  | strength=0.0 | sim=0.00 | kind=place country=Indonesia
+  Stren                                  | strength=0.0 | sim=0.00 | kind=place country=Indonesia
+  Udy                                    | strength=0.0 | sim=0.00 | kind=place country=Ukraine
+  Uberlândia                             | strength=0.0 | sim=0.00 | kind=place country=Brazil
+

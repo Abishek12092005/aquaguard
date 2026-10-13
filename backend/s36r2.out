@@ -1,0 +1,3 @@
+radius= 1500m  status=200    3.52s  elements=46  fits_in_2.5s=NO
+radius= 3000m  status=504    7.29s  elements=-  fits_in_2.5s=NO
+radius= 5000m  status=504    8.18s  elements=-  fits_in_2.5s=NO

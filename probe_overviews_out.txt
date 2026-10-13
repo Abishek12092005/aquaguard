@@ -1,0 +1,7 @@
+login ok
+=== /locations/state?q=Tamil Nadu&limit=4 ===
+{"data": {"available": false, "message": "No state found for that search."}, "message": "OK", "success": true}
+=== /locations/country?q=India&limit=3 ===
+{"data": {"available": true, "country": {"country_code": "IN", "lat": 22.0, "lon": 79.0, "name": "India"}, "legend": [{"dot": "🟢", "label": "SAFE", "level": "low"}, {"dot": "🟡", "label": "MODERATE", "level": "moderate"}, {"dot": "🔴", "label": "UNSAFE", "level": "high"}], "message": "No state-level data is available for this country.", "states": []}, "message": "OK", "success": true}
+=== /locations/district?q=Sivaganga ===
+{"data": {"available": true, "district": {"country": "India", "country_code": "IN", "district": "Sivaganga", "lat": 9.84701, "lon": 78.48358, "name": "Sivaganga", "state": "Tamil Nadu"}, "message": "No place-level data is available for this district.", "places": []}, "message": "OK", "success": true}

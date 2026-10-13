@@ -1,0 +1,8 @@
+[2026-09-30 15:02:45,607] INFO in tools: Aqua AI default tool handlers registered
+[2026-09-30 15:02:45,612] INFO in __init__: AquaGuard AI backend initialised (env=development)
+[2026-09-30 15:02:51,130] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-09-30 15:16:21,371] INFO in location_service: Location API https://nominatim.openstreetmap.org/search failed: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=15)
+[2026-09-30 15:17:57,243] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x2a1a10dec10>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=2.355373099911958)'))
+[2026-09-30 15:17:57,639] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=2.4176493999548256)
+[2026-09-30 15:17:57,651] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=2.4669112998526543)
+[2026-09-30 15:17:57,684] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=2.382711899932474)

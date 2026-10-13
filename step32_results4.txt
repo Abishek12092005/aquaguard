@@ -1,0 +1,4 @@
+STATE_KEYS: ['available', 'message']
+STATE districts: 0
+DISTRICT_KEYS: ['available', 'district', 'message', 'places']
+PLACES: 0

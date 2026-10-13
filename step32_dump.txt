@@ -1,0 +1,9 @@
+COUNTRY data keys: ['available', 'country', 'legend', 'message', 'states', 'summary']
+COUNTRY country: {"country_code": "IN", "lat": 22.0, "lon": 79.0, "name": "India"}
+  STATE ITEM: {"factors": [], "message": "Water source information is unavailable for this location.", "risk_level": "unknown", "risk_tone": "unknown", "sampled_points": 0, "state": "Gujarat", "water_types": [], "worst_source": null}
+  STATE ITEM: {"factors": [], "message": "Water source information is unavailable for this location.", "risk_level": "unknown", "risk_tone": "unknown", "sampled_points": 0, "state": "Dadra and Nagar Haveli and Daman and Diu", "water_types": [], "worst_source": null}
+  STATE ITEM: {"factors": [], "message": "Water source information is unavailable for this location.", "risk_level": "unknown", "risk_tone": "unknown", "sampled_points": 0, "state": "West Bengal", "water_types": [], "worst_source": null}
+STATE data keys: ['available', 'message']
+STATE message: No state found for that search.
+STATE available: False state: null
+SEARCH data type: list []

@@ -1,0 +1,6 @@
+login ok
+message=None places=3
+  Kalaiyarkovil | town | Sivaganga, Tamil Nadu
+  V.Pudukkulam | village | Sivaganga, Tamil Nadu
+  Vittaneri | village | Sivaganga, Tamil Nadu
+TEST3_RESULT: PASS

@@ -1,0 +1,10 @@
+current service query, 1500 m          status=200   4.19s elements=46  fits_in_2.5s=NO
+      e.g. None None
+      e.g. None None
+      e.g. None None
+water tags only, 2000 m                status=504   7.68s elements=0  fits_in_2.5s=NO
+water tags only, 3000 m                status=200   2.48s elements=52  fits_in_2.5s=YES
+      e.g. None None
+      e.g. None None
+      e.g. None None
+named water bodies only, 3000 m        status=504   8.79s elements=0  fits_in_2.5s=NO

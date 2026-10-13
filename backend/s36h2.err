@@ -1,0 +1,16 @@
+[2026-10-01 21:48:30,413] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:48:30,416] INFO in __init__: AquaGuard AI backend initialised (env=testing)
+Could not pre-load the water quality model from C:\Users\abishek\AppData\Local\Temp\aquaguard_hang_h9navbug\ml\model
+Traceback (most recent call last):
+  File "C:\Users\abishek\AppData\Local\Temp\aquaguard_hang_h9navbug\ml\predict.py", line 115, in warm_up
+    _load()
+    ~~~~~^^
+  File "C:\Users\abishek\AppData\Local\Temp\aquaguard_hang_h9navbug\ml\predict.py", line 102, in _load
+    _cache.update(_build())
+                  ~~~~~~^^
+  File "C:\Users\abishek\AppData\Local\Temp\aquaguard_hang_h9navbug\ml\predict.py", line 58, in _build
+    raise FileNotFoundError(
+        f"Model not found at {model_path}. Train it first: python ml/train_model.py"
+    )
+FileNotFoundError: Model not found at C:\Users\abishek\AppData\Local\Temp\aquaguard_hang_h9navbug\ml\model\water_quality_rf.joblib. Train it first: python ml/train_model.py
+[2026-10-01 21:48:30,536] WARNING in __init__: Water quality model not pre-loaded; predictions will report unavailable until the artifact is installed.

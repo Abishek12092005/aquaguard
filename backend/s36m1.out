@@ -1,0 +1,113 @@
+
+------------------------------------------------------------------------------
+STEP 1  search / select a location
+------------------------------------------------------------------------------
+  PASS  search responds 200   -> code=200 in 1.73s
+  PASS  search returned places   -> n=5
+  first result
+      {
+        "branch_label": "Chennai, Chennai district, Tamil Nadu, India",
+        "city": "Chennai",
+        "country": "India",
+        "country_code": "IN",
+        "district": "Chennai district",
+        "feature_code": "PPLA",
+        "kind": "place",
+        "label": "Chennai, Chennai district, Tamil Nadu, India",
+        "lat": 13.08784,
+        "lon": 80.27847,
+        "name": "Chennai",
+        "pincode": null,
+        "state": "Tamil Nadu"
+      }
+
+------------------------------------------------------------------------------
+STEP 2  identify the location
+------------------------------------------------------------------------------
+  PASS  resolve responds 200   -> code=200 in 0.52s
+  resolved location
+      {
+        "branch_label": "Chennai, Chennai district, Tamil Nadu, India",
+        "city": "Chennai",
+        "country": "India",
+        "country_code": "IN",
+        "district": "Chennai district",
+        "feature_code": "PPLA",
+        "kind": "place",
+        "label": "Chennai, Chennai district, Tamil Nadu, India",
+        "lat": 13.08784,
+        "lon": 80.27847,
+        "name": "Chennai",
+        "pincode": null,
+        "state": "Tamil Nadu"
+      }
+  PASS  resolution carries a place name   -> Chennai
+  PASS  resolution carries coordinates   -> 13.08784,80.27847
+
+------------------------------------------------------------------------------
+STEP 3  water source
+------------------------------------------------------------------------------
+  FAIL  water source responds 200   -> code=422 in 0.03s
+  FAIL  a water source was identified   -> primary={} nearby=0
+  primary source
+      {}
+  FAIL  nearby sources were listed (fallback candidates)   -> n=0
+  PASS  the water lookup completed   -> 0.03s (Overpass-backed)
+
+------------------------------------------------------------------------------
+STEP 4  water parameters
+------------------------------------------------------------------------------
+  PASS  parameters respond 200   -> code=200 in 0.00s
+  PASS  five parameters were supplied   -> keys=['dissolved_oxygen', 'ph', 'tds', 'temperature', 'turbidity']
+  parameters
+      {
+        "dissolved_oxygen": 7.0,
+        "ph": 7.2,
+        "tds": 300.0,
+        "temperature": 25.0,
+        "turbidity": 1.5
+      }
+
+------------------------------------------------------------------------------
+STEP 5  Analyze Water Quality
+------------------------------------------------------------------------------
+  PASS  Analyze Water Quality responds 201   -> code=201 in 0.08s
+
+------------------------------------------------------------------------------
+STEP 6  result
+------------------------------------------------------------------------------
+  verdict / confidence / model
+      {
+        "prediction": "safe",
+        "confidence": 0.8559,
+        "model_name": "random_forest_water_quality",
+        "model_version": "water-quality-rf-v1.0.0",
+        "is_safe": true,
+        "label": "SAFE",
+        "id": 5597
+      }
+  PASS  a verdict came back   -> safe
+  PASS  a confidence came back   -> 0.8559
+  PASS  the model named itself   -> random_forest_water_quality
+  PASS  the location came back with the result   -> Chennai
+  FAIL  the water source type came back with the result   -> None
+  PASS  the Analyze step is inside the ~5s ceiling   -> 0.08s
+  PASS  the Analyze step is near the ~3s target   -> 0.08s
+  PASS  every non-provider step is inside ~5s   -> max local step 1.73s
+    step timings: search=1.73s resolve=0.52s water=0.03s params=0.00s analyze=0.08s
+    (water=0.03s is the Overpass-backed lookup; it is cached for 1 h per place)
+
+------------------------------------------------------------------------------
+STEP 7  the same place asked twice gives the same verdict
+------------------------------------------------------------------------------
+  PASS  repeat verdict matches   -> safe
+  PASS  repeat confidence matches   -> 0.8559 vs 0.8559
+
+==============================================================================
+18/22 checks passed
+  FAILED: water source responds 200
+  FAILED: a water source was identified
+  FAILED: nearby sources were listed (fallback candidates)
+  FAILED: the water source type came back with the result
+FAILURES PRESENT
+==============================================================================

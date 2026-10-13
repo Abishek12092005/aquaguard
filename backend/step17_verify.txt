@@ -1,0 +1,32 @@
+﻿python.exe : [2026-09-29 17:56:27,357] INFO in tools: Aqua AI default tool handlers registered
+At line:1 char:213
++ ... p17_bom.py; & ".\.venv\Scripts\python.exe" verify_step17.py *>&1 | Ou ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2026-09-29 17:...lers registered:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2026-09-29 17:56:27,362] INFO in __init__: AquaGuard AI backend initialised (env=development)
+bundled states: 36
+Tamil Nadu       -> canonical=Tamil Nadu              39 districts
+tamil nadu       -> canonical=Tamil Nadu              39 districts
+Tamil  Nadu      -> canonical=Tamil Nadu              39 districts
+Kerala           -> canonical=Kerala                  14 districts
+Uttar Pradesh    -> canonical=Uttar Pradesh           76 districts
+Maharashtra      -> canonical=Maharashtra             37 districts
+Delhi            -> canonical=National Capital Territory of Delhi  14 districts
+Ladakh           -> canonical=Ladakh                   6 districts
+Odisha           -> canonical=Odisha                  30 districts
+
+Tamil Nadu first 6: ['Ariyalur', 'Chengalpattu', 'Chennai', 'Coimbatore', 'Cuddalore', 'Dharmapuri']
+
+GET /locations/state -> 200 in 0.88s
+  available: True
+  state: Tamil Nadu | country: India
+  districts: 39
+    1 Ariyalur | Tamil Nadu | India | unknown
+    2 Chengalpattu | Tamil Nadu | India | unknown
+    3 Chennai | Tamil Nadu | India | unknown
+    4 Coimbatore | Tamil Nadu | India | unknown
+    5 Cuddalore | Tamil Nadu | India | unknown
+    6 Dharmapuri | Tamil Nadu | India | unknown
+  summary: {'moderate': 0, 'safe': 0, 'total_districts': 39, 'unknown': 39, 'unsafe': 0}

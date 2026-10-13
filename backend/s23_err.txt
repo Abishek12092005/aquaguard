@@ -1,0 +1,35 @@
+[2026-09-30 00:37:08,491] INFO in tools: Aqua AI default tool handlers registered
+[2026-09-30 00:37:08,495] INFO in __init__: AquaGuard AI backend initialised (env=development)
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5056
+Press CTRL+C to quit
+[2026-09-30 00:37:12,193] INFO in water_quality: Water quality model pre-loaded and ready
+127.0.0.1 - - [30/Sep/2026 00:39:54] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:39:55] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:39:57] "GET /api/v1/locations/pincode?q=110001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:39:58] "GET /api/v1/locations/pincode?q=600001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:39:59] "GET /api/v1/locations/pincode?q=208001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:40:01] "GET /api/v1/locations/pincode?q=682001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:40:02] "GET /api/v1/locations/pincode?q=500001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:40:03] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+[2026-09-30 00:40:06,178] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1f2058502d0>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=2.492547200061381)'))
+[2026-09-30 00:40:06,178] INFO in location_service: Overpass budget spent - reporting unavailable
+127.0.0.1 - - [30/Sep/2026 00:40:06] "GET /api/v1/locations/context?lat=10.0745212&lon=78.7727332 HTTP/1.1" 200 -
+[2026-09-30 00:40:06,559] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=2.4944225000217557)
+[2026-09-30 00:40:06,560] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=2.4953743999358267)
+127.0.0.1 - - [30/Sep/2026 00:40:07] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+[2026-09-30 00:40:07,555] INFO in location_service: Overpass outage breaker OPEN - skipping query (119s left)
+127.0.0.1 - - [30/Sep/2026 00:40:08] "GET /api/v1/locations/context?lat=12.9797037&lon=77.594695 HTTP/1.1" 200 -
+[2026-09-30 00:40:09,083] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=2.4982507000677288)
+127.0.0.1 - - [30/Sep/2026 00:40:09] "GET /api/v1/locations/pincode?q=999999 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:40:09] "GET /api/v1/locations/pincode?q=000000 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:40:10] "GET /api/v1/locations/pincode?q=12345 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:40:11] "GET /api/v1/locations/pincode?q=012345 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:40:11] "GET /api/v1/locations/pincode?q=12345678 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:40:12] "GET /api/v1/locations/resolve?q=999999 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:40:13] "GET /api/v1/locations/resolve?q=12345 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:40:14] "GET /api/v1/locations/resolve?q=000000 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:40:14] "GET /api/v1/locations/resolve?q=012345 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:40:16] "GET /api/v1/locations/resolve?q=Kothanallur HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:40:17] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:40:18] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -

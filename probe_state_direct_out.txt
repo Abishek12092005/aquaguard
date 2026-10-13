@@ -1,0 +1,8 @@
+=== resolve_state('Tamil Nadu') ===
+{"name": "Tamil Nadu", "state": "Tamil Nadu", "country": "India", "country_code": "IN", "lat": 11.3323723, "lon": 78.6098639}
+=== state_districts() ===
+count=0
+=== resolve_district('Sivaganga') ===
+{"name": "Sivaganga", "district": "Sivaganga", "state": "Tamil Nadu", "country": "India", "country_code": "IN", "lat": 9.84701, "lon": 78.48358}
+=== Overpass ISO3166-2 IN relations (country_states query) ===
+elements=5

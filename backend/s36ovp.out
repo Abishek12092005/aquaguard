@@ -1,0 +1,16 @@
+https://overpass-api.de/api/interpreter
+    [with-UA] status=200 elapsed=2.4s elements=3 body='{\n  "version": 0.6,\n  "generator": "Overpass API 0.7.62.11 87bfad18",\n  "osm3s": {\n    "timestamp_os'
+https://overpass-api.de/api/interpreter
+    [no-UA] status=406 elapsed=0.8s elements=? body='<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">\n<html><he'
+https://overpass.kumi.systems/api/interpreter
+    [with-UA] FAILED after 45.6s: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=45)
+https://overpass.kumi.systems/api/interpreter
+    [no-UA] status=429 elapsed=0.7s elements=? body='Please include a meaningful User-Agent string with your requests to avoid rate-limiting.\n'
+https://overpass.private.coffee/api/interpreter
+    [with-UA] FAILED after 45.4s: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=45)
+https://overpass.private.coffee/api/interpreter
+    [no-UA] status=429 elapsed=0.7s elements=? body='Please include a meaningful User-Agent string with your requests to avoid rate-limiting.\n'
+https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter
+    [with-UA] FAILED after 21.1s: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x160e64fa5d0>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=45)'))
+https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter
+    [no-UA] FAILED after 21.1s: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x160e64fa710>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=45)'))

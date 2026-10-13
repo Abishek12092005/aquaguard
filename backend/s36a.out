@@ -1,0 +1,5 @@
+radius=  1500m  status=504    7.20s  elements=0
+radius=  3000m  status=504    9.04s  elements=0
+radius=  5000m  status=504   10.96s  elements=0
+radius= 10000m  status=200    7.88s  elements=0
+radius= 15000m  status=200   10.62s  elements=60

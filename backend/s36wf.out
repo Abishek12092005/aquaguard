@@ -1,0 +1,17 @@
+budget=12.0s read_timeout=11.0s breaker_state={'last_total_failure': 0.0, 'failing': False}
+
+Chennai (13.08784, 80.27847) in 12.42s
+  available = False
+  primary   = None
+  nearby    = 0
+  nearest   = None
+  message   = Water source information is unavailable for this location.
+  breaker   = {'last_total_failure': 1375799.7870904, 'failing': True}
+
+Varanasi (25.31668, 83.01041) in 0.00s
+  available = False
+  primary   = None
+  nearby    = 0
+  nearest   = None
+  message   = Water source information is unavailable for this location.
+  breaker   = {'last_total_failure': 1375799.7870904, 'failing': True}

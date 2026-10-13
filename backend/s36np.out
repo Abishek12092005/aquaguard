@@ -1,0 +1,40 @@
+{
+  "Muzaffarpur, Bihar": {
+    "walk_seconds": 12.77,
+    "walk_elements": 0,
+    "context_seconds": 0.0,
+    "available": false,
+    "primary": null,
+    "exact": false,
+    "nearest": null,
+    "nearby_count": 0,
+    "first_nearby": null,
+    "message": "Water source information is unavailable for this location."
+  },
+  "Chennai": {
+    "walk_seconds": 0.0,
+    "walk_elements": 0,
+    "context_seconds": 0.0,
+    "available": false,
+    "primary": null,
+    "exact": false,
+    "nearest": null,
+    "nearby_count": 0,
+    "first_nearby": null,
+    "message": "Water source information is unavailable for this location."
+  },
+  "Varanasi": {
+    "walk_seconds": 0.0,
+    "walk_elements": 0,
+    "context_seconds": 0.0,
+    "available": false,
+    "primary": null,
+    "exact": false,
+    "nearest": null,
+    "nearby_count": 0,
+    "first_nearby": null,
+    "message": "Water source information is unavailable for this location."
+  }
+}
+
+wrote C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\s36_nearby_results.json

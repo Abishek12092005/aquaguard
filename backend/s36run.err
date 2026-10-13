@@ -1,0 +1,1009 @@
+[2026-10-01 20:46:18,511] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 20:46:18,532] INFO in __init__: AquaGuard AI backend initialised (env=development)
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+[2026-10-01 20:46:23,518] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 20:46:23,522] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 20:46:45,201] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 20:46:45,212] INFO in water_quality: Water quality model pre-loaded and ready
+127.0.0.1 - - [01/Oct/2026 20:48:59] "GET /api/v1/health HTTP/1.1" 200 -
+[2026-10-01 20:49:23,978] INFO in prediction_service: Prediction id=5588 user=10411 verdict=safe confidence=0.9522
+127.0.0.1 - - [01/Oct/2026 20:49:23] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 20:49:24,040] INFO in prediction_service: Prediction id=5589 user=10411 verdict=safe confidence=0.7518
+127.0.0.1 - - [01/Oct/2026 20:49:24] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 20:49:24,108] INFO in prediction_service: Prediction id=5590 user=10411 verdict=safe confidence=0.9522
+127.0.0.1 - - [01/Oct/2026 20:49:24] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 20:49:24,209] INFO in alert_service: Alert raised id=2709 for prediction=5591
+[2026-10-01 20:49:24,214] INFO in prediction_service: Prediction id=5591 user=10411 verdict=unsafe confidence=0.9226
+127.0.0.1 - - [01/Oct/2026 20:49:24] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 20:49:24,284] INFO in prediction_service: Prediction id=5592 user=10411 verdict=moderate confidence=0.5586
+127.0.0.1 - - [01/Oct/2026 20:49:24] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 20:49:24,361] INFO in prediction_service: Prediction id=5593 user=10411 verdict=safe confidence=0.9522
+127.0.0.1 - - [01/Oct/2026 20:49:24] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 20:49:24,445] INFO in prediction_service: Prediction id=5594 user=10411 verdict=safe confidence=0.9522
+127.0.0.1 - - [01/Oct/2026 20:49:24] "POST /api/v1/predictions HTTP/1.1" 201 -
+127.0.0.1 - - [01/Oct/2026 20:49:24] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 20:49:24] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 20:49:24] "GET /api/v1/health HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:50:43] "GET /api/v1/location/search?q=Chennai&limit=5 HTTP/1.1" 404 -
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\step36_method1.py', reloading
+ * Restarting with stat
+[2026-10-01 20:51:15,919] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 20:51:15,923] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+127.0.0.1 - - [01/Oct/2026 20:51:20] "GET /api/v1/locations/search?q=Chennai&limit=5 HTTP/1.1" 200 -
+[2026-10-01 20:51:21,618] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\step36_method1.py', reloading
+ * Restarting with stat
+[2026-10-01 20:51:39,698] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 20:51:39,702] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+127.0.0.1 - - [01/Oct/2026 20:51:43] "GET /api/v1/locations/search?q=Chennai&limit=5 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:51:44] "GET /api/v1/locations/resolve?lat=13.08784&query=Chennai HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:51:44] "GET /api/v1/locations/water?lat=13.08784 HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 20:51:44] "GET /api/v1/locations/parameters?lat=13.08784 HTTP/1.1" 200 -
+[2026-10-01 20:51:45,960] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 20:51:46,090] INFO in prediction_service: Prediction id=5595 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 20:51:46] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 20:51:46,187] INFO in prediction_service: Prediction id=5596 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 20:51:46] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 20:52:10,286] INFO in location_service: Overpass budget spent - reporting unavailable
+127.0.0.1 - - [01/Oct/2026 20:52:10] "GET /api/v1/locations/water?lat=13.08784&lon=80.27847 HTTP/1.1" 200 -
+[2026-10-01 20:52:10,859] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=2.4978348000440747)
+[2026-10-01 20:52:10,875] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=2.499002299970016)
+[2026-10-01 20:52:11,025] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=2.4867823999375105)
+[2026-10-01 20:52:12,889] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x2148f495950>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=2.485009300056845)'))
+127.0.0.1 - - [01/Oct/2026 20:52:24] "GET /api/v1/locations/search?q=Varanasi&limit=1 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:52:24] "GET /api/v1/locations/water?lat=&lon= HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 20:52:26] "GET /api/v1/locations/search?q=Coimbatore&limit=1 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:52:26] "GET /api/v1/locations/water?lat=&lon= HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 20:52:28] "GET /api/v1/locations/search?q=Mysuru&limit=1 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:52:28] "GET /api/v1/locations/water?lat=&lon= HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 20:52:30] "GET /api/v1/locations/search?q=Bhopal&limit=1 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:52:30] "GET /api/v1/locations/water?lat=&lon= HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 20:52:32] "GET /api/v1/locations/search?q=Kochi&limit=1 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:52:32] "GET /api/v1/locations/water?lat=&lon= HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 20:52:52] "GET /api/v1/locations/search?q=Varanasi&limit=1 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:53:02] "GET /api/v1/locations/search?q=Varanasi&limit=1 HTTP/1.1" 200 -
+[2026-10-01 20:53:03,693] INFO in location_service: Overpass outage breaker OPEN - skipping query (67s left)
+127.0.0.1 - - [01/Oct/2026 20:53:03] "GET /api/v1/locations/water?lat=25.31668&lon=83.01041 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:53:03] "GET /api/v1/locations/search?q=Coimbatore&limit=1 HTTP/1.1" 200 -
+[2026-10-01 20:53:04,566] INFO in location_service: Overpass outage breaker OPEN - skipping query (66s left)
+127.0.0.1 - - [01/Oct/2026 20:53:04] "GET /api/v1/locations/water?lat=11.00555&lon=76.96612 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:53:04] "GET /api/v1/locations/search?q=Mysuru&limit=1 HTTP/1.1" 200 -
+[2026-10-01 20:53:05,206] INFO in location_service: Overpass outage breaker OPEN - skipping query (65s left)
+127.0.0.1 - - [01/Oct/2026 20:53:05] "GET /api/v1/locations/water?lat=12.29791&lon=76.63925 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:53:05] "GET /api/v1/locations/search?q=Bhopal&limit=1 HTTP/1.1" 200 -
+[2026-10-01 20:53:05,795] INFO in location_service: Overpass outage breaker OPEN - skipping query (64s left)
+127.0.0.1 - - [01/Oct/2026 20:53:05] "GET /api/v1/locations/water?lat=23.25469&lon=77.40289 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:53:05] "GET /api/v1/locations/search?q=Kochi&limit=1 HTTP/1.1" 200 -
+[2026-10-01 20:53:06,740] INFO in location_service: Overpass outage breaker OPEN - skipping query (64s left)
+127.0.0.1 - - [01/Oct/2026 20:53:06] "GET /api/v1/locations/water?lat=9.9679032&lon=76.2444378 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 20:53:08] "GET /api/v1/locations/search?q=Jaipur&limit=1 HTTP/1.1" 200 -
+[2026-10-01 20:53:09,228] INFO in location_service: Overpass outage breaker OPEN - skipping query (61s left)
+127.0.0.1 - - [01/Oct/2026 20:53:09] "GET /api/v1/locations/water?lat=26.91962&lon=75.78781 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\step36_overpass_probe.py', reloading
+Exception in thread Thread-1 (serve_forever):
+ * Restarting with stat
+[2026-10-01 20:56:37,289] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 20:56:37,293] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 20:56:45,197] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\app\\services\\location_service.py', reloading
+ * Restarting with stat
+[2026-10-01 21:09:33,252] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:09:33,257] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 21:09:39,851] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\app\\services\\location_service.py', reloading
+ * Restarting with stat
+[2026-10-01 21:09:49,872] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:09:49,879] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 21:09:55,206] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 21:10:35,026] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x18a71505a90>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=5.986561500001699)'))
+[2026-10-01 21:10:35,027] INFO in location_service: Overpass budget spent - reporting unavailable
+127.0.0.1 - - [01/Oct/2026 21:10:35] "GET /api/v1/locations/water?lat=13.08784&lon=80.27847 HTTP/1.1" 200 -
+[2026-10-01 21:10:35,489] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=5.990360500058159)
+[2026-10-01 21:10:35,512] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=5.995605600066483)
+[2026-10-01 21:10:35,527] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=5.9986616999376565)
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\app\\services\\location_service.py', reloading
+ * Restarting with stat
+[2026-10-01 21:16:04,440] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:16:04,454] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 21:16:28,610] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 21:16:31,464] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 21:16:31,464] INFO in __init__: AquaGuard AI backend initialised (env=development)
+127.0.0.1 - - [01/Oct/2026 21:16:31] "GET /api/v1/locations/water?lat=13.08784&lon=80.27847 HTTP/1.1" 200 -
+[2026-10-01 21:16:34,985] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x14bb23b25d0>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=10.0)'))
+[2026-10-01 21:16:35,222] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:16:35,302] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=10.0)
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\step36_method1.py', reloading
+ * Restarting with stat
+[2026-10-01 21:16:55,768] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:16:55,774] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+127.0.0.1 - - [01/Oct/2026 21:16:59] "GET /api/v1/locations/search?q=Chennai&limit=5 HTTP/1.1" 200 -
+[2026-10-01 21:17:00,340] INFO in water_quality: Water quality model pre-loaded and ready
+127.0.0.1 - - [01/Oct/2026 21:17:00] "GET /api/v1/locations/resolve?lat=13.08784&query=Chennai HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 21:17:00] "GET /api/v1/locations/water?lat=13.08784 HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:17:00] "GET /api/v1/locations/parameters?lat=13.08784 HTTP/1.1" 200 -
+[2026-10-01 21:17:00,533] INFO in prediction_service: Prediction id=5597 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:17:00] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 21:17:00,572] INFO in prediction_service: Prediction id=5598 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:17:00] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 21:18:36,974] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x29474020b90>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=10.0)'))
+[2026-10-01 21:18:37,359] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:18:37,375] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:18:39,407] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=3.395167199894786)
+127.0.0.1 - - [01/Oct/2026 21:18:39] "GET /api/v1/locations/water?lat=13.08784&lon=80.27847 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\step36_method1.py', reloading
+ * Restarting with stat
+[2026-10-01 21:20:59,426] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:20:59,429] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 21:21:03,662] INFO in water_quality: Water quality model pre-loaded and ready
+127.0.0.1 - - [01/Oct/2026 21:21:05] "GET /api/v1/locations/search?q=Chennai&limit=5 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 21:21:05] "GET /api/v1/locations/resolve?lat=13.08784&lon=80.27847&query=Chennai HTTP/1.1" 200 -
+[2026-10-01 21:21:14,556] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 21:21:14,556] INFO in __init__: AquaGuard AI backend initialised (env=development)
+127.0.0.1 - - [01/Oct/2026 21:21:14] "GET /api/v1/locations/water?lat=13.08784&lon=80.27847 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 21:21:14] "GET /api/v1/locations/parameters?lat=13.08784&lon=80.27847 HTTP/1.1" 200 -
+[2026-10-01 21:21:14,798] INFO in prediction_service: Prediction id=5599 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:21:14] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 21:21:14,856] INFO in prediction_service: Prediction id=5600 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:21:14] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 21:21:16,066] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x171ac2ae210>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=10.0)'))
+[2026-10-01 21:21:16,467] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:21:16,483] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=10.0)
+127.0.0.1 - - [01/Oct/2026 21:23:25] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:23:25] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:23:25] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:23:25] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:23:25] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:23:25] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:23:25] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:23:25] "POST /api/v1/predictions HTTP/1.1" 400 -
+127.0.0.1 - - [01/Oct/2026 21:23:29] "GET /api/v1/locations/water?lat=15.0&lon=65.0 HTTP/1.1" 200 -
+[2026-10-01 21:23:35,707] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x171ae458f50>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=10.0)'))
+[2026-10-01 21:23:36,174] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:23:36,425] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:23:39,690] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x171ae459450>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=10.0)'))
+[2026-10-01 21:23:40,107] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:23:41,108] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:23:42,157] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=3.119615599978715)
+127.0.0.1 - - [01/Oct/2026 21:23:42] "GET /api/v1/locations/water?lat=26.1445&lon=85.8918 HTTP/1.1" 200 -
+[2026-10-01 21:23:42,944] INFO in location_service: Overpass outage breaker OPEN - skipping query (119s left)
+127.0.0.1 - - [01/Oct/2026 21:23:42] "GET /api/v1/locations/water?lat=999.0&lon=999.0 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 21:23:42] "GET /api/v1/locations/water HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:23:44] "GET /api/v1/locations/search?q=zzzqqxnotaplace9999 HTTP/1.1" 200 -
+[2026-10-01 21:23:44,808] INFO in prediction_service: Prediction id=5601 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:23:44] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 21:23:44,864] INFO in prediction_service: Prediction id=5602 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:23:44] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 21:23:44,917] INFO in prediction_service: Prediction id=5603 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:23:44] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 21:23:44,982] INFO in prediction_service: Prediction id=5604 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:23:44] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 21:25:56,709] INFO in location_service: Overpass https://overpass-api.de/api/interpreter returned 400
+[2026-10-01 21:26:04,998] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x171ae45a490>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=10.0)'))
+[2026-10-01 21:26:05,416] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:26:05,448] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=10.0)
+127.0.0.1 - - [01/Oct/2026 21:26:05] "GET /api/v1/locations/water?lat=999&lon=999 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 21:26:05] "GET /api/v1/locations/search?q=zzzqqxnotaplace9999 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\app\\routes\\location_routes.py', reloading
+ * Restarting with stat
+[2026-10-01 21:26:44,039] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:26:44,042] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 21:26:49,939] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\app\\routes\\location_routes.py', reloading
+ * Restarting with stat
+[2026-10-01 21:27:07,164] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:27:07,184] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 21:27:09,907] INFO in water_quality: Water quality model pre-loaded and ready
+127.0.0.1 - - [01/Oct/2026 21:27:20] "GET /api/v1/locations/water?lat=999&lon=999 HTTP/1.1" 422 -
+[2026-10-01 21:27:30,649] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 21:27:30,649] INFO in __init__: AquaGuard AI backend initialised (env=development)
+127.0.0.1 - - [01/Oct/2026 21:27:30] "GET /api/v1/locations/water?lat=13.08&lon=80.27 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 21:27:30] "GET /api/v1/locations/context?lat=999&lon=999 HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:27:30] "GET /api/v1/locations/reverse?lat=999&lon=999 HTTP/1.1" 422 -
+[2026-10-01 21:27:31,136] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a67c1ede50>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=10.0)'))
+[2026-10-01 21:27:31,569] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:27:33,836] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:27:42,203] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a67e3d4a50>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=10.0)'))
+[2026-10-01 21:27:42,603] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:27:42,619] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:27:42,869] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=10.0)
+127.0.0.1 - - [01/Oct/2026 21:27:42] "GET /api/v1/locations/context?name=Chennai HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\step36_failure_modes.py', reloading
+ * Restarting with stat
+[2026-10-01 21:29:28,519] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:29:28,522] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 21:29:33,052] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\step36_model_missing.py', reloading
+ * Restarting with stat
+[2026-10-01 21:35:22,902] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:35:22,904] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 21:35:28,441] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\app\\__init__.py', reloading
+ * Restarting with stat
+[2026-10-01 21:39:38,873] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:39:38,877] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+Exception in thread ml-model-warmup:
+Traceback (most recent call last):
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\app\__init__.py", line 113, in _load
+    with current_app.app_context():
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\.venv\Lib\site-packages\werkzeug\local.py", line 318, in __get__
+    obj = instance._get_current_object()
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\.venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\app\\__init__.py', reloading
+ * Restarting with stat
+[2026-10-01 21:48:16,506] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:48:16,509] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 21:48:20,933] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\step36_model_missing.py', reloading
+ * Restarting with stat
+[2026-10-01 21:51:58,792] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:51:58,795] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 21:52:02,810] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 21:54:16,393] INFO in prediction_service: Prediction id=5608 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:54:16] "POST /api/v1/predictions HTTP/1.1" 201 -
+127.0.0.1 - - [01/Oct/2026 21:54:34] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:54:34] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:54:34] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:54:34] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:54:34] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:54:34] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:54:34] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:54:34] "POST /api/v1/predictions HTTP/1.1" 400 -
+[2026-10-01 21:54:45,072] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1ceba542ad0>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=10.0)'))
+[2026-10-01 21:54:45,489] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:54:45,506] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=10.0)
+[2026-10-01 21:54:47,522] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=3.504684899933636)
+127.0.0.1 - - [01/Oct/2026 21:54:47] "GET /api/v1/locations/water?lat=15.0&lon=65.0 HTTP/1.1" 200 -
+[2026-10-01 21:54:47,567] INFO in location_service: Overpass outage breaker OPEN - skipping query (120s left)
+127.0.0.1 - - [01/Oct/2026 21:54:47] "GET /api/v1/locations/water?lat=26.1445&lon=85.8918 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 21:54:47] "GET /api/v1/locations/water?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:54:47] "GET /api/v1/locations/context?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:54:47] "GET /api/v1/locations/reverse?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:54:47] "GET /api/v1/locations/water HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 21:54:48] "GET /api/v1/locations/search?q=zzzqqxnotaplace9999 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 21:54:50] "GET /api/v1/locations/search?q=!!!!@@@@ HTTP/1.1" 200 -
+[2026-10-01 21:54:50,119] INFO in prediction_service: Prediction id=5609 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:54:50] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 21:54:50,153] INFO in prediction_service: Prediction id=5610 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:54:50] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 21:54:50,199] INFO in prediction_service: Prediction id=5611 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:54:50] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 21:54:50,237] INFO in prediction_service: Prediction id=5612 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 21:54:50] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 21:56:43,064] INFO in location_service: Overpass outage breaker OPEN - skipping query (4s left)
+127.0.0.1 - - [01/Oct/2026 21:56:43] "GET /api/v1/locations/water?lat=13.08&lon=80.27 HTTP/1.1" 200 -
+[2026-10-01 21:56:44,144] INFO in location_service: Overpass outage breaker OPEN - skipping query (3s left)
+127.0.0.1 - - [01/Oct/2026 21:56:44] "GET /api/v1/locations/water?lat=25.32&lon=83.01 HTTP/1.1" 200 -
+[2026-10-01 21:56:44,667] INFO in location_service: Overpass outage breaker OPEN - skipping query (3s left)
+127.0.0.1 - - [01/Oct/2026 21:56:44] "GET /api/v1/locations/water?lat=28.61&lon=77.21 HTTP/1.1" 200 -
+[2026-10-01 21:56:44,922] INFO in location_service: Overpass outage breaker OPEN - skipping query (3s left)
+127.0.0.1 - - [01/Oct/2026 21:56:44] "GET /api/v1/locations/water?lat=12.97&lon=77.59 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\app\\services\\location_service.py', reloading
+ * Restarting with stat
+[2026-10-01 21:57:12,992] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 21:57:12,995] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 21:57:17,055] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 22:00:22,228] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x26dd71820d0>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-01 22:00:22,641] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-01 22:00:22,659] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+[2026-10-01 22:00:23,673] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=3.345307399984449)
+127.0.0.1 - - [01/Oct/2026 22:00:23] "GET /api/v1/locations/water?lat=13.08&lon=80.27 HTTP/1.1" 200 -
+[2026-10-01 22:00:23,980] INFO in location_service: Overpass outage breaker OPEN - skipping query (120s left)
+127.0.0.1 - - [01/Oct/2026 22:00:23] "GET /api/v1/locations/water?lat=25.32&lon=83.01 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\step36_trace_race.py', reloading
+ * Restarting with stat
+[2026-10-01 22:07:28,781] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 22:07:28,785] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 22:07:35,085] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\step36_trace_race.py', reloading
+ * Restarting with stat
+[2026-10-01 22:09:33,263] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 22:09:33,268] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 22:09:40,077] INFO in water_quality: Water quality model pre-loaded and ready
+127.0.0.1 - - [01/Oct/2026 22:56:24] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 22:56:24] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 22:56:24] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 22:56:24] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 22:56:24] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 22:56:24] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 22:56:24] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 22:56:24] "POST /api/v1/predictions HTTP/1.1" 400 -
+[2026-10-01 22:56:36,703] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x2cd2ac1d590>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-01 22:56:37,085] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-01 22:56:37,085] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+[2026-10-01 22:56:38,051] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=1.6769995000213385)
+127.0.0.1 - - [01/Oct/2026 22:56:38] "GET /api/v1/locations/water?lat=15.0&lon=65.0 HTTP/1.1" 200 -
+[2026-10-01 22:56:38,945] INFO in location_service: Overpass outage breaker OPEN - skipping query (119s left)
+127.0.0.1 - - [01/Oct/2026 22:56:38] "GET /api/v1/locations/water?lat=26.1445&lon=85.8918 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 22:56:38] "GET /api/v1/locations/water?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 22:56:38] "GET /api/v1/locations/context?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 22:56:39] "GET /api/v1/locations/reverse?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 22:56:39] "GET /api/v1/locations/water HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 22:56:40] "GET /api/v1/locations/search?q=zzzqqxnotaplace9999 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 22:56:41] "GET /api/v1/locations/search?q=!!!!@@@@ HTTP/1.1" 200 -
+[2026-10-01 22:56:42,115] INFO in prediction_service: Prediction id=5613 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 22:56:42] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 22:56:42,160] INFO in prediction_service: Prediction id=5614 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 22:56:42] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 22:56:42,220] INFO in prediction_service: Prediction id=5615 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 22:56:42] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 22:56:42,279] INFO in prediction_service: Prediction id=5616 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 22:56:42] "POST /api/v1/predictions HTTP/1.1" 201 -
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\step36_nearby_probe.py', reloading
+ * Restarting with stat
+[2026-10-01 23:02:24,771] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 23:02:24,776] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 23:02:29,830] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\app\\services\\location_service.py', reloading
+ * Restarting with stat
+[2026-10-01 23:05:51,192] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 23:05:51,195] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\app\\services\\location_service.py', reloading
+ * Restarting with stat
+[2026-10-01 23:06:00,221] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 23:06:00,225] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 23:06:05,403] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\app\\services\\location_service.py', reloading
+ * Restarting with stat
+[2026-10-01 23:06:13,212] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 23:06:13,216] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 23:06:17,302] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\step36_failure_modes.py', reloading
+ * Restarting with stat
+[2026-10-01 23:09:17,670] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 23:09:17,673] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 23:09:22,082] INFO in water_quality: Water quality model pre-loaded and ready
+127.0.0.1 - - [01/Oct/2026 23:09:41] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 23:09:41] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 23:09:41] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 23:09:41] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 23:09:41] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 23:09:41] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 23:09:41] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 23:09:41] "POST /api/v1/predictions HTTP/1.1" 400 -
+127.0.0.1 - - [01/Oct/2026 23:09:46] "GET /api/v1/locations/water?lat=15.0&lon=65.0 HTTP/1.1" 200 -
+[2026-10-01 23:09:51,813] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 23:09:51,813] INFO in __init__: AquaGuard AI backend initialised (env=development)
+127.0.0.1 - - [01/Oct/2026 23:09:51] "GET /api/v1/locations/water?lat=26.1445&lon=85.8918 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:09:51] "GET /api/v1/locations/water?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 23:09:51] "GET /api/v1/locations/context?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 23:09:51] "GET /api/v1/locations/reverse?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [01/Oct/2026 23:09:51] "GET /api/v1/locations/water HTTP/1.1" 422 -
+[2026-10-01 23:09:52,458] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a60d721590>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-01 23:09:52,843] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+[2026-10-01 23:09:52,843] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+127.0.0.1 - - [01/Oct/2026 23:09:53] "GET /api/v1/locations/search?q=zzzqqxnotaplace9999 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:09:53] "GET /api/v1/locations/search?q=!!!!@@@@ HTTP/1.1" 200 -
+[2026-10-01 23:09:53,667] INFO in prediction_service: Prediction id=5617 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 23:09:53] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 23:09:53,730] INFO in prediction_service: Prediction id=5618 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 23:09:53] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 23:09:53,790] INFO in prediction_service: Prediction id=5619 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 23:09:53] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 23:09:53,838] INFO in prediction_service: Prediction id=5620 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [01/Oct/2026 23:09:53] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-01 23:09:57,459] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a60d721e50>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-01 23:09:57,825] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-01 23:09:57,843] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+127.0.0.1 - - [01/Oct/2026 23:22:04] "GET /api/v1/health HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:43] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:43] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:47] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:47] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:50] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:50] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:50] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:50] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:54] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:55] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:58] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:58] "GET /api/v1/admin/session HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:58] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:26:58] "GET /api/v1/admin/session HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:27:03] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:27:03] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+[2026-10-01 23:27:05,028] INFO in location_service: Location API https://nominatim.openstreetmap.org/search failed: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=15)
+127.0.0.1 - - [01/Oct/2026 23:27:05] "GET /api/v1/locations/search?q=Karaikudi&limit=8&autocomplete=true HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:27:07] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:27:07] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:27:07] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:27:07] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:27:11] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:27:11] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:27:16] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:27:16] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+[2026-10-01 23:27:20,816] INFO in prediction_service: Prediction id=5621 user=10411 verdict=safe confidence=0.9522
+127.0.0.1 - - [01/Oct/2026 23:27:20] "POST /api/v1/predictions/predict HTTP/1.1" 201 -
+127.0.0.1 - - [01/Oct/2026 23:27:21] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 23:27:21] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+[2026-10-01 23:27:33,048] INFO in alert_service: Alert raised id=2710 for prediction=5622
+[2026-10-01 23:27:33,054] INFO in prediction_service: Prediction id=5622 user=10411 verdict=unsafe confidence=0.9226
+127.0.0.1 - - [01/Oct/2026 23:27:33] "POST /api/v1/predictions/predict HTTP/1.1" 201 -
+127.0.0.1 - - [01/Oct/2026 23:27:33] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:08:12] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:08:12] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:08:12] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:08:12] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:08:12] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:08:12] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:08:12] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:08:12] "POST /api/v1/predictions HTTP/1.1" 400 -
+[2026-10-02 00:08:25,601] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a60d721810>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-02 00:08:25,986] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 00:08:27,139] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=1.9113668999634683)
+[2026-10-02 00:08:27,580] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+127.0.0.1 - - [02/Oct/2026 00:08:27] "GET /api/v1/locations/water?lat=15.0&lon=65.0 HTTP/1.1" 200 -
+[2026-10-02 00:08:28,144] INFO in location_service: Overpass outage breaker OPEN - skipping query (119s left)
+127.0.0.1 - - [02/Oct/2026 00:08:28] "GET /api/v1/locations/water?lat=26.1445&lon=85.8918 HTTP/1.1" 200 -
+[2026-10-02 00:08:28,736] INFO in location_service: Overpass outage breaker OPEN - skipping query (119s left)
+127.0.0.1 - - [02/Oct/2026 00:08:28] "GET /api/v1/locations/water?lat=13.08784&lon=80.27847 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:08:28] "GET /api/v1/locations/water?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:08:28] "GET /api/v1/locations/context?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:08:28] "GET /api/v1/locations/reverse?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:08:28] "GET /api/v1/locations/water HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:08:31] "GET /api/v1/locations/search?q=zzzqqxnotaplace9999 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:08:32] "GET /api/v1/locations/search?q=!!!!@@@@ HTTP/1.1" 200 -
+[2026-10-02 00:08:32,786] INFO in prediction_service: Prediction id=5623 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:08:32] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:08:32,846] INFO in prediction_service: Prediction id=5624 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:08:32] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:08:32,910] INFO in prediction_service: Prediction id=5625 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:08:32] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:08:32,978] INFO in prediction_service: Prediction id=5626 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:08:32] "POST /api/v1/predictions HTTP/1.1" 201 -
+127.0.0.1 - - [02/Oct/2026 00:10:33] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:10:33] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:10:33] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:10:33] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:10:33] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:10:33] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:10:33] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:10:33] "POST /api/v1/predictions HTTP/1.1" 400 -
+127.0.0.1 - - [02/Oct/2026 00:10:39] "GET /api/v1/locations/water?lat=15.0&lon=65.0 HTTP/1.1" 200 -
+[2026-10-02 00:10:42,813] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a60da32ad0>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-02 00:10:43,546] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 00:10:43,546] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 00:10:48,964] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a60d720550>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-02 00:10:49,853] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 00:10:50,434] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 00:10:50,733] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=1.7451133001595736)
+127.0.0.1 - - [02/Oct/2026 00:10:50] "GET /api/v1/locations/water?lat=26.1445&lon=85.8918 HTTP/1.1" 200 -
+[2026-10-02 00:10:50,768] INFO in location_service: Overpass outage breaker OPEN - skipping query (120s left)
+127.0.0.1 - - [02/Oct/2026 00:10:50] "GET /api/v1/locations/water?lat=13.08784&lon=80.27847 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:10:50] "GET /api/v1/locations/water?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:10:50] "GET /api/v1/locations/context?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:10:50] "GET /api/v1/locations/reverse?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:10:50] "GET /api/v1/locations/water HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:10:50] "GET /api/v1/locations/search?q=zzzqqxnotaplace9999 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:10:50] "GET /api/v1/locations/search?q=!!!!@@@@ HTTP/1.1" 200 -
+[2026-10-02 00:10:50,930] INFO in prediction_service: Prediction id=5627 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:10:50] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:10:50,977] INFO in prediction_service: Prediction id=5628 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:10:50] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:10:51,029] INFO in prediction_service: Prediction id=5629 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:10:51] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:10:51,064] INFO in prediction_service: Prediction id=5630 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:10:51] "POST /api/v1/predictions HTTP/1.1" 201 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "POST /api/v1/predictions HTTP/1.1" 400 -
+[2026-10-02 00:11:31,424] INFO in location_service: Overpass outage breaker OPEN - skipping query (79s left)
+127.0.0.1 - - [02/Oct/2026 00:11:31] "GET /api/v1/locations/water?lat=15.0&lon=65.0 HTTP/1.1" 200 -
+[2026-10-02 00:11:31,456] INFO in location_service: Overpass outage breaker OPEN - skipping query (79s left)
+127.0.0.1 - - [02/Oct/2026 00:11:31] "GET /api/v1/locations/water?lat=26.1445&lon=85.8918 HTTP/1.1" 200 -
+[2026-10-02 00:11:31,488] INFO in location_service: Overpass outage breaker OPEN - skipping query (79s left)
+127.0.0.1 - - [02/Oct/2026 00:11:31] "GET /api/v1/locations/water?lat=13.08784&lon=80.27847 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "GET /api/v1/locations/water?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "GET /api/v1/locations/context?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "GET /api/v1/locations/reverse?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "GET /api/v1/locations/water HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "GET /api/v1/locations/search?q=zzzqqxnotaplace9999 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:11:31] "GET /api/v1/locations/search?q=!!!!@@@@ HTTP/1.1" 200 -
+[2026-10-02 00:11:31,628] INFO in prediction_service: Prediction id=5631 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:11:31] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:11:31,692] INFO in prediction_service: Prediction id=5632 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:11:31] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:11:31,744] INFO in prediction_service: Prediction id=5633 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:11:31] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:11:31,784] INFO in prediction_service: Prediction id=5634 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:11:31] "POST /api/v1/predictions HTTP/1.1" 201 -
+127.0.0.1 - - [02/Oct/2026 00:13:43] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:13:43] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:13:43] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:13:43] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:13:43] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:13:43] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:13:44] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:13:44] "POST /api/v1/predictions HTTP/1.1" 400 -
+[2026-10-02 00:13:59,072] INFO in location_service: Location API https://nominatim.openstreetmap.org/reverse failed: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=15)
+[2026-10-02 00:14:10,728] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a60d721810>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-02 00:14:11,162] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 00:14:11,179] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 00:14:11,194] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=11.0)
+127.0.0.1 - - [02/Oct/2026 00:14:11] "GET /api/v1/locations/water?lat=15.0&lon=65.0 HTTP/1.1" 200 -
+[2026-10-02 00:14:11,286] INFO in location_service: Overpass outage breaker OPEN - skipping query (120s left)
+127.0.0.1 - - [02/Oct/2026 00:14:11] "GET /api/v1/locations/water?lat=26.1445&lon=85.8918 HTTP/1.1" 200 -
+[2026-10-02 00:14:11,488] INFO in location_service: Overpass outage breaker OPEN - skipping query (120s left)
+127.0.0.1 - - [02/Oct/2026 00:14:11] "GET /api/v1/locations/water?lat=13.08784&lon=80.27847 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:14:11] "GET /api/v1/locations/water?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:14:11] "GET /api/v1/locations/context?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:14:11] "GET /api/v1/locations/reverse?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:14:11] "GET /api/v1/locations/water HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:14:13] "GET /api/v1/locations/search?q=zzzqqxnotaplace9999 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:14:13] "GET /api/v1/locations/search?q=!!!!@@@@ HTTP/1.1" 200 -
+[2026-10-02 00:14:13,689] INFO in prediction_service: Prediction id=5635 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:14:13] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:14:13,743] INFO in prediction_service: Prediction id=5636 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:14:13] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:14:13,792] INFO in prediction_service: Prediction id=5637 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:14:13] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:14:13,854] INFO in prediction_service: Prediction id=5638 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:14:13] "POST /api/v1/predictions HTTP/1.1" 201 -
+127.0.0.1 - - [02/Oct/2026 00:18:46] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:18:46] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:18:46] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:18:46] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:18:46] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:18:46] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:18:46] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:18:46] "POST /api/v1/predictions HTTP/1.1" 400 -
+127.0.0.1 - - [02/Oct/2026 00:18:51] "GET /api/v1/locations/water?lat=15.0&lon=65.0 HTTP/1.1" 200 -
+[2026-10-02 00:18:57,374] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a60da31e50>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-02 00:18:58,569] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-02 00:18:58,569] INFO in __init__: AquaGuard AI backend initialised (env=development)
+[2026-10-02 00:18:58,597] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 00:18:58,598] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+127.0.0.1 - - [02/Oct/2026 00:18:58] "GET /api/v1/locations/water?lat=26.1445&lon=85.8918 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:18:58] "GET /api/v1/locations/water?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:18:58] "GET /api/v1/locations/context?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:18:58] "GET /api/v1/locations/reverse?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:18:58] "GET /api/v1/locations/water HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:18:58] "GET /api/v1/locations/search?q=zzzqqxnotaplace9999 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:18:58] "GET /api/v1/locations/search?q=!!!!@@@@ HTTP/1.1" 200 -
+[2026-10-02 00:18:58,869] INFO in prediction_service: Prediction id=5639 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:18:58] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:18:58,923] INFO in prediction_service: Prediction id=5640 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:18:58] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:18:58,969] INFO in prediction_service: Prediction id=5641 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:18:58] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:18:59,010] INFO in prediction_service: Prediction id=5642 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:18:59] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:19:03,011] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a60da320d0>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-02 00:19:04,357] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 00:19:04,389] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+127.0.0.1 - - [02/Oct/2026 00:19:21] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:19:21] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:19:21] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:19:21] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:19:21] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:19:21] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:19:21] "POST /api/v1/predictions HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:19:21] "POST /api/v1/predictions HTTP/1.1" 400 -
+[2026-10-02 00:19:36,867] INFO in location_service: Location API https://nominatim.openstreetmap.org/reverse failed: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=15)
+[2026-10-02 00:19:37,441] INFO in location_service: Overpass cache hit for this query
+127.0.0.1 - - [02/Oct/2026 00:19:37] "GET /api/v1/locations/water?lat=15.0&lon=65.0 HTTP/1.1" 200 -
+[2026-10-02 00:19:37,677] INFO in location_service: Overpass cache hit for this query
+[2026-10-02 00:19:37,845] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-02 00:19:37,846] INFO in __init__: AquaGuard AI backend initialised (env=development)
+127.0.0.1 - - [02/Oct/2026 00:19:37] "GET /api/v1/locations/water?lat=26.1445&lon=85.8918 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:19:37] "GET /api/v1/locations/water?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:19:37] "GET /api/v1/locations/context?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:19:37] "GET /api/v1/locations/reverse?lat=999.0&lon=999.0 HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:19:37] "GET /api/v1/locations/water HTTP/1.1" 422 -
+127.0.0.1 - - [02/Oct/2026 00:19:39] "GET /api/v1/locations/search?q=zzzqqxnotaplace9999 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 00:19:39] "GET /api/v1/locations/search?q=!!!!@@@@ HTTP/1.1" 200 -
+[2026-10-02 00:19:39,663] INFO in prediction_service: Prediction id=5643 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:19:39] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:19:39,711] INFO in prediction_service: Prediction id=5644 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:19:39] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:19:39,767] INFO in prediction_service: Prediction id=5645 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:19:39] "POST /api/v1/predictions HTTP/1.1" 201 -
+[2026-10-02 00:19:39,808] INFO in prediction_service: Prediction id=5646 user=10411 verdict=safe confidence=0.8559
+127.0.0.1 - - [02/Oct/2026 00:19:39] "POST /api/v1/predictions HTTP/1.1" 201 -
+127.0.0.1 - - [02/Oct/2026 02:26:06] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:26:06] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:26:28] "GET /api/v1/dashboard/recent?limit=6 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:26:29] "GET /api/v1/dashboard/recent?limit=6 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:26:29] "GET /api/v1/dashboard/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:26:29] "GET /api/v1/dashboard/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:27:17] "GET /api/v1/locations/rain-alert?lat=10.097805861798165&lon=78.7568647733945 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:27:28] "GET /api/v1/locations/reverse?lat=10.097805861798165&lon=78.7568647733945 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:27:28] "GET /api/v1/locations/reverse?lat=10.097805861798165&lon=78.7568647733945 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:27:30] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:27:30] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:27:33] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:27:33] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:27:34] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:27:34] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:27:49] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:27:49] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:27:58] "GET /api/v1/predictions/history?page=2&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:01] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:01] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:01] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:01] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:08] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:08] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:21] "GET /api/v1/dashboard/recent?limit=6 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:21] "GET /api/v1/dashboard/recent?limit=6 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:21] "GET /api/v1/dashboard/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:22] "GET /api/v1/dashboard/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:41] "GET /api/v1/dashboard/recent?limit=6 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:41] "GET /api/v1/dashboard/recent?limit=6 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:41] "GET /api/v1/dashboard/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:41] "GET /api/v1/dashboard/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:45] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:28:45] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+[2026-10-02 02:28:59,083] INFO in ai_service: Aqua AI turn classified intent=USER_DATA has_context=False user=10411
+[2026-10-02 02:29:00,368] INFO in tool_runner: Aqua AI executing tool get_prediction_summary for user=10411
+127.0.0.1 - - [02/Oct/2026 02:29:01] "POST /api/v1/aqua-ai/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:29:21] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:29:21] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:29:21] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:29:21] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:10] "GET /api/v1/locations/reverse?lat=10.097816001805203&lon=78.75683819771469 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:10] "GET /api/v1/locations/reverse?lat=10.097816001805203&lon=78.75683819771469 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:11] "GET /api/v1/locations/reverse?lat=10.09782&lon=78.75684 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:25] "GET /api/v1/locations/search?q=ka&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:27] "GET /api/v1/locations/search?q=karue&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:28] "GET /api/v1/locations/search?q=karu&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:29] "GET /api/v1/locations/search?q=karur&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:32] "GET /api/v1/locations/reverse?lat=10.09782&lon=78.75684 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:35] "GET /api/v1/locations/search?q=Karaikudi,+Tamil+Nadu&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:36] "GET /api/v1/locations/reverse?lat=10.09782&lon=78.75684 HTTP/1.1" 200 -
+[2026-10-02 02:30:43,528] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a60daba350>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+127.0.0.1 - - [02/Oct/2026 02:30:43] "GET /api/v1/locations/search?q=la&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+[2026-10-02 02:30:43,920] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+127.0.0.1 - - [02/Oct/2026 02:30:44] "GET /api/v1/locations/search?q=ka&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:44] "GET /api/v1/locations/search?q=lae&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+[2026-10-02 02:30:44,937] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 02:30:44,964] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=3.745318500092253)
+127.0.0.1 - - [02/Oct/2026 02:30:44] "GET /api/v1/locations/context?lat=10.09782&lon=78.75684 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:46] "GET /api/v1/locations/search?q=laei&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:48] "GET /api/v1/locations/search?q=k&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:49] "GET /api/v1/locations/search?q=kar&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:50] "GET /api/v1/locations/search?q=kar&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:50] "GET /api/v1/locations/search?q=karj&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:50] "GET /api/v1/locations/search?q=karj&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:50] "GET /api/v1/locations/search?q=karu&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:51] "GET /api/v1/locations/search?q=karur&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:53] "GET /api/v1/locations/search?q=karju&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:53] "GET /api/v1/locations/search?q=karju&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:30:53] "GET /api/v1/locations/search?q=karju\\&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:09] "GET /api/v1/locations/reverse?lat=10.95771&lon=78.08095 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:15] "GET /api/v1/locations/search?q=Karur,+Tamil+Nadu,+Indi&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:20] "GET /api/v1/locations/search?q=nsn&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:20] "GET /api/v1/locations/search?q=n&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:22] "GET /api/v1/locations/search?q=nsn+colleh\\&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:23] "GET /api/v1/locations/search?q=nsn+c&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:24] "GET /api/v1/locations/search?q=nsn+co&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:25] "GET /api/v1/locations/search?q=nsn+collehe&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:26] "GET /api/v1/locations/search?q=nsn+colle&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:26] "GET /api/v1/locations/search?q=nsn+colle&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:26] "GET /api/v1/locations/search?q=nsn+colle&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:26] "GET /api/v1/locations/search?q=nsn+colle&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:26] "GET /api/v1/locations/search?q=nsn+colle&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:27] "GET /api/v1/locations/search?q=nsn+colle&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:28] "GET /api/v1/locations/search?q=nsn+colleh&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:28] "GET /api/v1/locations/search?q=nsn+colleh&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:28] "GET /api/v1/locations/search?q=nsn+colleh&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:28] "GET /api/v1/locations/search?q=nsn+colle&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:29] "GET /api/v1/locations/search?q=nsn+collen&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:30] "GET /api/v1/locations/search?q=nsn+collej&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:31] "GET /api/v1/locations/search?q=nsn+collek&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:33] "GET /api/v1/locations/search?q=nsn+colleg&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:34] "GET /api/v1/locations/search?q=nsn+college&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:35] "GET /api/v1/locations/reverse?lat=-41.27078&lon=173.28404 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:45] "GET /api/v1/locations/search?q=ala&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:46] "GET /api/v1/locations/search?q=alaga&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:46] "GET /api/v1/locations/search?q=alaga&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:46] "GET /api/v1/locations/search?q=alaga&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:49] "GET /api/v1/locations/search?q=alagar&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:50] "GET /api/v1/locations/search?q=alagaoo&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:51] "GET /api/v1/locations/search?q=alagao&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:53] "GET /api/v1/locations/search?q=alagap&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:54] "GET /api/v1/locations/search?q=alagappa&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:55] "GET /api/v1/locations/search?q=alagappa+c&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:31:57] "GET /api/v1/locations/search?q=alagappa+co&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:00] "GET /api/v1/locations/search?q=alagappa+coll&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:00] "GET /api/v1/locations/search?q=alagappa&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:01] "GET /api/v1/locations/search?q=alagappa+col&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:01] "GET /api/v1/locations/search?q=alagappa+colle&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:02] "GET /api/v1/locations/search?q=alagappa+colle&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:02] "GET /api/v1/locations/search?q=alagappa+colle&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:02] "GET /api/v1/locations/search?q=alagappa+colle&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:02] "GET /api/v1/locations/search?q=alagappa+collen&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:02] "GET /api/v1/locations/search?q=alagappa+collen&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:05] "GET /api/v1/locations/search?q=alagappa+collr&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:06] "GET /api/v1/locations/search?q=alagappa+colleb&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:07] "GET /api/v1/locations/search?q=alagappa+college&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:09] "GET /api/v1/locations/search?q=alagappa+colleg&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:10] "GET /api/v1/locations/reverse?lat=13.00788&lon=80.23833 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:19] "GET /api/v1/locations/reverse?lat=13.00788&lon=80.23833 HTTP/1.1" 200 -
+[2026-10-02 02:32:19,478] INFO in location_service: Overpass outage breaker OPEN - skipping query (25s left)
+127.0.0.1 - - [02/Oct/2026 02:32:20] "GET /api/v1/locations/context?lat=13.00788&lon=80.23833 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:23] "GET /api/v1/locations/search?q=Chennai+Corporation,+Tamil+Nadu&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:31] "GET /api/v1/locations/search?q=Chennai+Corporation,+Tamil+Nad&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:37] "GET /api/v1/locations/search?q=gra&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:37] "GET /api/v1/locations/search?q=gra&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:39] "GET /api/v1/locations/search?q=gras&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:39] "GET /api/v1/locations/search?q=gras&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:40] "GET /api/v1/locations/search?q=grad&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:42] "GET /api/v1/locations/search?q=gradt&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:44] "GET /api/v1/locations/search?q=gradte&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:48] "GET /api/v1/locations/search?q=gradtwu&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:49] "GET /api/v1/locations/search?q=gradtwi&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:49] "GET /api/v1/locations/search?q=gradtwi&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:50] "GET /api/v1/locations/search?q=gradtwim&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:51] "GET /api/v1/locations/search?q=gradtw&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:51] "GET /api/v1/locations/search?q=gradtw&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:53] "GET /api/v1/locations/search?q=gradtwin&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:56] "GET /api/v1/locations/country?q=gradtwin&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:57] "GET /api/v1/locations/state?q=gradtwin&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:57] "GET /api/v1/locations/district?q=gradtwin HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:32:59] "GET /api/v1/locations/resolve?q=gradtwin HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:02] "GET /api/v1/locations/search?q=gradtwin+.&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:03] "GET /api/v1/locations/search?q=gradtwin&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:05] "GET /api/v1/locations/search?q=gradtwin&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:06] "GET /api/v1/locations/search?q=gradtwin+.&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:06] "GET /api/v1/locations/search?q=gradtwin&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:07] "GET /api/v1/locations/search?q=gradtwin+.&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:08] "GET /api/v1/locations/search?q=gradtwin+m&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:08] "GET /api/v1/locations/search?q=gradtwin&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:09] "GET /api/v1/locations/search?q=gradtwin+/&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:10] "GET /api/v1/locations/search?q=gradtwin&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+[2026-10-02 02:33:10,929] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a60daba0d0>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-02 02:33:11,518] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 02:33:11,519] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 02:33:11,519] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=11.0)
+127.0.0.1 - - [02/Oct/2026 02:33:11] "GET /api/v1/locations/context?lat=10.8778769&lon=-3.5306668 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:12] "GET /api/v1/locations/search?q=gradtwin+,&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:14] "GET /api/v1/locations/search?q=gradtwin+,c&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:14] "GET /api/v1/locations/search?q=gradtwin+,che&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:15] "GET /api/v1/locations/search?q=gradtwin+,chenn&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:15] "GET /api/v1/locations/search?q=gradtwin+,chennai&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:16] "GET /api/v1/locations/country?q=gradtwin+,chennai&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:17] "GET /api/v1/locations/state?q=gradtwin+,chennai&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:18] "GET /api/v1/locations/district?q=gradtwin+,chennai HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:18] "GET /api/v1/locations/resolve?q=gradtwin+,chennai HTTP/1.1" 200 -
+[2026-10-02 02:33:18,714] INFO in location_service: Overpass outage breaker OPEN - skipping query (113s left)
+127.0.0.1 - - [02/Oct/2026 02:33:18] "GET /api/v1/locations/context?lat=10.8778769&lon=-3.5306668 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:21] "GET /api/v1/locations/search?q=gradtwin+,chenna&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:22] "GET /api/v1/locations/search?q=gradtwin&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:24] "GET /api/v1/locations/search?q=gradtwin,&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:25] "GET /api/v1/locations/search?q=gradtwin,&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:26] "GET /api/v1/locations/search?q=gradtwin,+s&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:27] "GET /api/v1/locations/search?q=gradtwin,&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:32] "GET /api/v1/locations/search?q=s&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:32] "GET /api/v1/locations/search?q=s&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:34] "GET /api/v1/locations/search?q=sj&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:35] "GET /api/v1/locations/search?q=sh&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:37] "GET /api/v1/locations/search?q=sho&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:40] "GET /api/v1/locations/search?q=shol&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:41] "GET /api/v1/locations/search?q=sholi&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:42] "GET /api/v1/locations/search?q=sholim&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:42] "GET /api/v1/locations/search?q=sholi&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:42] "GET /api/v1/locations/search?q=sholi,&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:46] "GET /api/v1/locations/search?q=sholin&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:46] "GET /api/v1/locations/search?q=sholim&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:46] "GET /api/v1/locations/search?q=sholi&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:49] "GET /api/v1/locations/search?q=sholinh&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:50] "GET /api/v1/locations/search?q=sholing&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:51] "GET /api/v1/locations/search?q=sholingan&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:52] "GET /api/v1/locations/search?q=sholinga&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:53] "GET /api/v1/locations/search?q=sholin&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:53] "GET /api/v1/locations/search?q=sholi&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:53] "GET /api/v1/locations/search?q=sholingane&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:55] "GET /api/v1/locations/search?q=sholinganek&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:58] "GET /api/v1/locations/search?q=sholinganel&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:59] "GET /api/v1/locations/search?q=sholinganell&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:33:59] "GET /api/v1/locations/search?q=sholingane&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:34:01] "GET /api/v1/locations/search?q=sholinganelli&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:34:01] "GET /api/v1/locations/search?q=sholinganell&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:34:01] "GET /api/v1/locations/country?q=sholinganallur&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:34:01] "GET /api/v1/locations/search?q=sholinganellu&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:34:03] "GET /api/v1/locations/search?q=sholinganellue&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:34:03] "GET /api/v1/locations/state?q=sholinganallur&risk=false HTTP/1.1" 200 -
+[2026-10-02 02:34:03,859] INFO in location_service: Overpass outage breaker OPEN - skipping query (68s left)
+127.0.0.1 - - [02/Oct/2026 02:34:05] "GET /api/v1/locations/search?q=sholinganellur&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+[2026-10-02 02:34:05,725] INFO in country_service: Overpass could not enumerate places in 'Sholinganallur'; answered from the geocoder instead.
+[2026-10-02 02:34:05,726] INFO in location_service: Overpass outage breaker OPEN - skipping query (66s left)
+[2026-10-02 02:34:05,728] INFO in location_service: Overpass outage breaker OPEN - skipping query (66s left)
+127.0.0.1 - - [02/Oct/2026 02:34:05] "GET /api/v1/locations/district?q=sholinganallur HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:34:18] "GET /api/v1/locations/search?q=sholinganallur&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+[2026-10-02 02:34:34,248] INFO in location_service: Overpass outage breaker OPEN - skipping query (37s left)
+127.0.0.1 - - [02/Oct/2026 02:34:35] "GET /api/v1/locations/context?lat=12.8935356&lon=80.2320634 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:34:36] "GET /api/v1/locations/search?q=Sholinganallur+-+Chennai+Corporation,+Sholinganallur,+Tamil+Nadu,+India&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:34:51] "GET /api/v1/locations/country?q=Sholinganallur+-+Chennai+Corporation,+Sholinganallur,+Tamil+Nadu,+India&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:34:52] "GET /api/v1/locations/state?q=Sholinganallur+-+Chennai+Corporation,+Sholinganallur,+Tamil+Nadu,+India&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:34:53] "GET /api/v1/locations/district?q=Sholinganallur+-+Chennai+Corporation,+Sholinganallur,+Tamil+Nadu,+India HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:34:54] "GET /api/v1/locations/resolve?q=Sholinganallur+-+Chennai+Corporation,+Sholinganallur,+Tamil+Nadu,+India HTTP/1.1" 200 -
+[2026-10-02 02:34:54,503] INFO in location_service: Overpass outage breaker OPEN - skipping query (17s left)
+127.0.0.1 - - [02/Oct/2026 02:34:54] "GET /api/v1/locations/context?lat=12.8935356&lon=80.2320634 HTTP/1.1" 200 -
+[2026-10-02 02:35:05,902] INFO in prediction_service: Prediction id=5647 user=10411 verdict=safe confidence=0.7980
+127.0.0.1 - - [02/Oct/2026 02:35:05] "POST /api/v1/predictions/predict HTTP/1.1" 201 -
+[2026-10-02 02:35:18,326] INFO in prediction_service: Prediction id=5648 user=10411 verdict=safe confidence=0.7980
+127.0.0.1 - - [02/Oct/2026 02:35:18] "POST /api/v1/predictions/predict HTTP/1.1" 201 -
+127.0.0.1 - - [02/Oct/2026 02:35:39] "GET /api/v1/locations/reverse?lat=10.097816001805203&lon=78.75683819771469 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:35:39] "GET /api/v1/locations/reverse?lat=10.097816001805203&lon=78.75683819771469 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:35:55] "GET /api/v1/locations/reverse?lat=10.09782&lon=78.75684 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:01] "GET /api/v1/locations/reverse?lat=10.09782&lon=78.75684 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:04] "GET /api/v1/locations/search?q=Karaikudi,+Tamil+Nadu&limit=8&autocomplete=true&state=Tamil+Nadu&district=Karaikkudi HTTP/1.1" 200 -
+[2026-10-02 02:36:12,238] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1a60dabb4d0>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-02 02:36:12,570] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 02:36:12,642] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+[2026-10-02 02:36:13,725] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=3.4570387999992818)
+127.0.0.1 - - [02/Oct/2026 02:36:13] "GET /api/v1/locations/context?lat=10.09782&lon=78.75684 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:27] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:27] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:28] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:28] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:28] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:28] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+[2026-10-02 02:36:38,771] INFO in alert_service: Alert marked read: id=2710 user=10411
+127.0.0.1 - - [02/Oct/2026 02:36:38] "PATCH /api/v1/alerts/2710/read HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:38] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:38] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:38] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:38] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:38] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:52] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:36:52] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:37:04] "GET /api/v1/dashboard/recent?limit=6 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:37:04] "GET /api/v1/dashboard/recent?limit=6 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:37:04] "GET /api/v1/dashboard/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:37:04] "GET /api/v1/dashboard/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:38:12] "GET /api/v1/locations/reverse?lat=10.097816001805203&lon=78.75683819771469 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:38:12] "GET /api/v1/locations/reverse?lat=10.097816001805203&lon=78.75683819771469 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:38:42] "GET /api/v1/dashboard/recent?limit=6 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:38:42] "GET /api/v1/dashboard/recent?limit=6 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:38:42] "GET /api/v1/dashboard/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:38:42] "GET /api/v1/dashboard/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:39:37] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:39:37] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:39:44] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:39:44] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:39:44] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:39:44] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:40:32] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:40:32] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+[2026-10-02 02:41:00,159] INFO in location_service: Location API https://nominatim.openstreetmap.org/reverse failed: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=15)
+127.0.0.1 - - [02/Oct/2026 02:41:00] "GET /api/v1/locations/reverse?lat=10.097816001805203&lon=78.75683819771469 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:41:00] "GET /api/v1/locations/reverse?lat=10.097816001805203&lon=78.75683819771469 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:42:51] "GET /api/v1/locations/rain-alert?lat=10.097805861798165&lon=78.7568647733945 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:42:54] "GET /api/v1/locations/reverse?lat=10.097805861798165&lon=78.7568647733945 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:42:54] "GET /api/v1/locations/reverse?lat=10.097805861798165&lon=78.7568647733945 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:43:52] "GET /api/v1/locations/reverse?lat=10.097805861798165&lon=78.7568647733945 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:43:52] "GET /api/v1/locations/reverse?lat=10.097805861798165&lon=78.7568647733945 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:44:57] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:44:57] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:44:59] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:44:59] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:44:59] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:44:59] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:48:29] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:48:29] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+[2026-10-02 02:48:42,000] INFO in location_service: Location API https://nominatim.openstreetmap.org/reverse failed: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=15)
+127.0.0.1 - - [02/Oct/2026 02:48:45] "GET /api/v1/locations/reverse?lat=10.097805861798165&lon=78.7568647733945 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 02:48:45] "GET /api/v1/locations/reverse?lat=10.097805861798165&lon=78.7568647733945 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:11:05] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:11:05] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:11:09] "GET /api/v1/dashboard/recent?limit=6 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:11:09] "GET /api/v1/dashboard/recent?limit=6 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:11:10] "GET /api/v1/dashboard/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:11:10] "GET /api/v1/dashboard/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:11:13] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:11:13] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:11:15] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:11:15] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+[2026-10-02 03:11:35,506] INFO in report_mail_service: Reports to Mail: capping ALL_PDF from 425 to 250 rows for user=10411
+[2026-10-02 03:12:00,540] INFO in mail_service: Email sent to shekabi2005@gmail.com (AquaGuard AI: your water quality report)
+[2026-10-02 03:12:00,549] INFO in report_mail_service: Reports to Mail: option=ALL_PDF user=10411 recipient=shekabi2005@gmail.com -> sent (aquaguard-reports-all-20261001-214150.pdf, 458952 bytes)
+127.0.0.1 - - [02/Oct/2026 03:12:00] "POST /api/v1/reports/mail HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:16] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:16] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:16] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:16] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+[2026-10-02 03:13:22,413] INFO in alert_service: Alert resolved: id=2710
+127.0.0.1 - - [02/Oct/2026 03:13:22] "PATCH /api/v1/alerts/2710/resolve HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:22] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:22] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:22] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:22] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:22] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+[2026-10-02 03:13:25,459] INFO in alert_service: Alert reopened: id=2710
+127.0.0.1 - - [02/Oct/2026 03:13:25] "PATCH /api/v1/alerts/2710/unresolve HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:25] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:25] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:25] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:25] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:25] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+[2026-10-02 03:13:29,653] INFO in alert_service: Marked 130 alerts read for user=10411
+127.0.0.1 - - [02/Oct/2026 03:13:29] "PATCH /api/v1/alerts/read-all HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:29] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:29] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:29] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:29] "GET /api/v1/alerts HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:29] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:48] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:48] "GET /api/v1/predictions/history?page=1&per_page=20&sort=newest HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:49] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:49] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:13:59] "GET /api/v1/locations/reverse?lat=10.097816001805203&lon=78.75683819771469 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:14:00] "GET /api/v1/locations/reverse?lat=10.097816001805203&lon=78.75683819771469 HTTP/1.1" 200 -
+[2026-10-02 03:14:34,927] INFO in ai_service: Aqua AI turn classified intent=PROJECT_INFO has_context=False user=10411
+[2026-10-02 03:14:36,200] INFO in tool_runner: Aqua AI executing tool explain_concept for user=10411
+127.0.0.1 - - [02/Oct/2026 03:14:37] "POST /api/v1/aqua-ai/chat HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:14:37] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Oct/2026 03:14:37] "GET /api/v1/predictions/history?per_page=100 HTTP/1.1" 200 -
+[2026-10-02 03:15:03,401] INFO in ai_service: Aqua AI turn classified intent=FOLLOW_UP has_context=True user=10411
+[2026-10-02 03:15:04,674] INFO in tool_runner: Aqua AI executing tool explain_concept for user=10411
+127.0.0.1 - - [02/Oct/2026 03:15:06] "POST /api/v1/aqua-ai/chat HTTP/1.1" 200 -

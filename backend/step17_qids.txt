@@ -1,0 +1,2 @@
+﻿retry after HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)
+retry after HTTP Error 400: Bad Request

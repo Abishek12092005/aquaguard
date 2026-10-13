@@ -1,0 +1,9 @@
+PASS  TEST1 country overview  -> states=3
+FAIL  TEST1 country overview  -> KeyError('name')
+FAIL  TEST2 state overview  -> KeyError('districts')
+FAIL  TEST3 district places  -> TimeoutError('timed out')
+FAIL  TEST7 famous place exact  -> name=None kind=None label=None
+FAIL  TEST10 history  -> TypeError('list indices must be integers or slices, not str')
+
+SUMMARY: 1 / 6 passed
+FAILED: TEST1 country overview, TEST2 state overview, TEST3 district places, TEST7 famous place exact, TEST10 history

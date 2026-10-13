@@ -1,0 +1,3 @@
+login ok
+message='No place-level data is available for this district.' places=0
+TEST3_RESULT: EMPTY

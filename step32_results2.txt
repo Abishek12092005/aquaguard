@@ -1,0 +1,15 @@
+FAIL  TEST1 country overview  -> TypeError('list indices must be integers or slices, not str')
+FAIL  TEST2 state overview  -> KeyError('districts')
+FAIL  TEST3 district places  -> places=0
+PASS  TEST3 no verdict labels on place cards
+FAIL  TEST4 default parameters labelled estimated  -> source=user_input_required label=User input required
+PASS  TEST4 five water parameters pre-filled  -> ph=7.2 tds=300.0
+  note: place pincode=None (geocoder-dependent)
+PASS  TEST5 hand-off payload complete  -> keys=['default_parameters', 'default_parameters_detail', 'place', 'water']
+PASS  TEST6 RF verdict + confidence + risk  -> prediction=safe confidence=0.876 probabilities=['moderate', 'safe', 'unsafe']
+PASS  TEST6 district + pincode echoed  -> district=Sivaganga pincode=630001
+FAIL  TEST7 famous place exact  -> name=None label=None
+FAIL  TEST10 history  -> TypeError('list indices must be integers or slices, not str')
+
+SUMMARY: 5 / 11 passed
+FAILED: TEST1 country overview, TEST2 state overview, TEST3 district places, TEST4 default parameters labelled estimated, TEST7 famous place exact, TEST10 history

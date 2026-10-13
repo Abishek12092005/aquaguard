@@ -1,0 +1,20 @@
+﻿python.exe : [2026-09-29 17:59:15,403] INFO in tools: Aqua AI default tool handlers registered
+At line:1 char:163
++ ... rd\backend; & ".\.venv\Scripts\python.exe" verify_step17_search.py *> ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2026-09-29 17:...lers registered:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2026-09-29 17:59:15,416] INFO in __init__: AquaGuard AI backend initialised (env=development)
+==================================================================
+USER TYPES: 'Tamil Nadu'
+  resolve -> 200 (a PLACE, not a state)
+==================================================================
+USER TYPES: 'Kerala'
+  resolve -> 200 (a PLACE, not a state)
+==================================================================
+USER TYPES: 'Uttar Pradesh'
+  resolve -> 200 (a PLACE, not a state)
+==================================================================
+USER TYPES: 'Delhi'
+  resolve -> 200 (a PLACE, not a state)

@@ -1,0 +1,54 @@
+[2026-09-29 18:22:35,246] INFO in tools: Aqua AI default tool handlers registered
+[2026-09-29 18:22:35,302] INFO in __init__: AquaGuard AI backend initialised (env=development)
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+[2026-09-29 18:22:42,635] INFO in water_quality: Water quality model pre-loaded and ready
+127.0.0.1 - - [29/Sep/2026 19:59:07] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 19:59:08] "GET /api/v1/alerts/summary HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 19:59:10] "GET /api/v1/locations/state?q=Tamil+Nadu&risk=false HTTP/1.1" 200 -
+127.0.0.1 - - [29/Sep/2026 19:59:11] "GET /api/v1/locations/search?q=Tamil+Nadu&limit=8&autocomplete=true HTTP/1.1" 200 -
+[2026-09-29 19:59:13,293] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x1f2fc4d9810>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=2.5)'))
+[2026-09-29 19:59:13,652] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=2.5)
+[2026-09-29 19:59:13,667] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=2.5)
+[2026-09-29 19:59:13,682] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=2.5)
+[2026-09-29 19:59:19,298] INFO in location_service: Overpass outage breaker OPEN - skipping query (114s left)
+[2026-09-29 19:59:19,503] INFO in location_service: Overpass outage breaker OPEN - skipping query (114s left)
+[2026-09-29 19:59:19,754] INFO in location_service: Overpass outage breaker OPEN - skipping query (114s left)
+[2026-09-29 19:59:19,831] INFO in location_service: Overpass outage breaker OPEN - skipping query (114s left)
+[2026-09-29 19:59:20,026] INFO in location_service: Overpass outage breaker OPEN - skipping query (114s left)
+[2026-09-29 19:59:20,339] INFO in location_service: Overpass outage breaker OPEN - skipping query (113s left)
+[2026-09-29 19:59:26,428] INFO in location_service: Overpass outage breaker OPEN - skipping query (107s left)
+[2026-09-29 19:59:26,464] INFO in location_service: Overpass outage breaker OPEN - skipping query (107s left)
+[2026-09-29 19:59:26,677] INFO in location_service: Overpass outage breaker OPEN - skipping query (107s left)
+[2026-09-29 19:59:27,456] INFO in location_service: Overpass outage breaker OPEN - skipping query (106s left)
+[2026-09-29 19:59:27,703] INFO in location_service: Overpass outage breaker OPEN - skipping query (106s left)
+[2026-09-29 19:59:27,729] INFO in location_service: Overpass outage breaker OPEN - skipping query (106s left)
+[2026-09-29 19:59:30,328] INFO in location_service: Overpass outage breaker OPEN - skipping query (103s left)
+[2026-09-29 19:59:31,209] INFO in location_service: Overpass outage breaker OPEN - skipping query (102s left)
+[2026-09-29 19:59:31,441] INFO in location_service: Overpass outage breaker OPEN - skipping query (102s left)
+[2026-09-29 19:59:33,014] INFO in location_service: Overpass outage breaker OPEN - skipping query (101s left)
+[2026-09-29 19:59:34,583] INFO in location_service: Overpass outage breaker OPEN - skipping query (99s left)
+[2026-09-29 19:59:35,033] INFO in location_service: Overpass outage breaker OPEN - skipping query (99s left)
+[2026-09-29 19:59:35,585] INFO in location_service: Overpass outage breaker OPEN - skipping query (98s left)
+[2026-09-29 19:59:36,067] INFO in location_service: Overpass outage breaker OPEN - skipping query (98s left)
+[2026-09-29 19:59:36,239] INFO in location_service: Overpass outage breaker OPEN - skipping query (97s left)
+[2026-09-29 19:59:37,651] INFO in location_service: Overpass outage breaker OPEN - skipping query (96s left)
+[2026-09-29 19:59:38,415] INFO in location_service: Overpass outage breaker OPEN - skipping query (95s left)
+[2026-09-29 19:59:39,988] INFO in location_service: Overpass outage breaker OPEN - skipping query (94s left)
+[2026-09-29 19:59:40,194] INFO in location_service: Overpass outage breaker OPEN - skipping query (93s left)
+[2026-09-29 19:59:40,852] INFO in location_service: Overpass outage breaker OPEN - skipping query (93s left)
+[2026-09-29 19:59:40,878] INFO in location_service: Overpass outage breaker OPEN - skipping query (93s left)
+[2026-09-29 19:59:41,124] INFO in location_service: Overpass outage breaker OPEN - skipping query (93s left)
+[2026-09-29 19:59:43,335] INFO in location_service: Overpass outage breaker OPEN - skipping query (90s left)
+[2026-09-29 19:59:44,448] INFO in location_service: Overpass outage breaker OPEN - skipping query (89s left)
+[2026-09-29 19:59:45,962] INFO in location_service: Overpass outage breaker OPEN - skipping query (88s left)
+[2026-09-29 19:59:46,722] INFO in location_service: Overpass outage breaker OPEN - skipping query (87s left)
+[2026-09-29 19:59:46,770] INFO in location_service: Overpass outage breaker OPEN - skipping query (87s left)
+[2026-09-29 19:59:47,007] INFO in location_service: Overpass outage breaker OPEN - skipping query (87s left)
+[2026-09-29 19:59:47,456] INFO in location_service: Overpass outage breaker OPEN - skipping query (86s left)
+[2026-09-29 19:59:48,913] INFO in location_service: Overpass outage breaker OPEN - skipping query (85s left)
+[2026-09-29 19:59:49,898] INFO in location_service: Overpass outage breaker OPEN - skipping query (84s left)
+[2026-09-29 19:59:51,292] INFO in location_service: Overpass outage breaker OPEN - skipping query (82s left)
+[2026-09-29 19:59:53,388] INFO in location_service: Overpass outage breaker OPEN - skipping query (80s left)
+127.0.0.1 - - [29/Sep/2026 19:59:53] "GET /api/v1/locations/state?q=Tamil+Nadu HTTP/1.1" 200 -

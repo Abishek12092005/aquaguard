@@ -1,0 +1,7 @@
+workers            : 4
+sleeps             : {'a': 8.0, 'b': 3.0, 'c': 6.0, 'd': 5.0}
+elapsed            : 3.00s
+winner             : ['b']
+fastest single     : 3.00s  <- what concurrent execution costs
+sum (if serial)    : 22.00s
+verdict            : CONCURRENT

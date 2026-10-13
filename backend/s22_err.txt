@@ -1,0 +1,30 @@
+[2026-09-30 00:08:44,379] INFO in tools: Aqua AI default tool handlers registered
+[2026-09-30 00:08:44,384] INFO in __init__: AquaGuard AI backend initialised (env=development)
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5055
+Press CTRL+C to quit
+[2026-09-30 00:08:49,674] INFO in water_quality: Water quality model pre-loaded and ready
+127.0.0.1 - - [30/Sep/2026 00:10:58] "GET /api/v1/locations/resolve?q=Kothanallur HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:10:59] "GET /api/v1/locations/resolve?q=Kothanallur,%20Kalkulam HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:00] "GET /api/v1/locations/resolve?q=Kothanallur,%20Kalkulam,%20Tamil%20Nadu HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:00] "GET /api/v1/locations/resolve?q=Kottur HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:01] "GET /api/v1/locations/resolve?q=Chennai HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:02] "GET /api/v1/locations/resolve?q=Karaikudi HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:12] "GET /api/v1/locations/resolve?q=Coimbatore HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:13] "GET /api/v1/locations/resolve?q=Kochi HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:14] "GET /api/v1/locations/resolve?q=Anna%20Nagar HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:15] "GET /api/v1/locations/resolve?q=T%20Nagar HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:17] "GET /api/v1/locations/resolve?q=K%20K%20Nagar HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:28] "GET /api/v1/locations/resolve?q=Green%20Park%20Colony HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:33] "GET /api/v1/locations/resolve?q=Athur HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:34] "GET /api/v1/locations/resolve?q=Chettikulam HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:34] "GET /api/v1/locations/resolve?q=Athur,%20Chengalpattu HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:35] "GET /api/v1/locations/resolve?q=HDFC%20Bank HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:36] "GET /api/v1/locations/resolve?q=Reliance%20Fresh HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:43] "GET /api/v1/locations/resolve?q=Kumaraguru%20College HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:44] "GET /api/v1/locations/resolve?q=Delhi%20Public%20School HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:45] "GET /api/v1/locations/resolve?q=Taj%20Hotel HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:46] "GET /api/v1/locations/resolve?q=Apollo%20Hospital HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:47] "GET /api/v1/locations/resolve?q=Marina%20Beach HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:11:57] "GET /api/v1/locations/resolve?q=Meenakshi%20Amman%20Temple HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:12:03] "GET /api/v1/locations/resolve?q=630001 HTTP/1.1" 200 -

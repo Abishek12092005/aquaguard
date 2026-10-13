@@ -1,0 +1,30 @@
+
+> aquaguard-ai-frontend@0.1.0 dev
+> vite
+
+
+  [32m[1mVITE[22m v6.4.3[39m  [2mready in [0m[1m1124[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m11:27:11 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m11:27:11 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m11:39:29 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/AppLayout.jsx, /src/components/AquaAI/AquaAIButton.jsx, /src/pages/Location.jsx, /src/pages/Predict.jsx[22m
+[2m11:39:29 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/AppLayout.jsx, /src/components/AquaAI/AquaAIButton.jsx, /src/pages/Location.jsx, /src/pages/Predict.jsx[22m
+[2m11:39:44 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m11:39:53 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m11:40:04 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m11:40:16 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m11:40:29 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m11:40:46 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m11:41:07 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m12:24:37 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/AppLayout.jsx, /src/components/AquaAI/AquaAIButton.jsx, /src/pages/Location.jsx, /src/pages/Predict.jsx[22m
+[2m12:24:37 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/AppLayout.jsx, /src/components/AquaAI/AquaAIButton.jsx, /src/pages/Location.jsx, /src/pages/Predict.jsx[22m
+[2m12:24:51 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m12:25:04 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m12:25:18 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m12:26:18 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m12:26:29 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m12:26:48 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m12:27:16 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m
+[2m12:27:46 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Location.jsx, /src/index.css[22m

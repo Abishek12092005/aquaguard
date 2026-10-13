@@ -1,0 +1,31 @@
+built a sandbox ml/ tree at: C:\Users\abishek\AppData\Local\Temp\aquaguard_no_model_0ug1h5fz\ml
+  forest artifact present? False (real one exists: True)
+
+waiting for the model-less server to boot...
+  PASS  the model-less server boots and answers /health   -> port=57713
+
+------------------------------------------------------------------------------
+WITH NO MODEL INSTALLED
+------------------------------------------------------------------------------
+  PASS  the sandbox really has no forest artifact   -> C:\Users\abishek\AppData\Local\Temp\aquaguard_no_model_0ug1h5fz\ml\model\water_quality_rf.joblib
+  response: code=0 body={"transport_error": "timed out"}
+  FAIL  a prediction request FAILS rather than answering   -> code=0
+  PASS  no verdict is invented   -> prediction=None
+  PASS  no confidence is invented   -> confidence=None
+  FAIL  the failure is reported as a model error (503), not a server crash   -> code=0
+  FAIL  the message says the model is unavailable, not a verdict   -> {"transport_error": "timed out"}
+  FAIL  it failed FAST rather than hanging   -> 45.00s
+
+------------------------------------------------------------------------------
+THE ASSISTANT'S PREDICTION TOOL FAILS THE SAME WAY
+------------------------------------------------------------------------------
+  PASS  Aqua AI does not state a verdict without a model   -> code=200
+
+==============================================================================
+5/9 checks passed
+  FAILED: a prediction request FAILS rather than answering
+  FAILED: the failure is reported as a model error (503), not a server crash
+  FAILED: the message says the model is unavailable, not a verdict
+  FAILED: it failed FAST rather than hanging
+FAILURES PRESENT
+==============================================================================

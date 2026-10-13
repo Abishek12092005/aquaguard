@@ -1,0 +1,22 @@
+register note: HTTP Error 409: CONFLICT
+PASS  AUTH register + login + JWT  -> token_len=331
+FAIL  TEST1 country overview  -> TimeoutError('timed out')
+FAIL  TEST2 state overview  -> TimeoutError('timed out')
+FAIL  TEST3 district places  -> TimeoutError('timed out')
+PASS  TEST4 place + hierarchy  -> place=Karaikudi district=Sivaganga state=Tamil Nadu country=India pincode=None
+FAIL  TEST4 water source + nearby + distances  -> primary=None nearby=0 nearest=None distance=Nonekm
+PASS  TEST4 rain (real weather API)  -> status=expected_soon current_mm=0.0
+PASS  TEST4 risk level + factors  -> level=unknown factors=[]
+PASS  TEST4 default prediction parameters  -> keys=['dissolved_oxygen', 'ph', 'tds', 'temperature', 'turbidity']
+PASS  TEST4 'Enter Water Prediction' available  -> place=Karaikudi -> /predict
+FAIL  TEST6 Random Forest verdict + confidence + risk  -> prediction=safe confidence=0.773 risk_level=None id=5219
+PASS  TEST5 location echoed on prediction  -> district=Sivaganga pincode=630001
+PASS  TEST7 famous place found  -> name=Meenakshi Temple kind=place label=Meenakshi Temple, Bengaluru, Bangalore East, Karnataka, India
+PASS  TEST8 reverse geocode -> place  -> name=Karaikudi label=Karaikudi, Karaikkudi, Sivagangai, Tamil Nadu, 623001, India pincode=623001
+PASS  TEST9 manual pin -> water info  -> available=False primary=None nearby=0
+FAIL  TEST10 history  -> TypeError('list indices must be integers or slices, not str')
+FAIL  TEST11 admin reports  -> AttributeError("'list' object has no attribute 'get'")
+PASS  ALERTS endpoint  -> True
+
+SUMMARY: 11/18 passed
+FAILED: TEST1 country overview, TEST2 state overview, TEST3 district places, TEST4 water source + nearby + distances, TEST6 Random Forest verdict + confidence + risk, TEST10 history, TEST11 admin reports

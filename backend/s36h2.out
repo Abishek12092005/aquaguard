@@ -1,0 +1,19 @@
+
+=== state after boot, inside an app context ===
+config dir : C:\Users\abishek\AppData\Local\Temp\aquaguard_hang_h9navbug\ml
+_ml_root() : C:\Users\abishek\AppData\Local\Temp\aquaguard_hang_h9navbug\ml
+available  : False
+
+=== is_available() OUTSIDE an app context (the request path is inside, but check) ===
+False
+
+=== drive the predict endpoint through the test client (20 s cap) ===
+status: 503
+body  : {
+  "errors": {
+    "expected_path": "C:\\Users\\abishek\\AppData\\Local\\Temp\\aquaguard_hang_h9navbug\\no_legacy\\aquaguard_random_forest.pkl"
+  },
+  "message": "Prediction model artifact was not found. Train the model first (python -m app.ml.train).",
+  "success": false
+}
+

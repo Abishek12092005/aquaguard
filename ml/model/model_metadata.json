@@ -1,0 +1,91 @@
+{
+  "model_name": "RandomForestClassifier",
+  "model_version": "water-quality-rf-v1.0.0",
+  "trained_at": "2026-09-18T11:30:18.884833+00:00",
+  "random_state": 42,
+  "dataset": "water_quality.csv",
+  "row_count": 3967,
+  "features": [
+    "ph",
+    "turbidity",
+    "tds",
+    "temperature",
+    "dissolved_oxygen"
+  ],
+  "target": "water_quality",
+  "classes": [
+    "MODERATE",
+    "SAFE",
+    "UNSAFE"
+  ],
+  "hyperparameters": {
+    "n_estimators": 300,
+    "max_depth": null,
+    "min_samples_split": 4,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "class_weight": "balanced",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "accuracy": 0.6071,
+    "confusion_matrix": [
+      [
+        135,
+        78,
+        65
+      ],
+      [
+        73,
+        195,
+        9
+      ],
+      [
+        68,
+        19,
+        152
+      ]
+    ],
+    "report": {
+      "MODERATE": {
+        "precision": 0.4891304347826087,
+        "recall": 0.4856115107913669,
+        "f1-score": 0.48736462093862815,
+        "support": 278.0
+      },
+      "SAFE": {
+        "precision": 0.6678082191780822,
+        "recall": 0.703971119133574,
+        "f1-score": 0.6854130052724078,
+        "support": 277.0
+      },
+      "UNSAFE": {
+        "precision": 0.672566371681416,
+        "recall": 0.6359832635983264,
+        "f1-score": 0.6537634408602151,
+        "support": 239.0
+      },
+      "accuracy": 0.6070528967254408,
+      "macro avg": {
+        "precision": 0.6098350085473689,
+        "recall": 0.6085219645077556,
+        "f1-score": 0.6088470223570837,
+        "support": 794.0
+      },
+      "weighted avg": {
+        "precision": 0.6066807309996881,
+        "recall": 0.6070528967254408,
+        "f1-score": 0.6065443695805881,
+        "support": 794.0
+      }
+    },
+    "feature_importances": {
+      "ph": 0.3254,
+      "turbidity": 0.1475,
+      "tds": 0.1716,
+      "temperature": 0.1469,
+      "dissolved_oxygen": 0.2086
+    }
+  }
+}

@@ -1,0 +1,58 @@
+
+------------------------------------------------------------------------------
+INVALID INPUT  (both methods refuse; neither invents a verdict)
+------------------------------------------------------------------------------
+  PASS  pH out of range: refused with 4xx   -> code=422
+  PASS  pH out of range: no verdict AND no confidence invented   -> status=422
+  PASS  turbidity negative: refused with 4xx   -> code=422
+  PASS  turbidity negative: no verdict AND no confidence invented   -> status=422
+  PASS  TDS absurdly high: refused with 4xx   -> code=422
+  PASS  TDS absurdly high: no verdict AND no confidence invented   -> status=422
+  PASS  non-numeric pH: refused with 4xx   -> code=422
+  PASS  non-numeric pH: no verdict AND no confidence invented   -> status=422
+  PASS  null dissolved oxygen: refused with 4xx   -> code=422
+  PASS  null dissolved oxygen: no verdict AND no confidence invented   -> status=422
+  PASS  partial submission: refused with 4xx   -> code=422
+  PASS  partial submission: no verdict AND no confidence invented   -> status=422
+  PASS  empty body: refused with 4xx   -> code=422
+  PASS  empty body: no verdict AND no confidence invented   -> status=422
+  PASS  malformed JSON body is refused   -> code=400
+
+------------------------------------------------------------------------------
+MISSING WATER SOURCE / MISSING WATER-QUALITY DATA
+------------------------------------------------------------------------------
+  PASS  an empty ocean still answers 200   -> code=200
+  PASS  it reports the source as unavailable, not invented   -> available=False primary=None
+  PASS  it explains why   -> Water source information is unavailable for this location.
+  PASS  it invents no nearby sources   -> n=0
+
+------------------------------------------------------------------------------
+NEARBY WATER SOURCE FALLBACK  (real distance, never fabricated)
+------------------------------------------------------------------------------
+  FAIL  a nearby source is offered   -> none returned (Overpass gave nothing here)
+
+------------------------------------------------------------------------------
+INVALID COORDINATES
+------------------------------------------------------------------------------
+  FAIL  impossible coordinates are refused   -> code=200
+  PASS  no location at all is refused   -> code=422
+
+------------------------------------------------------------------------------
+UNKNOWN PLACE
+------------------------------------------------------------------------------
+  FAIL  an unsearchable name is refused, not invented   -> code=200
+
+------------------------------------------------------------------------------
+SLOW NETWORK  (the answer is still correct, just later)
+------------------------------------------------------------------------------
+  PASS  a valid submission still succeeds under latency   -> code=201 in 0.08s
+  PASS  the verdict is still a real one   -> safe
+  PASS  repeated calls are stable regardless of timing   -> {('safe', 0.8559)}
+
+==============================================================================
+23/26 checks passed
+  FAILED: a nearby source is offered
+  FAILED: impossible coordinates are refused
+  FAILED: an unsearchable name is refused, not invented
+FAILURES PRESENT
+==============================================================================

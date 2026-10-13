@@ -1,0 +1,16 @@
+[2026-10-01 23:06:48,410] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 23:06:48,414] INFO in __init__: AquaGuard AI backend initialised (env=testing)
+[2026-10-01 23:06:53,581] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 23:06:59,090] INFO in location_service: Overpass cache hit for this query
+[2026-10-01 23:06:59,165] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 23:06:59,165] INFO in __init__: AquaGuard AI backend initialised (env=development)
+[2026-10-01 23:06:59,449] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x19e89dbe490>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-01 23:06:59,850] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-01 23:06:59,850] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+[2026-10-01 23:07:10,367] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x19eae9d5810>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))
+[2026-10-01 23:07:10,750] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=11.0)
+[2026-10-01 23:07:11,680] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=3.1694888998754323)
+[2026-10-01 23:07:11,769] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=11.0)
+[2026-10-01 23:07:11,771] INFO in location_service: Overpass outage breaker OPEN - skipping query (120s left)
+[2026-10-01 23:07:11,772] INFO in location_service: Overpass outage breaker OPEN - skipping query (120s left)
+[2026-10-01 23:07:11,773] INFO in location_service: Overpass outage breaker OPEN - skipping query (120s left)

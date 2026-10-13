@@ -1,0 +1,22 @@
+[2026-10-01 21:45:40,777] INFO in tools: Aqua AI default tool handlers registered
+Exception in thread ml-model-warmup:
+[2026-10-01 21:45:40,781] INFO in __init__: AquaGuard AI backend initialised (env=testing)
+Traceback (most recent call last):
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\app\__init__.py", line 113, in _load
+    with current_app.app_context():
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\.venv\Lib\site-packages\werkzeug\local.py", line 318, in __get__
+    obj = instance._get_current_object()
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\.venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.

@@ -1,0 +1,30 @@
+pointing ML_WATER_QUALITY_DIR at an empty dir: C:\Users\abishek\AppData\Local\Temp\aquaguard_no_model_z85_rqom
+  contents: [] (no water_quality_rf.joblib)
+
+waiting for the model-less server to boot...
+  PASS  the model-less server boots and answers /health   -> port=51114
+
+------------------------------------------------------------------------------
+WITH NO MODEL INSTALLED
+------------------------------------------------------------------------------
+  response: code=201 body={"data": {"confidence": 0.8559, "created_at": "2026-10-01T16:00:33", "dissolved_oxygen": 7.0, "feature_contributions": [{"contribution": 0.0651, "importance": 0.3254, "name": "ph", "value": 7.2}, {"contribution": 73.5288, "importance": 0.1475, "name": "turbidity", "value": 1.5}, {"contribution": 423
+  FAIL  a prediction request FAILS rather than answering   -> code=201
+  FAIL  no verdict is invented   -> prediction=safe
+  FAIL  no confidence is invented   -> confidence=0.8559
+  FAIL  the failure is reported as a model error (503), not a server crash   -> code=201
+  PASS  the message says the model is unavailable, not a verdict   -> {"data": {"confidence": 0.8559, "created_at": "2026-10-01T16:00:33", "dissolved_oxygen": 7.0, "feature_contributions": [{"contribution": 0.0651, "importance": 0
+  PASS  it failed FAST rather than hanging   -> 4.50s
+
+------------------------------------------------------------------------------
+THE ASSISTANT'S PREDICTION TOOL FAILS THE SAME WAY
+------------------------------------------------------------------------------
+  PASS  Aqua AI does not state a verdict without a model   -> code=200
+
+==============================================================================
+4/8 checks passed
+  FAILED: a prediction request FAILS rather than answering
+  FAILED: no verdict is invented
+  FAILED: no confidence is invented
+  FAILED: the failure is reported as a model error (503), not a server crash
+FAILURES PRESENT
+==============================================================================

@@ -1,0 +1,36 @@
+﻿   HTTP 429, waiting 65s
+python.exe : Traceback (most recent call last):
+At line:1 char:163
++ ... rd\backend; & ".\.venv\Scripts\python.exe" build_step17_districts.py  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\build_step17_districts.py", line 158, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\build_step17_districts.py", line 142, in main
+    result = fetch_all()
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\build_step17_districts.py", line 121, in fetch_all
+    for row in sparql(QUERY):
+               ~~~~~~^^^^^^^
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\build_step17_districts.py", line 106, in sparql
+    with urllib.request.urlopen(req, timeout=180) as fh:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 495, in open
+    response = meth(req, response)
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 533, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 613, in 
+http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request

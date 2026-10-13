@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AquaGuard AI — AI-based water quality monitoring and prediction system."
+    />
+    <meta name="theme-color" content="#007cc6" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23007cc6' d='M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11Z'/%3E%3C/svg%3E"
+    />
+    <title>AquaGuard AI — Water Quality Monitoring &amp; Prediction</title>
+    <!--
+      Apply the saved theme before first paint.
+
+      React mounts a frame or two after the HTML is parsed, so without this the
+      page renders light and then snaps to dark — a visible flash on every load
+      for anyone who chose dark. This is intentionally inline and before the
+      module script: a deferred script would run too late to prevent it.
+
+      Deliberately tiny and dependency-free, and wrapped in try/catch because a
+      locked-down browser can throw on localStorage access — a theme preference
+      must never be able to break the page.
+    -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('aquaguard.theme')
+          // DEFAULT IS LIGHT. Only an explicitly saved choice turns dark - the
+          // OS-level preference is deliberately ignored, so a first-time visitor
+          // always gets the light theme regardless of their system setting.
+          if (saved === 'dark') document.documentElement.classList.add('dark')
+          document.documentElement.style.colorScheme = saved === 'dark' ? 'dark' : 'light'
+        } catch (e) {
+          /* fall through to the light default */
+        }
+      })()
+    </script>
+ </head>
+ <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+ </body>
+</html>

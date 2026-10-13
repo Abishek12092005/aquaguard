@@ -1,0 +1,982 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------------------------
+   Print
+   What the browser's "save as PDF" actually produces.
+
+   The Reports page prints a document, not a screenshot of the app: the sidebar,
+   the top bar, the animated water backdrop and every control are removed, so the
+   sheet contains the report and nothing else. Anything interactive is useless on
+   paper, and the water backdrop would print as a large block of ink.
+
+   `print:hidden` on individual elements (the filter chips, the reading list)
+   handles the per-page choices; this block handles the shell.
+   --------------------------------------------------------------------------- */
+@media print {
+  /* The chrome. `display: none` rather than `visibility: hidden` so the removed
+     elements take no space and the report starts at the top of the sheet.
+
+     `nav` and `aside` cover the sidebar and the topbar; `footer` covers the
+     page footer. The list is explicit rather than a blanket `[aria-hidden]`
+     rule, which would also have removed the decorative droplet on the
+     masthead below. */
+  aside,
+  footer,
+  nav,
+  .print-hide {
+    display: none !important;
+  }
+
+  /* The animated backdrop layers and the launcher. These are all `aria-hidden`
+     decoration; the masthead's own droplet carries an explicit class instead, so
+     it survives. */
+  [aria-hidden="true"]:not(.print-keep) {
+    display: none !important;
+  }
+
+  /* --- Paper ------------------------------------------------------------
+     Forced to light: white sheet, dark ink, regardless of the on-screen theme.
+
+     This is deliberate and NOT the dark-mode bug it looks like. Two reasons:
+
+       1. A dark print theme would either be ignored (most print dialogues drop
+          background colours by default, leaving white text on white paper and a
+          blank report) or, when honoured, empty a cartridge onto the page.
+       2. A report is a document that gets filed, annotated and photocopied.
+          Dark ink on white is the form that survives all three.
+
+     So the print output is always the light theme, and the on-screen report
+     still follows the user's chosen theme. */
+  html,
+  body,
+  #root {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  /* Invert every text colour the app sets, so dark-mode utilities do not
+     survive onto paper as light-on-white. */
+  .print-sheet,
+  .print-sheet * {
+    color: #0f172a !important;
+    background-color: transparent !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* The water accents that carry meaning: keep the droplet disc tinted. */
+  .print-sheet .print-keep {
+    background-color: #eff9ff !important;
+    color: #0163a0 !important;
+  }
+
+  /* THE VERDICT KEEPS ITS COLOUR ON PAPER.
+
+     A plain `.badge` on the sheet is flattened to the aqua brand tint, because a
+     neutral chip does not need colour on a document. The VERDICT does: red for
+     unsafe, yellow for moderate, green for safe is the single most important
+     thing on the page, and printing it as blue would destroy the meaning. So the
+     `.badge-button-*` classes are excluded from the flattening and given the same
+     light tint + dark text the screen shows. The first rule resets every badge to
+     a plain bordered chip; the three below re-colour the verdict specifically. */
+  .print-sheet .badge,
+  .print-sheet .badge-button {
+    background-color: #eff9ff !important;
+    color: #0163a0 !important;
+    border-color: #0163a0 !important;
+  }
+  .print-sheet .badge-button-safe {
+    background-color: #dcfce7 !important;
+    color: #15803d !important;
+    border-color: #15803d !important;
+  }
+  .print-sheet .badge-button-moderate {
+    background-color: #fef3c7 !important;
+    color: #b45309 !important;
+    border-color: #b45309 !important;
+  }
+  .print-sheet .badge-button-unsafe {
+    background-color: #fee2e2 !important;
+    color: #b91c1c !important;
+    border-color: #b91c1c !important;
+  }
+
+  /* Cards become plain bordered blocks, so a report reads as a document rather
+     than as a screenshot of a UI. */
+  .card {
+    background: #fff !important;
+    box-shadow: none !important;
+    --tw-ring-shadow: 0 0 #0000 !important;
+  }
+
+
+  /* The masthead sits at the very top of the printed page, centred. */
+  .print-masthead {
+    padding-top: 0 !important;
+  }
+
+  /* --- No rule above the report -----------------------------------------
+
+     `.print-sheet` used to carry a 3px aqua bar along its top edge. On paper
+     that is the "grey line" running across the top of the page before any text,
+     which is exactly what the report should not open with. The document now
+     starts on its title, so the bar is removed rather than recoloured.
+
+     The sheet's own border and ring are cleared with it, because a printed
+     report is a document, not a card. */
+  .print-sheet {
+    border-top: 0 !important;
+    border: 0 !important;
+    --tw-ring-shadow: 0 0 #0000 !important;
+    margin: 0 !important;
+  }
+
+  /* --- No filters, list, or page chrome, and no watermark --------------
+
+     The Reports page renders the reading list and the filter chips beside the
+     sheet, and the app shell renders a breadcrumb ("Overview") above it. None of
+     that belongs on the printed page: the breadcrumb specifically printed as a
+     grey label floating above the report. `print:hidden` on the per-page
+     elements plus these shell rules keeps the sheet alone on the paper.
+
+     The animated water backdrop and any fixed side decoration are `aria-hidden`
+     and are already removed by the rule above; `WaterBackground` is additionally
+     fixed-positioned, so it is named here too as a belt-and-braces guard against
+     it ever being given a different attribute. */
+  .print-hide,
+  [data-print-hide],
+  .water-background,
+  /* THE CHAT LAUNCHER IS REMOVED FROM THE SHEET.
+
+     The Aqua AI droplet is a `fixed bottom-right` floating button, and a fixed
+     element prints at its viewport position on EVERY page. On the report that
+     showed up as a water-drop mark floating down the right-hand side of the
+     sheet — the "side watermark" that was asked to be removed. The launcher's
+     own container is named here so the mark cannot appear on paper at all. */
+  .aqua-ai-launcher,
+  .aqua-ai-root {
+    display: none !important;
+  }
+
+  /* Grid containers collapse to one column so the sheet is not squeezed beside
+     the (hidden) list. */
+  .print-sheet {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  /* Tables must not be clipped or scrolled on paper. */
+  .table-wrap {
+    overflow: visible !important;
+  }
+
+  .table {
+    min-width: 0 !important;
+  }
+
+  /* Keep a table row and its header together across a page break. */
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Design tokens
+   Exposed as CSS variables so non-Tailwind contexts (charts, SVG fills from
+   Recharts) can reference the same colours without duplicating hex values.
+   --------------------------------------------------------------------------- */
+:root {
+  --aqua-50: #eff9ff;
+  --aqua-100: #dcf1ff;
+  --aqua-500: #0e9de8;
+  --aqua-600: #007cc6;
+  --aqua-700: #0163a0;
+  --aqua-950: #072c49;
+
+  --safe: #16a34a;
+  --moderate: #d97706;
+  --unsafe: #dc2626;
+
+  color-scheme: light;
+}
+
+@layer base {
+  /* `html` and `body` must be allowed to grow past the viewport. They were
+     `height: 100%`, which clamps them to one screen while their content keeps
+     overflowing — the document then reports a scrollHeight larger than its
+     clientHeight but has nothing to scroll, and the page is simply stuck.
+     `min-height` gives the same "fills the screen" start without the clamp, and
+     `#root` inherits it so the shell still stretches on a short page. */
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  /* No horizontal overflow anywhere. `overflow-x: hidden` on the body is a
+     last-resort backstop: a single wide child must never make the whole page
+     scroll sideways on a phone. Layouts below still avoid overflowing in the
+     first place, so nothing is actually clipped. */
+  html,
+  body {
+    @apply overflow-x-hidden;
+  }
+
+  body {
+    /* The base layer under the animated <WaterBackground />. It is an aqua tint
+       rather than flat slate so the first paint already reads as water, and so
+       there is no grey flash before the animation mounts. */
+    @apply bg-aqua-50 text-slate-800 antialiased dark:bg-slate-900 dark:text-slate-100;
+    /* Slightly tighter, more deliberate text rendering — the default looks
+       loose at small sizes on Windows. */
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Headings share one optical rhythm: tight tracking, balanced wrapping, and
+     no hyphenation surprises in narrow cards. */
+  h1,
+  h2,
+  h3 {
+    @apply tracking-tight text-slate-900 dark:text-white;
+    text-wrap: balance;
+  }
+
+  /* Long-form body copy reads better with balanced paragraph wrapping. */
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Tabular figures wherever numbers are compared down a column (history,
+     KPIs). Prevents the digits from jittering between rows. */
+  table,
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Consistent focus ring across every interactive element. `outline` rather
+     than only a ring, so it is visible against saturated buttons too. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-aqua-500 ring-offset-2 ring-offset-white;
+  }
+
+  /* --- STEP 28: THE ANIMATED LOCATION PIN -------------------------------
+     The map button's pin is drawn as SVG with three small motions, so these live
+     here as plain CSS keyframes rather than as Tailwind utilities. `Icon` cannot
+     carry them: it renders a single `<path>`, and this pin needs three separate
+     elements to pulse, glow and bob independently. A class in markup also keeps
+     the keyframes out of Tailwind's scanner entirely, so no safelist entry is
+     needed and they can never be compiled away.
+     Every animation below is clamped by the reduced-motion block further down. */
+  @keyframes aqua-pin-pulse {
+    /* Spent mostly invisible: the ring is fully transparent for the first
+       sixth of the cycle, so between signals there is nothing moving at the tip.
+       That is what keeps this "subtle" rather than a blinking cursor. */
+    0% {
+      opacity: 0;
+      transform: scale(0.55);
+    }
+    22% {
+      opacity: 0.5;
+      transform: scale(0.7);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(2.1);
+    }
+  }
+
+  /* THE BOB IS GONE, DELIBERATELY - keyframe AND rule.
+
+     `aqua-pin-bob` translated the pin 2px up and down forever, which is the
+     "continuously moving location symbol" the brief forbids: on Location
+     Prediction the marker sits over a map the user is aiming at, and on the
+     Dashboard's Recent Activity list a bobbing pin drew the eye to every row.
+
+     Deleting the keyframe as well as the `.aqua-pin-body` rule is the point:
+     leaving the keyframe behind would let a future `className="aqua-pin-body"`
+     silently reintroduce the motion. With both removed there is nothing to
+     apply, so the pin body cannot move at any call site. The two non-spatial
+     accents (pulse, halo) remain for emphasis. */
+  @keyframes aqua-pin-glow {
+    0%,
+    100% {
+      opacity: 0.55;
+      transform: scale(0.94);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.04);
+    }
+  }
+
+  .aqua-pin-pulse {
+    transform-origin: 12px 21.5px;
+    transform-box: fill-box;
+    animation: aqua-pin-pulse 2.4s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+  }
+
+  .aqua-pin-glow {
+    transform-origin: 50% 100%;
+    transform-box: fill-box;
+    animation: aqua-pin-glow 2.4s ease-in-out infinite;
+  }
+
+  /* HOVER AND FOCUS-ON-THE-BUTTON intensify the pin, the same way the rest of the
+     toolbar signals itself. This is scoped to the icon, so the button's own
+     hover background still happens independently and nothing about the button's
+     behaviour changes - it is decoration layered on a control that behaves
+     exactly as before. */
+  button:hover .aqua-pin-pulse,
+  button:focus-visible .aqua-pin-pulse {
+    animation-duration: 1.6s;
+  }
+
+  button:hover .aqua-pin-glow,
+  button:focus-visible .aqua-pin-glow {
+    animation-duration: 1.6s;
+  }
+
+  /* Respect the OS "reduce motion" setting: transitions and the pulse-ring are
+     decoration, and a user who has asked for less motion should not get them. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Themed scrollbars for the inner scroll areas (chat, tables). Subtle, so
+     they read as part of the surface rather than the OS bleeding through. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.aqua.300') transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-aqua-300/70;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@layer components {
+  /* ----------------------------------------------------------------------
+     Water backdrop
+     The body gradient behind <WaterBackground />. It is defined here rather
+     than as a Tailwind `bg-gradient-to-b` chain in the component so the
+     light-to-deep progression stays in one place: pale aqua at the surface,
+     deepening toward the seabed, which is what gives the page its depth.
+     ---------------------------------------------------------------------- */
+  .bg-water-body {
+    background-image: linear-gradient(
+      to bottom,
+      theme('colors.aqua.100') 0%,
+      theme('colors.aqua.50') 28%,
+      #ffffff 52%,
+      theme('colors.aqua.100') 78%,
+      theme('colors.aqua.200') 100%
+    );
+  }
+
+  /*
+   * The application backdrop: the animation as a tint, not as a wall.
+   *
+   * This replaced `.bg-water-body-dark`, which was a full-opacity gradient of
+   * aqua-800 → 600 → 900. That class is worth understanding because it is the
+   * trap this one avoids: a `fixed inset-0` layer at full opacity is opaque by
+   * construction, so once it was in place no amount of tuning the drops, the
+   * waves or the bubbles could make the screen read as light — everything in
+   * the middle of the page sat on top of a mid-blue, and the rain could only
+   * ever be seen *through* the layer where it happened to be painted on top.
+   *
+   * So the ground here is mostly the page itself. `body` is aqua-50 in light
+   * mode (and slate-900 in dark, which this leaves alone), and on top of it sit
+   * three low-alpha token washes. The result is the same top-to-bottom depth
+   * read — a slightly cooler surface, a clearer mid-water, a touch of depth at
+   * the seabed — but what the user mostly sees is the light page, so a white
+   * card looks like a card rather than a lit panel in a dark room.
+   *
+   * Every stop is a *lot* of nothing: 0.16 alpha at its strongest. It does not
+   * have to carry the scene on its own, because the rain, the caustics and the
+   * swell are painted over it — that is what the animation is for. Raising
+   * these is the one lever that darkens the whole authenticated UI at once, so
+   * they are deliberately easy to nudge from here.
+   *
+   * The colour is aqua-200 (#b8e4ff) rather than a white-adjacent tint. Alpha
+   * alone would have been the wrong lever: pushing a near-white wash to a higher
+   * opacity makes the page *whiter*, not deeper. Turning the tint aqua is what
+   * actually lowers the result while keeping the screen light — every sampled
+   * row lands around #d6efff instead of #fcfeff, which reads as tinted water
+   * rather than as paper.
+   *
+   * The dark theme needs none of this: the veil is a pale wash and would sit
+   * oddly on slate-900, so `dark:` swaps it for a barely-there aqua lift instead.
+   */
+  .bg-water-veil {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(62, 176, 245, 0.62) 0%,
+      rgba(126, 209, 255, 0.55) 34%,
+      rgba(62, 176, 245, 0.6) 72%,
+      rgba(1, 99, 160, 0.66) 100%
+    );
+  }
+
+  .dark .bg-water-veil {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(11 70 110 / 0.5) 0%,
+      rgb(7 44 73 / 0.34) 40%,
+      rgb(2 20 36 / 0.62) 100%
+    );
+  }
+
+  /*
+   * The auth hero: looking down into deep water from just below the surface.
+   *
+   * The stops deliberately sweep a wide tonal range — an almost-black navy at
+   * the very top, a bright luminous band where light penetrates (around 30%),
+   * then falling away into deep water at the bottom. The previous version used
+   * three adjacent mid-blues, which technically had rain on top of it but read
+   * as one flat slab: nothing in the background told the eye it had depth, so
+   * the falling drops had no frame of reference either.
+   */
+  .bg-hero-water {
+    background-image: linear-gradient(
+      to bottom,
+      theme('colors.aqua.950') 0%,
+      theme('colors.aqua.900') 12%,
+      theme('colors.aqua.700') 30%,
+      theme('colors.aqua.600') 46%,
+      theme('colors.aqua.800') 72%,
+      theme('colors.aqua.950') 100%
+    );
+  }
+
+  /* ----------------------------------------------------------------------
+     Buttons
+     One shape, one radius (field), one transition. Variants differ only in
+     colour, so a primary button next to a secondary one is visually a pair.
+     ---------------------------------------------------------------------- */
+  .btn {
+    @apply inline-flex select-none items-center justify-center gap-2 rounded-field
+           px-3.5 py-2 text-sm font-medium leading-5
+           transition-all duration-150
+           disabled:pointer-events-none disabled:opacity-55;
+  }
+  /* `bg-aqua-700` rather than 600 in dark mode: white on aqua-600 measures 4.47,
+     which misses the 4.5 line for 14px text. One step deeper clears it without
+     changing the button's read.
+
+     DARK-MODE HOVER IS BLACK ON WHITE, EVERYWHERE. The requirement is that a
+     hovered control reads as an unmistakable state change: in dark mode every
+     button variant turns black-surfaced with white text under the pointer, the
+     same way the table rows already do. It is applied per variant below rather
+     than left to the browser, because the light-mode hover (a wash of aqua or
+     slate) is nearly invisible against a dark page. */
+  .btn-primary {
+    @apply btn bg-aqua-600 text-white shadow-sm
+           hover:bg-aqua-700 hover:shadow-md active:bg-aqua-800
+           dark:bg-aqua-700 dark:hover:bg-black dark:hover:text-white
+           dark:active:bg-black dark:active:text-white;
+  }
+  /* Secondary is the "quiet" surface. In LIGHT mode that is a white button with
+     dark text; in DARK mode it is the same idea inverted — a WHITE button with
+     BLACK text — so a download/CSV control is the brightest, clearest thing on a
+     dark page rather than a slate block that blends into it. Its hover is black
+     with white text, matching every other variant in dark mode. */
+  .btn-secondary {
+    @apply btn border-slate-300 bg-white text-slate-700 shadow-sm
+           hover:border-slate-400 hover:bg-slate-50 active:bg-slate-100
+           dark:border-white dark:bg-white dark:text-black
+           dark:hover:border-black dark:hover:bg-black dark:hover:text-white
+           dark:active:bg-black dark:active:text-white;
+  }
+
+  /* SECONDARY BUTTONS INSIDE A CARD KEEP BLACK TEXT IN DARK MODE.
+
+     `.btn-secondary` already asks for `dark:text-black`, but the global dark-card
+     text remap further down this file (.dark .card .text-slate-700, specificity
+     0-3-0) is more specific than a `dark:` utility (0-1-0), so it WON the
+     cascade and repainted the label WHITE on the WHITE button — literally
+     invisible, which is exactly what the Clear / Previous / Next buttons showed.
+
+     This rule is the same specificity as the remap and comes later, so the light
+     button keeps its dark label. It is scoped to `.card` on purpose: a secondary
+     button OUTSIDE a card (the login page, a bare surface) is unaffected, since
+     nothing there was overriding the colour. */
+  .dark .card .btn-secondary,
+  .dark .card .btn-secondary:hover,
+  .dark .card .btn-secondary:active {
+    color: #000 !important;
+    background-color: #fff;
+  }
+  .dark .card .btn-secondary:hover,
+  .dark .card .btn-secondary:active {
+    color: #fff !important;
+    background-color: #000;
+  }
+  .btn-ghost {
+    @apply btn text-slate-600 hover:bg-slate-100 hover:text-slate-900
+           dark:text-slate-300 dark:hover:bg-black dark:hover:text-white
+           dark:active:bg-black dark:active:text-white;
+  }
+  .btn-danger {
+    @apply btn bg-unsafe text-white shadow-sm
+           hover:bg-unsafe-dark hover:shadow-md active:bg-unsafe-dark
+           dark:hover:bg-black dark:hover:text-white dark:active:bg-black
+           dark:active:text-white;
+  }
+
+  /* ----------------------------------------------------------------------
+     Surfaces
+     `card` had `border-slate-200` with no `border` width, so the colour was
+     applied to a 0px border and no border ever rendered. The width is now
+     explicit, and the radius/shadow come from the shared scale.
+     ---------------------------------------------------------------------- */
+  /* `border` (the width utility) must be present as well as the colour: in
+     Tailwind v3 `border-slate-200` alone emits only border-color, which applies
+     to a 0px border and renders nothing. */
+  /* Slightly translucent so the animated water behind the page tints through,
+     plus a hairline aqua ring and an inset highlight along the top edge — the
+     "wet edge" a drop of water leaves on glass.
+
+     No `backdrop-blur` here on purpose: the water behind is already soft
+     gradient, so blurring it again produced a smeared pale halo around every
+     card instead of a crisp pane. The 0.9 alpha is the balance point — enough
+     translucency to read as glass, opaque enough that dense table text keeps
+     full contrast. */
+  .card {
+    @apply rounded-card bg-white/90 p-5 shadow-card ring-1 ring-inset ring-aqua-100/70
+           dark:bg-slate-800/90 dark:ring-slate-700;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 0.55) 0%,
+      rgb(255 255 255 / 0) 42%
+    );
+  }
+
+  /* The top-edge highlight is a white sheen — on a dark card it reads as a
+     bright smear, so dark mode drops it entirely rather than recolouring it. */
+  .dark .card {
+    background-image: none;
+  }
+
+  /*
+   * Every card is a dark surface in dark mode, so text inside one defaults to
+   * white and only opts out deliberately.
+   *
+   * This is a base rather than a rule per component because the failure it
+   * prevents is a *forgotten* `dark:` variant, and those are invisible to
+   * review — the component looks right written on its own and only breaks once
+   * the theme flips. Setting the colour on the card means an element that says
+   * nothing inherits white, which is the correct default on this surface, while
+   * anything that wants a specific colour (a badge, a muted timestamp, a
+   * destructive action) still overrides it normally.
+   *
+   * Specificity is (0,2,0) — one class, one class — so any single Tailwind
+   * utility on the child wins without needing `!important`.
+   */
+  .dark .card {
+    color: theme('colors.white');
+  }
+
+  /*
+   * ...but inheriting is not enough, because most of the app names a colour
+   * explicitly. An element with `text-slate-900` and no `dark:` variant does not
+   * inherit the card's white — it paints near-black on the dark card. Measured
+   * on the real screens that is not a subtle miss: `text-slate-900` on a
+   * slate-800 card is a contrast ratio of 1.19, and `text-slate-500` is 3.14.
+   * Seventy-seven elements across the five authenticated screens were failing
+   * that way, all of them for the same reason.
+   *
+   * Auditing and patching each site individually would fix today's list and
+   * nothing else: the next component written with a plain `text-slate-700`
+   * reintroduces the bug silently, because it looks correct when read on its
+   * own. So the neutral text scale is remapped here instead, once, for dark
+   * mode.
+   *
+   * Only *neutral* colors are remapped. The semantic palettes — `safe`,
+   * `caution`, `unsafe`, `aqua` — are deliberately left alone: their whole job
+   * is to read as green/amber/red/blue, and flipping them on a dark surface
+   * would destroy the meaning rather than preserve it. Components that use those
+   * on a light chip (a badge) keep the light chip in dark mode, which is why
+   * they still pass.
+   *
+   * `slate-300` and lighter are absent on purpose — they are already legible, and
+   * they are what placeholder and disabled text use.
+   */
+  .dark .card .text-slate-900,
+  .dark .card .text-slate-800,
+  .dark .card .text-slate-700 {
+    color: theme('colors.white');
+  }
+
+  .dark .card .text-slate-600,
+  .dark .card .text-slate-500 {
+    color: theme('colors.slate.300');
+  }
+
+  /* `text-slate-400` is the muted tier already; lift it one step so it clears
+     4.5:1 on slate-800 rather than sitting at 4.0. */
+  .dark .card .text-slate-400 {
+    color: theme('colors.slate.400');
+  }
+
+  /* A card that responds to hover — for tiles that link somewhere. */
+  .card-interactive {
+    @apply card transition-shadow duration-200 hover:shadow-card-hover;
+  }
+
+  /* ----------------------------------------------------------------------
+     Forms
+     Inputs, selects and textareas share one control shape and one focus
+     treatment, so a form reads as a single instrument.
+     ---------------------------------------------------------------------- */
+  .input {
+    @apply w-full rounded-field border-slate-300 bg-white px-3 py-2 text-sm
+           text-slate-900 shadow-sm transition-colors placeholder:text-slate-400
+           hover:border-slate-400
+           focus:border-aqua-500 focus:outline-none focus:ring-2 focus:ring-aqua-500/25
+           disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-500
+           dark:border-slate-600 dark:bg-slate-900 dark:text-white
+           dark:placeholder:text-slate-500 dark:hover:border-slate-500
+           dark:disabled:bg-slate-800 dark:disabled:text-slate-500;
+  }
+
+  /* A field the server rejected. Same shape, red treatment. */
+  /* --- Map popup: search suggestions above the map ------------------------
+     Leaflet's own stacking is deliberately left alone: it depends on the
+     relative order of its panes (tiles 200 → overlays 400 → markers 600 →
+     popups 700) and its controls sit at 1000. Flattening the panes to a single
+     value would put markers under tiles, so the suggestion list instead clears
+     1000 with `z-[1200]` from the Tailwind class - above the map's controls and
+     markers, still below the app topbar, which never exceeds z-50.
+
+     The rule below is the second half of that fix: the list's stacking context
+     is resolved against its own wrapper rather than against the map, and its
+     background is opaque, because the list sits directly over the tiles and a
+     translucent one would let the map show through the suggestion text. */
+  .aquaguard-map-suggestions {
+    isolation: isolate;
+    background-color: #ffffff;
+  }
+  .dark .aquaguard-map-suggestions {
+    background-color: rgb(30 41 59);
+  }
+
+  .input-error {
+    @apply border-unsafe focus:border-unsafe focus:ring-unsafe/25;
+  }
+
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-slate-700 dark:text-slate-300;
+  }
+
+  .field-hint {
+    @apply mt-1.5 text-xs text-slate-500 dark:text-slate-400;
+  }
+
+  .field-error {
+    @apply mt-1.5 flex items-start gap-1 text-xs font-medium text-unsafe-dark;
+  }
+
+  /* ----------------------------------------------------------------------
+     Badges
+     Shared by history, alerts and the prediction result, so the same verdict
+     looks identical everywhere it appears.
+     ---------------------------------------------------------------------- */
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-2xs
+           font-semibold uppercase tracking-wide;
+  }
+  .badge-safe {
+    @apply badge bg-safe-light text-safe-dark
+           dark:border dark:border-safe dark:bg-safe/10 dark:text-safe;
+  }
+  .badge-moderate {
+    @apply badge bg-caution-light text-caution-dark
+           dark:border dark:border-caution dark:bg-caution/10 dark:text-caution;
+  }
+  .badge-unsafe {
+    @apply badge bg-unsafe-light text-unsafe-dark
+           dark:border dark:border-unsafe dark:bg-unsafe/10 dark:text-unsafe;
+  }
+
+  /* --- Verdict as a SOLID colour chip ------------------------------------
+     The Home page asked for the three verdict boxes to BE their own colour —
+     the whole pill filled red / yellow / green — with WHITE text sitting inside
+     it, rather than the pale tint with dark text used everywhere else.
+
+     Kept separate from `.badge-safe|moderate|unsafe` on purpose: those pale
+     chips appear in history lists, alerts and the result card, and replacing
+     them would repaint every one of those places. This is the Home page's own
+     reading of the same verdict, so it is its own class.
+
+     The fill is the SATURATED shade (`bg-safe`, `bg-caution`, `bg-unsafe`) and
+     the text is pure white. Bold is part of it: white on a mid-tone yellow has
+     the least contrast of the three, and the extra weight is what keeps
+     "MODERATE" legible there. */
+  .badge-solid {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-2xs
+           font-bold uppercase tracking-wide text-white;
+  }
+  .badge-solid-safe {
+    @apply badge-solid bg-safe;
+  }
+  .badge-solid-moderate {
+    @apply badge-solid bg-caution;
+  }
+  .badge-solid-unsafe {
+    @apply badge-solid bg-unsafe;
+  }
+
+  /* --- Verdict as a COLOURED BUTTON --------------------------------------
+     RED for unsafe, YELLOW for moderate, GREEN for safe — shown as a
+     control-shaped pill wherever a verdict appears: the readings list, the
+     report sheet, and (through the same class) the printed / PDF output.
+
+     The fills are the LIGHT tint of each colour, not the saturated one. A wall
+     of solid red beats the eye and makes a long list harder to scan than a plain
+     one, so each pill is a pale tint with a matching darker border and dark text
+     — clearly red/yellow/green at a glance, but gentle to read down a column. */
+  .badge-button {
+    @apply inline-flex items-center gap-1 rounded-full border px-2.5 py-1
+           text-2xs font-bold uppercase tracking-wide;
+  }
+  .badge-button-safe {
+    @apply badge-button border-safe bg-safe-light text-safe-dark
+           dark:border-safe dark:bg-safe/10 dark:text-safe;
+  }
+  .badge-button-moderate {
+    @apply badge-button border-caution bg-caution-light text-caution-dark
+           dark:border-caution dark:bg-caution/10 dark:text-caution;
+  }
+  .badge-button-unsafe {
+    @apply badge-button border-unsafe bg-unsafe-light text-unsafe-dark
+           dark:border-unsafe dark:bg-unsafe/10 dark:text-unsafe;
+  }
+  /* The one badge that is a neutral surface rather than a coloured chip, so it
+     is also the one that has to invert: `bg-slate-100` + `text-slate-600` is a
+     near-white pill, which on a dark card reads as a light-mode control dropped
+     into a dark screen — exactly what "Acknowledged" looked like. */
+  .badge-slate {
+    @apply badge bg-slate-100 text-slate-600
+           dark:bg-slate-700 dark:text-slate-200;
+  }
+
+  /* ----------------------------------------------------------------------
+     Tables
+     `.table-wrap` owns the horizontal scroll, so a table wider than its card
+     scrolls inside the card rather than pushing the page sideways.
+
+     It used to be `-mx-5 px-5`, which only works inside a *padded* card: the
+     negative margin cancels the card's `p-5` so the table can bleed to the
+     edge while the padding keeps the first and last columns off it. But
+     `<Card padded={false}>` (used by History and Alerts) sets `p-0`, so there
+     was no padding to cancel — the -mx-5 pushed the wrapper 20px past each
+     side of the card and the table visibly escaped it, which is exactly the
+     "content outside the white box" that the history table showed.
+
+     `min-w-0` is the other half of the fix: as a flex/grid child the wrapper
+     defaults to `min-width: auto`, which refuses to shrink below its content
+     and so defeats `overflow-x: auto` entirely. With `min-w-0` it can become
+     narrower than the table, and the scroll engages.
+     ---------------------------------------------------------------------- */
+  .table-wrap {
+    @apply min-w-0 w-full overflow-x-auto;
+  }
+
+  /* The first and last cells carry the outer spacing, not the table.
+
+     Padding on the `<table>` element itself is additive to its width: a table
+     with `min-width: 704px` and `px-5` measures 744px, so it still sticks out
+     past the wrapper and gets clipped mid-column. Putting the gutter on the
+     edge cells keeps the table's own width honest — it measures exactly what
+     its columns need — so the wrapper's `overflow-x` clips at a clean column
+     boundary and the card's edges stay straight. */
+  .table-wrap > .table thead th:first-child,
+  .table-wrap > .table tbody td:first-child {
+    @apply pl-5;
+  }
+
+  .table-wrap > .table thead th:last-child,
+  .table-wrap > .table tbody td:last-child {
+    @apply pr-5;
+  }
+
+  /* `min-width` is a *floor for the whole table*, not per column, so it is set
+     as low as the content honestly needs. The previous 40rem (640px) forced a
+     horizontal scrollbar onto a screen with plenty of room, because the app's
+     sidebar leaves the content area narrower than the viewport. 34rem keeps the
+     eight history columns readable while letting the table fit the card at
+     common laptop widths instead of always overflowing it. */
+  .table {
+    @apply w-full min-w-[34rem] border-collapse text-sm;
+  }
+
+  .table thead th {
+    @apply whitespace-nowrap border-b border-slate-200 bg-slate-50/70 px-3 py-2.5
+           text-left text-2xs font-semibold uppercase tracking-wider text-slate-500
+           dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-400;
+  }
+
+  .table tbody td {
+    @apply border-b border-slate-100 px-3 py-2.5 align-middle text-slate-700
+           dark:border-slate-700/60 dark:text-slate-200;
+  }
+
+  /* ----------------------------------------------------------------------
+     The report's measured-parameters table, compacted on a phone
+     ----------------------------------------------------------------------
+     Four columns of real content have to fit a ~350px card on a phone. At the
+     default `text-sm` / `px-3 py-2.5` they do not — the status chip is pushed
+     out and the reader has to scroll a table that is the whole point of the
+     block. Below `sm` every cell therefore drops a size and tightens its
+     padding, so the full table fits the card width and stays readable; from
+     `sm` up the shared `.table` sizing is untouched.
+
+     Only the MOBILE case is overridden: the desktop report card is narrow (it
+     sits beside the readings list) but has room for the standard sizing, and
+     changing it there would be a regression rather than a fix. */
+  .report-table thead th {
+    @apply px-1.5 py-2 text-[0.625rem] text-left tracking-wide;
+  }
+
+  .report-table tbody td {
+    @apply px-1.5 py-2 text-[0.6875rem];
+  }
+
+  /* THE STATUS COLUMN HUGS THE RIGHT CORNER ON A PHONE.
+
+     The header and its chips are pushed to the right edge below `sm`, so the
+     status reads as a column pinned against the card's right side with the
+     "Normal range" band immediately to its left - the two belong together, and
+     on a phone they are the pair the reader looks at.
+
+     Done HERE rather than with a `text-right` utility on the `<th>`/`<td>`
+     because the rules above already apply `text-left` to those elements at the
+     same specificity; the utility and the rule are then decided by source order,
+     which is fragile. A rule scoped to the last column is unambiguous, and from
+     `sm` up the shared left alignment returns untouched. */
+  .report-table thead th:last-child,
+  .report-table tbody td:last-child {
+    @apply text-right;
+  }
+
+  /* THE STATUS CHIPS SHRINK WITH THE TABLE ON A PHONE.
+
+     The chip keeps the shared `.badge` sizing from `sm` up (it is a small pill
+     anyway), but on a phone the four-column table has no room for `px-2.5 py-1`
+     plus a two-word label — that is what pushed the column wide and made the
+     "Below normal" / "Above normal" chips the tallest thing in their row. Below
+     `sm` the chip loses its side padding and drops a size, so the whole status
+     column reads as a compact stack of small tags rather than three wide pills.
+
+     Scoped to `.report-table` so every other badge in the app is untouched. */
+  .report-table tbody td .badge {
+    @apply px-1.5 py-0.5 text-[0.5625rem] leading-none;
+  }
+
+  /* THE REPORT TABLE NEVER SCROLLS SIDEWAYS.
+
+     It is four short columns in a fixed layout, so there is nothing to scroll
+     to — but `.table-wrap` sets `overflow-x: auto`, and a table even one pixel
+     wider than its box therefore grew a scrollbar and could be dragged out of
+     alignment under the heading. `overflow: visible` removes the scroll entirely
+     and `table-fixed` (on the element) guarantees the columns divide the available
+     width exactly, so the table is stable: it stays where it is put, at every
+     viewport, with the header sitting straight over its column. */
+  .report-table-wrap {
+    @apply overflow-visible;
+  }
+
+  @screen sm {
+    .report-table thead th {
+      @apply px-3 py-2.5 text-2xs;
+    }
+
+    .report-table tbody td {
+      @apply px-3 py-2.5 text-sm;
+    }
+  }
+
+  .table tbody tr:last-child td {
+    @apply border-b-0;
+  }
+
+  /* Hover states are BLACK in dark mode, not a lighter grey.
+
+     `slate-700/40` on a `slate-800` card is a lift of about 30 in luminance —
+     visible, but it reads as "a slightly different grey" rather than as "this row
+     is under the pointer". Black at the same alpha is unambiguous against every
+     dark surface the app uses, and `text-white` keeps the row's text legible on
+     it. The light theme is unchanged: a pale aqua tint, dark text. */
+  .table tbody tr {
+    @apply transition-colors hover:bg-aqua-50/70 hover:text-slate-900
+           dark:hover:bg-black/60 dark:hover:text-white;
+  }
+
+  /* ----------------------------------------------------------------------
+     Section rhythm
+     One spacing scale for the gaps between blocks, so pages do not each pick
+     their own.
+     ---------------------------------------------------------------------- */
+  .stack-section {
+    @apply space-y-section;
+  }
+
+  /* ----------------------------------------------------------------------
+     The fixed top bar, and the content that has to clear it
+     ----------------------------------------------------------------------
+     The header is `fixed` at EVERY breakpoint, so it is out of flow and takes no
+     space in the content column. The content is padded by the bar's height
+     instead, and both read the same `--topbar-h` so they cannot drift apart.
+
+     WHY NOT `sticky`. `sticky top-0` is the obvious spelling and it silently
+     fails here: the page is a column of siblings under `min-h-screen`, so there
+     is no scrolling ancestor for the bar to stick inside once the document
+     itself is the scroller. Measured on a real scroll, the sticky bar's `top`
+     went to -1800 once the page had scrolled 1800px — it left the screen
+     entirely. On a phone that is exactly the "navbar scrolls away" complaint,
+     and `fixed` is the fix: the viewport is its containing block unconditionally.
+
+     `--topbar-h` is 4rem (the bar's `h-16`) plus a little breathing room, and
+     the section rhythm at `lg` is restored to the previous 6rem total. */
+  :root {
+    --topbar-h: 4rem;
+  }
+
+  .app-topbar {
+    height: var(--topbar-h);
+  }
+
+  /* The content starts BELOW the bar on every viewport. `pt` is the bar height
+     plus the page's own 1.5rem top padding, so the first block is not glued to
+     the bar. The `lg` value keeps the 6rem gap the desktop layout already had. */
+  .app-content {
+    padding-top: calc(var(--topbar-h) + 1.5rem);
+  }
+
+  @screen lg {
+    .app-content {
+      padding-top: calc(var(--topbar-h) + 2rem);
+    }
+  }
+}

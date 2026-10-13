@@ -1,0 +1,48 @@
+[2026-10-01 22:07:35,736] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 22:07:35,741] INFO in __init__: AquaGuard AI backend initialised (env=testing)
+Traceback (most recent call last):
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\step36_trace_race.py", line 54, in <module>
+    result = ls._overpass(query)
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\app\services\location_service.py", line 463, in _overpass
+    body = future.result()
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\app\services\location_service.py", line 373, in _overpass_one
+    response = _session.post(
+        url, data=query, headers=_HEADERS,
+        timeout=min(_OVERPASS_READ_TIMEOUT, max(remaining, 1.0)),
+    )
+TypeError: timed_post() got an unexpected keyword argument 'data'
+[2026-10-01 22:07:37,322] ERROR in water_quality: Water quality model warm-up did not complete
+Traceback (most recent call last):
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\app\ml\water_quality.py", line 147, in warm_up
+    _load_pipeline()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\app\ml\water_quality.py", line 77, in _load_pipeline
+    import predict as wq_predict  # type: ignore  # provided by ml/predict.py
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\ml\predict.py", line 33, in <module>
+    import joblib
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\.venv\Lib\site-packages\joblib\__init__.py", line 114, in <module>
+    from ._cloudpickle_wrapper import wrap_non_picklable_objects
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\.venv\Lib\site-packages\joblib\_cloudpickle_wrapper.py", line 14, in <module>
+    from .externals.loky import wrap_non_picklable_objects
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\.venv\Lib\site-packages\joblib\externals\loky\__init__.py", line 19, in <module>
+    from .backend.context import cpu_count
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\.venv\Lib\site-packages\joblib\externals\loky\backend\__init__.py", line 4, in <module>
+    from .context import get_context
+  File "C:\Users\abishek\OneDrive\Desktop\aquagaurd\backend\.venv\Lib\site-packages\joblib\externals\loky\backend\context.py", line 24, in <module>
+    from concurrent.futures.process import _MAX_WINDOWS_WORKERS
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\process.py", line 112, in <module>
+    threading._register_atexit(_python_exit)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\abishek\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1505, in _register_atexit
+    raise RuntimeError("can't register atexit after shutdown")
+RuntimeError: can't register atexit after shutdown
+[2026-10-01 22:07:37,335] WARNING in __init__: Water quality model not pre-loaded; predictions will report unavailable until the artifact is installed.
+[2026-10-01 22:07:46,797] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x21b11bdc2f0>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=11.0)'))

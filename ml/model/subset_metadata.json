@@ -1,0 +1,1766 @@
+{
+  "generated_at": "2026-09-20T18:17:36.330053+00:00",
+  "training_version": "subset-v1.0.0",
+  "dataset": "water_quality.csv",
+  "row_count": 3967,
+  "train_rows": 3173,
+  "test_rows": 794,
+  "random_state": 42,
+  "class_labels": [
+    "MODERATE",
+    "SAFE",
+    "UNSAFE"
+  ],
+  "hyperparameters": {
+    "n_estimators": 300,
+    "max_depth": null,
+    "min_samples_split": 4,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "class_weight": "balanced",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "full_config": "ph+turbidity+tds+temperature+dissolved_oxygen",
+  "reliability_policy": {
+    "min_macro_f1": 0.6,
+    "baseline_margin": 0.05,
+    "majority_class_baseline": 0.3501
+  },
+  "summary_by_size": {
+    "1": {
+      "config_count": 5,
+      "mean_accuracy": 0.3861,
+      "mean_macro_f1": 0.383,
+      "reliable_count": 0,
+      "configs": [
+        "temperature",
+        "turbidity",
+        "dissolved_oxygen",
+        "tds",
+        "ph"
+      ]
+    },
+    "2": {
+      "config_count": 10,
+      "mean_accuracy": 0.4438,
+      "mean_macro_f1": 0.4422,
+      "reliable_count": 0,
+      "configs": [
+        "turbidity+temperature",
+        "ph+tds",
+        "turbidity+dissolved_oxygen",
+        "ph+dissolved_oxygen",
+        "turbidity+tds",
+        "tds+temperature",
+        "temperature+dissolved_oxygen",
+        "ph+turbidity",
+        "ph+temperature",
+        "tds+dissolved_oxygen"
+      ]
+    },
+    "3": {
+      "config_count": 10,
+      "mean_accuracy": 0.51,
+      "mean_macro_f1": 0.5075,
+      "reliable_count": 0,
+      "configs": [
+        "turbidity+temperature+dissolved_oxygen",
+        "ph+turbidity+dissolved_oxygen",
+        "ph+tds+temperature",
+        "ph+turbidity+temperature",
+        "ph+tds+dissolved_oxygen",
+        "turbidity+tds+temperature",
+        "ph+turbidity+tds",
+        "ph+temperature+dissolved_oxygen",
+        "turbidity+tds+dissolved_oxygen",
+        "tds+temperature+dissolved_oxygen"
+      ]
+    },
+    "4": {
+      "config_count": 5,
+      "mean_accuracy": 0.5597,
+      "mean_macro_f1": 0.5587,
+      "reliable_count": 0,
+      "configs": [
+        "turbidity+tds+temperature+dissolved_oxygen",
+        "ph+turbidity+tds+dissolved_oxygen",
+        "ph+turbidity+temperature+dissolved_oxygen",
+        "ph+tds+temperature+dissolved_oxygen",
+        "ph+turbidity+tds+temperature"
+      ]
+    },
+    "5": {
+      "config_count": 1,
+      "mean_accuracy": 0.6033,
+      "mean_macro_f1": 0.6051,
+      "reliable_count": 1,
+      "configs": [
+        "ph+turbidity+tds+temperature+dissolved_oxygen"
+      ]
+    }
+  },
+  "configs": {
+    "ph": {
+      "config": "ph",
+      "features": [
+        "ph"
+      ],
+      "feature_count": 1,
+      "model_file": "ph.joblib",
+      "accuracy": 0.4773,
+      "macro_precision": 0.4666,
+      "macro_recall": 0.4785,
+      "macro_f1": 0.4692,
+      "confusion_matrix": [
+        [
+          79,
+          112,
+          87
+        ],
+        [
+          68,
+          181,
+          28
+        ],
+        [
+          74,
+          46,
+          119
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3575,
+          "recall": 0.2842,
+          "f1": 0.3166,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.5339,
+          "recall": 0.6534,
+          "f1": 0.5877,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.5085,
+          "recall": 0.4979,
+          "f1": 0.5032,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "turbidity": {
+      "config": "turbidity",
+      "features": [
+        "turbidity"
+      ],
+      "feature_count": 1,
+      "model_file": "turbidity.joblib",
+      "accuracy": 0.3388,
+      "macro_precision": 0.337,
+      "macro_recall": 0.3367,
+      "macro_f1": 0.3368,
+      "confusion_matrix": [
+        [
+          100,
+          93,
+          85
+        ],
+        [
+          86,
+          99,
+          92
+        ],
+        [
+          87,
+          82,
+          70
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3663,
+          "recall": 0.3597,
+          "f1": 0.363,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.3613,
+          "recall": 0.3574,
+          "f1": 0.3593,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.2834,
+          "recall": 0.2929,
+          "f1": 0.2881,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": false,
+      "reliable": false
+    },
+    "tds": {
+      "config": "tds",
+      "features": [
+        "tds"
+      ],
+      "feature_count": 1,
+      "model_file": "tds.joblib",
+      "accuracy": 0.3728,
+      "macro_precision": 0.3693,
+      "macro_recall": 0.3731,
+      "macro_f1": 0.3688,
+      "confusion_matrix": [
+        [
+          74,
+          130,
+          74
+        ],
+        [
+          76,
+          132,
+          69
+        ],
+        [
+          75,
+          74,
+          90
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3289,
+          "recall": 0.2662,
+          "f1": 0.2942,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.3929,
+          "recall": 0.4765,
+          "f1": 0.4307,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.3863,
+          "recall": 0.3766,
+          "f1": 0.3814,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": false,
+      "reliable": false
+    },
+    "temperature": {
+      "config": "temperature",
+      "features": [
+        "temperature"
+      ],
+      "feature_count": 1,
+      "model_file": "temperature.joblib",
+      "accuracy": 0.3476,
+      "macro_precision": 0.3472,
+      "macro_recall": 0.3472,
+      "macro_f1": 0.3466,
+      "confusion_matrix": [
+        [
+          90,
+          100,
+          88
+        ],
+        [
+          84,
+          105,
+          88
+        ],
+        [
+          73,
+          85,
+          81
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3644,
+          "recall": 0.3237,
+          "f1": 0.3429,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.3621,
+          "recall": 0.3791,
+          "f1": 0.3704,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.3152,
+          "recall": 0.3389,
+          "f1": 0.3266,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": false,
+      "reliable": false
+    },
+    "dissolved_oxygen": {
+      "config": "dissolved_oxygen",
+      "features": [
+        "dissolved_oxygen"
+      ],
+      "feature_count": 1,
+      "model_file": "dissolved_oxygen.joblib",
+      "accuracy": 0.3942,
+      "macro_precision": 0.3933,
+      "macro_recall": 0.394,
+      "macro_f1": 0.3935,
+      "confusion_matrix": [
+        [
+          102,
+          87,
+          89
+        ],
+        [
+          93,
+          118,
+          66
+        ],
+        [
+          70,
+          76,
+          93
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3849,
+          "recall": 0.3669,
+          "f1": 0.3757,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.4199,
+          "recall": 0.426,
+          "f1": 0.4229,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.375,
+          "recall": 0.3891,
+          "f1": 0.3819,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": false,
+      "reliable": false
+    },
+    "ph+turbidity": {
+      "config": "ph+turbidity",
+      "features": [
+        "ph",
+        "turbidity"
+      ],
+      "feature_count": 2,
+      "model_file": "ph+turbidity.joblib",
+      "accuracy": 0.4975,
+      "macro_precision": 0.4944,
+      "macro_recall": 0.499,
+      "macro_f1": 0.496,
+      "confusion_matrix": [
+        [
+          100,
+          99,
+          79
+        ],
+        [
+          76,
+          169,
+          32
+        ],
+        [
+          78,
+          35,
+          126
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3937,
+          "recall": 0.3597,
+          "f1": 0.3759,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.5578,
+          "recall": 0.6101,
+          "f1": 0.5828,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.5316,
+          "recall": 0.5272,
+          "f1": 0.5294,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+tds": {
+      "config": "ph+tds",
+      "features": [
+        "ph",
+        "tds"
+      ],
+      "feature_count": 2,
+      "model_file": "ph+tds.joblib",
+      "accuracy": 0.5214,
+      "macro_precision": 0.5137,
+      "macro_recall": 0.5225,
+      "macro_f1": 0.5164,
+      "confusion_matrix": [
+        [
+          98,
+          103,
+          77
+        ],
+        [
+          56,
+          187,
+          34
+        ],
+        [
+          84,
+          26,
+          129
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4118,
+          "recall": 0.3525,
+          "f1": 0.3798,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.5918,
+          "recall": 0.6751,
+          "f1": 0.6307,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.5375,
+          "recall": 0.5397,
+          "f1": 0.5386,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+temperature": {
+      "config": "ph+temperature",
+      "features": [
+        "ph",
+        "temperature"
+      ],
+      "feature_count": 2,
+      "model_file": "ph+temperature.joblib",
+      "accuracy": 0.4786,
+      "macro_precision": 0.4696,
+      "macro_recall": 0.4799,
+      "macro_f1": 0.4724,
+      "confusion_matrix": [
+        [
+          85,
+          108,
+          85
+        ],
+        [
+          65,
+          175,
+          37
+        ],
+        [
+          78,
+          41,
+          120
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3728,
+          "recall": 0.3058,
+          "f1": 0.336,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.5401,
+          "recall": 0.6318,
+          "f1": 0.5824,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.4959,
+          "recall": 0.5021,
+          "f1": 0.499,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+dissolved_oxygen": {
+      "config": "ph+dissolved_oxygen",
+      "features": [
+        "ph",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 2,
+      "model_file": "ph+dissolved_oxygen.joblib",
+      "accuracy": 0.5428,
+      "macro_precision": 0.5417,
+      "macro_recall": 0.5449,
+      "macro_f1": 0.543,
+      "confusion_matrix": [
+        [
+          114,
+          90,
+          74
+        ],
+        [
+          76,
+          177,
+          24
+        ],
+        [
+          71,
+          28,
+          140
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4368,
+          "recall": 0.4101,
+          "f1": 0.423,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.6,
+          "recall": 0.639,
+          "f1": 0.6189,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.5882,
+          "recall": 0.5858,
+          "f1": 0.587,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "turbidity+tds": {
+      "config": "turbidity+tds",
+      "features": [
+        "turbidity",
+        "tds"
+      ],
+      "feature_count": 2,
+      "model_file": "turbidity+tds.joblib",
+      "accuracy": 0.3804,
+      "macro_precision": 0.3807,
+      "macro_recall": 0.3815,
+      "macro_f1": 0.381,
+      "confusion_matrix": [
+        [
+          101,
+          98,
+          79
+        ],
+        [
+          101,
+          104,
+          72
+        ],
+        [
+          69,
+          73,
+          97
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3727,
+          "recall": 0.3633,
+          "f1": 0.3679,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.3782,
+          "recall": 0.3755,
+          "f1": 0.3768,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.3911,
+          "recall": 0.4059,
+          "f1": 0.3984,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": false,
+      "reliable": false
+    },
+    "turbidity+temperature": {
+      "config": "turbidity+temperature",
+      "features": [
+        "turbidity",
+        "temperature"
+      ],
+      "feature_count": 2,
+      "model_file": "turbidity+temperature.joblib",
+      "accuracy": 0.3526,
+      "macro_precision": 0.3535,
+      "macro_recall": 0.353,
+      "macro_f1": 0.3532,
+      "confusion_matrix": [
+        [
+          97,
+          107,
+          74
+        ],
+        [
+          106,
+          97,
+          74
+        ],
+        [
+          77,
+          76,
+          86
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3464,
+          "recall": 0.3489,
+          "f1": 0.3477,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.3464,
+          "recall": 0.3502,
+          "f1": 0.3483,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.3675,
+          "recall": 0.3598,
+          "f1": 0.3636,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": false,
+      "reliable": false
+    },
+    "turbidity+dissolved_oxygen": {
+      "config": "turbidity+dissolved_oxygen",
+      "features": [
+        "turbidity",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 2,
+      "model_file": "turbidity+dissolved_oxygen.joblib",
+      "accuracy": 0.4068,
+      "macro_precision": 0.4017,
+      "macro_recall": 0.4082,
+      "macro_f1": 0.4039,
+      "confusion_matrix": [
+        [
+          79,
+          108,
+          91
+        ],
+        [
+          81,
+          140,
+          56
+        ],
+        [
+          77,
+          58,
+          104
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3333,
+          "recall": 0.2842,
+          "f1": 0.3068,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.4575,
+          "recall": 0.5054,
+          "f1": 0.4803,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.4143,
+          "recall": 0.4351,
+          "f1": 0.4245,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "tds+temperature": {
+      "config": "tds+temperature",
+      "features": [
+        "tds",
+        "temperature"
+      ],
+      "feature_count": 2,
+      "model_file": "tds+temperature.joblib",
+      "accuracy": 0.3854,
+      "macro_precision": 0.383,
+      "macro_recall": 0.3874,
+      "macro_f1": 0.3844,
+      "confusion_matrix": [
+        [
+          82,
+          109,
+          87
+        ],
+        [
+          82,
+          122,
+          73
+        ],
+        [
+          80,
+          57,
+          102
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3361,
+          "recall": 0.295,
+          "f1": 0.3142,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.4236,
+          "recall": 0.4404,
+          "f1": 0.4319,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.3893,
+          "recall": 0.4268,
+          "f1": 0.4072,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": false,
+      "reliable": false
+    },
+    "tds+dissolved_oxygen": {
+      "config": "tds+dissolved_oxygen",
+      "features": [
+        "tds",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 2,
+      "model_file": "tds+dissolved_oxygen.joblib",
+      "accuracy": 0.4547,
+      "macro_precision": 0.4552,
+      "macro_recall": 0.4559,
+      "macro_f1": 0.4555,
+      "confusion_matrix": [
+        [
+          110,
+          85,
+          83
+        ],
+        [
+          93,
+          136,
+          48
+        ],
+        [
+          72,
+          52,
+          115
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4,
+          "recall": 0.3957,
+          "f1": 0.3978,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.4982,
+          "recall": 0.491,
+          "f1": 0.4945,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.4675,
+          "recall": 0.4812,
+          "f1": 0.4742,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "temperature+dissolved_oxygen": {
+      "config": "temperature+dissolved_oxygen",
+      "features": [
+        "temperature",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 2,
+      "model_file": "temperature+dissolved_oxygen.joblib",
+      "accuracy": 0.4181,
+      "macro_precision": 0.4161,
+      "macro_recall": 0.4178,
+      "macro_f1": 0.416,
+      "confusion_matrix": [
+        [
+          97,
+          105,
+          76
+        ],
+        [
+          77,
+          137,
+          63
+        ],
+        [
+          72,
+          69,
+          98
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3943,
+          "recall": 0.3489,
+          "f1": 0.3702,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.4405,
+          "recall": 0.4946,
+          "f1": 0.466,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.4135,
+          "recall": 0.41,
+          "f1": 0.4118,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+turbidity+tds": {
+      "config": "ph+turbidity+tds",
+      "features": [
+        "ph",
+        "turbidity",
+        "tds"
+      ],
+      "feature_count": 3,
+      "model_file": "ph+turbidity+tds.joblib",
+      "accuracy": 0.539,
+      "macro_precision": 0.5337,
+      "macro_recall": 0.54,
+      "macro_f1": 0.5351,
+      "confusion_matrix": [
+        [
+          103,
+          101,
+          74
+        ],
+        [
+          63,
+          192,
+          22
+        ],
+        [
+          78,
+          28,
+          133
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4221,
+          "recall": 0.3705,
+          "f1": 0.3946,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.5981,
+          "recall": 0.6931,
+          "f1": 0.6421,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.5808,
+          "recall": 0.5565,
+          "f1": 0.5684,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+turbidity+temperature": {
+      "config": "ph+turbidity+temperature",
+      "features": [
+        "ph",
+        "turbidity",
+        "temperature"
+      ],
+      "feature_count": 3,
+      "model_file": "ph+turbidity+temperature.joblib",
+      "accuracy": 0.5378,
+      "macro_precision": 0.5333,
+      "macro_recall": 0.5384,
+      "macro_f1": 0.534,
+      "confusion_matrix": [
+        [
+          110,
+          96,
+          72
+        ],
+        [
+          61,
+          186,
+          30
+        ],
+        [
+          70,
+          38,
+          131
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4564,
+          "recall": 0.3957,
+          "f1": 0.4239,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.5813,
+          "recall": 0.6715,
+          "f1": 0.6231,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.5622,
+          "recall": 0.5481,
+          "f1": 0.5551,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+turbidity+dissolved_oxygen": {
+      "config": "ph+turbidity+dissolved_oxygen",
+      "features": [
+        "ph",
+        "turbidity",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 3,
+      "model_file": "ph+turbidity+dissolved_oxygen.joblib",
+      "accuracy": 0.5869,
+      "macro_precision": 0.585,
+      "macro_recall": 0.5878,
+      "macro_f1": 0.5859,
+      "confusion_matrix": [
+        [
+          128,
+          77,
+          73
+        ],
+        [
+          66,
+          194,
+          17
+        ],
+        [
+          68,
+          27,
+          144
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4885,
+          "recall": 0.4604,
+          "f1": 0.4741,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.651,
+          "recall": 0.7004,
+          "f1": 0.6748,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.6154,
+          "recall": 0.6025,
+          "f1": 0.6089,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+tds+temperature": {
+      "config": "ph+tds+temperature",
+      "features": [
+        "ph",
+        "tds",
+        "temperature"
+      ],
+      "feature_count": 3,
+      "model_file": "ph+tds+temperature.joblib",
+      "accuracy": 0.5403,
+      "macro_precision": 0.5332,
+      "macro_recall": 0.5415,
+      "macro_f1": 0.5347,
+      "confusion_matrix": [
+        [
+          100,
+          107,
+          71
+        ],
+        [
+          55,
+          195,
+          27
+        ],
+        [
+          78,
+          27,
+          134
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4292,
+          "recall": 0.3597,
+          "f1": 0.3914,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.5927,
+          "recall": 0.704,
+          "f1": 0.6436,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.5776,
+          "recall": 0.5607,
+          "f1": 0.569,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+tds+dissolved_oxygen": {
+      "config": "ph+tds+dissolved_oxygen",
+      "features": [
+        "ph",
+        "tds",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 3,
+      "model_file": "ph+tds+dissolved_oxygen.joblib",
+      "accuracy": 0.5819,
+      "macro_precision": 0.5822,
+      "macro_recall": 0.5835,
+      "macro_f1": 0.5827,
+      "confusion_matrix": [
+        [
+          126,
+          84,
+          68
+        ],
+        [
+          69,
+          189,
+          19
+        ],
+        [
+          75,
+          17,
+          147
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4667,
+          "recall": 0.4532,
+          "f1": 0.4599,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.6517,
+          "recall": 0.6823,
+          "f1": 0.6667,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.6282,
+          "recall": 0.6151,
+          "f1": 0.6216,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+temperature+dissolved_oxygen": {
+      "config": "ph+temperature+dissolved_oxygen",
+      "features": [
+        "ph",
+        "temperature",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 3,
+      "model_file": "ph+temperature+dissolved_oxygen.joblib",
+      "accuracy": 0.5567,
+      "macro_precision": 0.5506,
+      "macro_recall": 0.559,
+      "macro_f1": 0.5527,
+      "confusion_matrix": [
+        [
+          107,
+          93,
+          78
+        ],
+        [
+          64,
+          191,
+          22
+        ],
+        [
+          62,
+          33,
+          144
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4592,
+          "recall": 0.3849,
+          "f1": 0.4188,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.6025,
+          "recall": 0.6895,
+          "f1": 0.6431,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.5902,
+          "recall": 0.6025,
+          "f1": 0.5963,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "turbidity+tds+temperature": {
+      "config": "turbidity+tds+temperature",
+      "features": [
+        "turbidity",
+        "tds",
+        "temperature"
+      ],
+      "feature_count": 3,
+      "model_file": "turbidity+tds+temperature.joblib",
+      "accuracy": 0.4093,
+      "macro_precision": 0.4064,
+      "macro_recall": 0.411,
+      "macro_f1": 0.4073,
+      "confusion_matrix": [
+        [
+          84,
+          111,
+          83
+        ],
+        [
+          83,
+          135,
+          59
+        ],
+        [
+          67,
+          66,
+          106
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.359,
+          "recall": 0.3022,
+          "f1": 0.3281,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.4327,
+          "recall": 0.4874,
+          "f1": 0.4584,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.4274,
+          "recall": 0.4435,
+          "f1": 0.4353,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "turbidity+tds+dissolved_oxygen": {
+      "config": "turbidity+tds+dissolved_oxygen",
+      "features": [
+        "turbidity",
+        "tds",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 3,
+      "model_file": "turbidity+tds+dissolved_oxygen.joblib",
+      "accuracy": 0.4471,
+      "macro_precision": 0.4436,
+      "macro_recall": 0.4505,
+      "macro_f1": 0.4456,
+      "confusion_matrix": [
+        [
+          89,
+          98,
+          91
+        ],
+        [
+          90,
+          142,
+          45
+        ],
+        [
+          54,
+          61,
+          124
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.382,
+          "recall": 0.3201,
+          "f1": 0.3483,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.4718,
+          "recall": 0.5126,
+          "f1": 0.4913,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.4769,
+          "recall": 0.5188,
+          "f1": 0.497,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "turbidity+temperature+dissolved_oxygen": {
+      "config": "turbidity+temperature+dissolved_oxygen",
+      "features": [
+        "turbidity",
+        "temperature",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 3,
+      "model_file": "turbidity+temperature+dissolved_oxygen.joblib",
+      "accuracy": 0.437,
+      "macro_precision": 0.4345,
+      "macro_recall": 0.4394,
+      "macro_f1": 0.4352,
+      "confusion_matrix": [
+        [
+          84,
+          116,
+          78
+        ],
+        [
+          87,
+          147,
+          43
+        ],
+        [
+          64,
+          59,
+          116
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.3574,
+          "recall": 0.3022,
+          "f1": 0.3275,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.4565,
+          "recall": 0.5307,
+          "f1": 0.4908,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.4895,
+          "recall": 0.4854,
+          "f1": 0.4874,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "tds+temperature+dissolved_oxygen": {
+      "config": "tds+temperature+dissolved_oxygen",
+      "features": [
+        "tds",
+        "temperature",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 3,
+      "model_file": "tds+temperature+dissolved_oxygen.joblib",
+      "accuracy": 0.4635,
+      "macro_precision": 0.4607,
+      "macro_recall": 0.466,
+      "macro_f1": 0.462,
+      "confusion_matrix": [
+        [
+          96,
+          100,
+          82
+        ],
+        [
+          82,
+          149,
+          46
+        ],
+        [
+          58,
+          58,
+          123
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4068,
+          "recall": 0.3453,
+          "f1": 0.3735,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.4853,
+          "recall": 0.5379,
+          "f1": 0.5103,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.49,
+          "recall": 0.5146,
+          "f1": 0.502,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+turbidity+tds+temperature": {
+      "config": "ph+turbidity+tds+temperature",
+      "features": [
+        "ph",
+        "turbidity",
+        "tds",
+        "temperature"
+      ],
+      "feature_count": 4,
+      "model_file": "ph+turbidity+tds+temperature.joblib",
+      "accuracy": 0.5605,
+      "macro_precision": 0.5558,
+      "macro_recall": 0.5612,
+      "macro_f1": 0.5569,
+      "confusion_matrix": [
+        [
+          112,
+          96,
+          70
+        ],
+        [
+          58,
+          196,
+          23
+        ],
+        [
+          77,
+          25,
+          137
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4534,
+          "recall": 0.4029,
+          "f1": 0.4267,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.6183,
+          "recall": 0.7076,
+          "f1": 0.6599,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.5957,
+          "recall": 0.5732,
+          "f1": 0.5842,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+turbidity+tds+dissolved_oxygen": {
+      "config": "ph+turbidity+tds+dissolved_oxygen",
+      "features": [
+        "ph",
+        "turbidity",
+        "tds",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 4,
+      "model_file": "ph+turbidity+tds+dissolved_oxygen.joblib",
+      "accuracy": 0.5957,
+      "macro_precision": 0.5998,
+      "macro_recall": 0.5966,
+      "macro_f1": 0.5977,
+      "confusion_matrix": [
+        [
+          132,
+          80,
+          66
+        ],
+        [
+          74,
+          195,
+          8
+        ],
+        [
+          76,
+          17,
+          146
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4681,
+          "recall": 0.4748,
+          "f1": 0.4714,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.6678,
+          "recall": 0.704,
+          "f1": 0.6854,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.6636,
+          "recall": 0.6109,
+          "f1": 0.6362,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+turbidity+temperature+dissolved_oxygen": {
+      "config": "ph+turbidity+temperature+dissolved_oxygen",
+      "features": [
+        "ph",
+        "turbidity",
+        "temperature",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 4,
+      "model_file": "ph+turbidity+temperature+dissolved_oxygen.joblib",
+      "accuracy": 0.5768,
+      "macro_precision": 0.5748,
+      "macro_recall": 0.5785,
+      "macro_f1": 0.5761,
+      "confusion_matrix": [
+        [
+          122,
+          82,
+          74
+        ],
+        [
+          70,
+          190,
+          17
+        ],
+        [
+          66,
+          27,
+          146
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4729,
+          "recall": 0.4388,
+          "f1": 0.4552,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.6355,
+          "recall": 0.6859,
+          "f1": 0.6597,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.616,
+          "recall": 0.6109,
+          "f1": 0.6134,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+tds+temperature+dissolved_oxygen": {
+      "config": "ph+tds+temperature+dissolved_oxygen",
+      "features": [
+        "ph",
+        "tds",
+        "temperature",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 4,
+      "model_file": "ph+tds+temperature+dissolved_oxygen.joblib",
+      "accuracy": 0.5945,
+      "macro_precision": 0.5951,
+      "macro_recall": 0.5958,
+      "macro_f1": 0.5948,
+      "confusion_matrix": [
+        [
+          128,
+          87,
+          63
+        ],
+        [
+          66,
+          196,
+          15
+        ],
+        [
+          73,
+          18,
+          148
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4794,
+          "recall": 0.4604,
+          "f1": 0.4697,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.6512,
+          "recall": 0.7076,
+          "f1": 0.6782,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.6549,
+          "recall": 0.6192,
+          "f1": 0.6366,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "turbidity+tds+temperature+dissolved_oxygen": {
+      "config": "turbidity+tds+temperature+dissolved_oxygen",
+      "features": [
+        "turbidity",
+        "tds",
+        "temperature",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 4,
+      "model_file": "turbidity+tds+temperature+dissolved_oxygen.joblib",
+      "accuracy": 0.471,
+      "macro_precision": 0.4664,
+      "macro_recall": 0.4742,
+      "macro_f1": 0.468,
+      "confusion_matrix": [
+        [
+          91,
+          101,
+          86
+        ],
+        [
+          78,
+          155,
+          44
+        ],
+        [
+          55,
+          56,
+          128
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4062,
+          "recall": 0.3273,
+          "f1": 0.3625,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.4968,
+          "recall": 0.5596,
+          "f1": 0.5263,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.4961,
+          "recall": 0.5356,
+          "f1": 0.5151,
+          "support": 239
+        }
+      },
+      "meets_threshold": false,
+      "beats_baseline": true,
+      "reliable": false
+    },
+    "ph+turbidity+tds+temperature+dissolved_oxygen": {
+      "config": "ph+turbidity+tds+temperature+dissolved_oxygen",
+      "features": [
+        "ph",
+        "turbidity",
+        "tds",
+        "temperature",
+        "dissolved_oxygen"
+      ],
+      "feature_count": 5,
+      "model_file": "ph+turbidity+tds+temperature+dissolved_oxygen.joblib",
+      "accuracy": 0.6033,
+      "macro_precision": 0.6059,
+      "macro_recall": 0.6049,
+      "macro_f1": 0.6051,
+      "confusion_matrix": [
+        [
+          133,
+          79,
+          66
+        ],
+        [
+          74,
+          194,
+          9
+        ],
+        [
+          68,
+          19,
+          152
+        ]
+      ],
+      "per_class": {
+        "MODERATE": {
+          "precision": 0.4836,
+          "recall": 0.4784,
+          "f1": 0.481,
+          "support": 278
+        },
+        "SAFE": {
+          "precision": 0.6644,
+          "recall": 0.7004,
+          "f1": 0.6819,
+          "support": 277
+        },
+        "UNSAFE": {
+          "precision": 0.6696,
+          "recall": 0.636,
+          "f1": 0.6524,
+          "support": 239
+        }
+      },
+      "meets_threshold": true,
+      "beats_baseline": true,
+      "reliable": true
+    }
+  }
+}

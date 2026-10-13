@@ -1,0 +1,138 @@
+[2026-09-30 00:41:01,788] INFO in tools: Aqua AI default tool handlers registered
+[2026-09-30 00:41:01,792] INFO in __init__: AquaGuard AI backend initialised (env=development)
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5057
+Press CTRL+C to quit
+[2026-09-30 00:41:05,598] INFO in water_quality: Water quality model pre-loaded and ready
+127.0.0.1 - - [30/Sep/2026 00:43:14] "GET /api/v1/locations/resolve?q=Kothanallur HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:17] "GET /api/v1/locations/resolve?q=Kothanallur,%20Kalkulam HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:17] "GET /api/v1/locations/resolve?q=Kothanallur,%20Kalkulam,%20Tamil%20Nadu HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:17] "GET /api/v1/locations/resolve?q=Kottur HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:21] "GET /api/v1/locations/resolve?q=Chennai HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:22] "GET /api/v1/locations/resolve?q=Karaikudi HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:24] "GET /api/v1/locations/resolve?q=Coimbatore HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:25] "GET /api/v1/locations/resolve?q=Kochi HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:26] "GET /api/v1/locations/resolve?q=Anna%20Nagar HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:28] "GET /api/v1/locations/resolve?q=T%20Nagar HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:32] "GET /api/v1/locations/resolve?q=K%20K%20Nagar HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:34] "GET /api/v1/locations/resolve?q=Green%20Park%20Colony HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:36] "GET /api/v1/locations/resolve?q=Athur HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:37] "GET /api/v1/locations/resolve?q=Chettikulam HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:37] "GET /api/v1/locations/resolve?q=Athur,%20Chengalpattu HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:40] "GET /api/v1/locations/resolve?q=HDFC%20Bank HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:41] "GET /api/v1/locations/resolve?q=Reliance%20Fresh HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:43] "GET /api/v1/locations/resolve?q=Kumaraguru%20College HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:44] "GET /api/v1/locations/resolve?q=Delhi%20Public%20School HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:45] "GET /api/v1/locations/resolve?q=Taj%20Hotel HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:48] "GET /api/v1/locations/resolve?q=Apollo%20Hospital HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:49] "GET /api/v1/locations/resolve?q=Marina%20Beach HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:50] "GET /api/v1/locations/resolve?q=Meenakshi%20Amman%20Temple HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:51] "GET /api/v1/locations/resolve?q=630001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:51] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:52] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:53] "GET /api/v1/locations/pincode?q=110001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:55] "GET /api/v1/locations/pincode?q=600001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:43:56] "GET /api/v1/locations/pincode?q=208001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:06] "GET /api/v1/locations/pincode?q=682001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:08] "GET /api/v1/locations/pincode?q=500001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:09] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+[2026-09-30 00:44:12,003] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x22ff8b847d0>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=2.4917560999747366)'))
+[2026-09-30 00:44:12,004] INFO in location_service: Overpass budget spent - reporting unavailable
+127.0.0.1 - - [30/Sep/2026 00:44:12] "GET /api/v1/locations/context?lat=10.0745212&lon=78.7727332 HTTP/1.1" 200 -
+[2026-09-30 00:44:12,395] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=2.4965904001146555)
+[2026-09-30 00:44:12,395] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=2.4936939000617713)
+127.0.0.1 - - [30/Sep/2026 00:44:13] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+[2026-09-30 00:44:13,441] INFO in location_service: Overpass outage breaker OPEN - skipping query (119s left)
+127.0.0.1 - - [30/Sep/2026 00:44:13] "GET /api/v1/locations/context?lat=12.9797037&lon=77.594695 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:14] "GET /api/v1/locations/pincode?q=999999 HTTP/1.1" 404 -
+[2026-09-30 00:44:14,964] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=2.4983300999738276)
+127.0.0.1 - - [30/Sep/2026 00:44:15] "GET /api/v1/locations/pincode?q=000000 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:44:16] "GET /api/v1/locations/pincode?q=12345 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:44:16] "GET /api/v1/locations/pincode?q=012345 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:44:17] "GET /api/v1/locations/pincode?q=12345678 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:44:18] "GET /api/v1/locations/resolve?q=999999 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:44:18] "GET /api/v1/locations/resolve?q=12345 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:44:19] "GET /api/v1/locations/resolve?q=000000 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:44:20] "GET /api/v1/locations/resolve?q=012345 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:44:20] "GET /api/v1/locations/resolve?q=Kothanallur HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:21] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:23] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:40] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:41] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:42] "GET /api/v1/locations/pincode?q=110001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:44] "GET /api/v1/locations/pincode?q=600001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:45] "GET /api/v1/locations/pincode?q=208001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:46] "GET /api/v1/locations/pincode?q=682001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:47] "GET /api/v1/locations/pincode?q=500001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:49] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+[2026-09-30 00:44:49,155] INFO in location_service: Overpass outage breaker OPEN - skipping query (83s left)
+127.0.0.1 - - [30/Sep/2026 00:44:49] "GET /api/v1/locations/context?lat=10.0745212&lon=78.7727332 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:50] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+[2026-09-30 00:44:50,408] INFO in location_service: Overpass outage breaker OPEN - skipping query (82s left)
+127.0.0.1 - - [30/Sep/2026 00:44:50] "GET /api/v1/locations/context?lat=12.9797037&lon=77.594695 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:51] "GET /api/v1/locations/pincode?q=999999 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:44:52] "GET /api/v1/locations/pincode?q=000000 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:44:52] "GET /api/v1/locations/pincode?q=12345 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:44:53] "GET /api/v1/locations/pincode?q=012345 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:44:54] "GET /api/v1/locations/pincode?q=12345678 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:44:54] "GET /api/v1/locations/resolve?q=999999 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:44:55] "GET /api/v1/locations/resolve?q=12345 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:44:56] "GET /api/v1/locations/resolve?q=000000 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:44:56] "GET /api/v1/locations/resolve?q=012345 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:44:57] "GET /api/v1/locations/resolve?q=Kothanallur HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:58] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:44:59] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:45:16] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:45:17] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:45:19] "GET /api/v1/locations/pincode?q=110001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:45:20] "GET /api/v1/locations/pincode?q=600001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:45:21] "GET /api/v1/locations/pincode?q=208001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:45:22] "GET /api/v1/locations/pincode?q=682001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:45:24] "GET /api/v1/locations/pincode?q=500001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:45:25] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+[2026-09-30 00:45:25,366] INFO in location_service: Overpass outage breaker OPEN - skipping query (47s left)
+127.0.0.1 - - [30/Sep/2026 00:45:25] "GET /api/v1/locations/context?lat=10.0745212&lon=78.7727332 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:45:26] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+[2026-09-30 00:45:26,635] INFO in location_service: Overpass outage breaker OPEN - skipping query (45s left)
+127.0.0.1 - - [30/Sep/2026 00:45:26] "GET /api/v1/locations/context?lat=12.9797037&lon=77.594695 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:45:27] "GET /api/v1/locations/pincode?q=999999 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:45:28] "GET /api/v1/locations/pincode?q=000000 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:45:29] "GET /api/v1/locations/pincode?q=12345 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:45:29] "GET /api/v1/locations/pincode?q=012345 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:45:30] "GET /api/v1/locations/pincode?q=12345678 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:45:31] "GET /api/v1/locations/resolve?q=999999 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:45:31] "GET /api/v1/locations/resolve?q=12345 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:45:32] "GET /api/v1/locations/resolve?q=000000 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:45:32] "GET /api/v1/locations/resolve?q=012345 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:45:33] "GET /api/v1/locations/resolve?q=Kothanallur HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:45:34] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:45:36] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:46:44] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:46:46] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:46:47] "GET /api/v1/locations/pincode?q=110001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:46:48] "GET /api/v1/locations/pincode?q=600001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:46:49] "GET /api/v1/locations/pincode?q=208001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:46:50] "GET /api/v1/locations/pincode?q=682001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:46:52] "GET /api/v1/locations/pincode?q=500001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:46:53] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+[2026-09-30 00:46:55,844] INFO in location_service: Overpass budget spent - reporting unavailable
+[2026-09-30 00:46:55,844] INFO in location_service: Overpass https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: /osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', port=443) at 0x22ff8b842d0>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=2.4949517999775708)'))
+127.0.0.1 - - [30/Sep/2026 00:46:55] "GET /api/v1/locations/context?lat=10.0745212&lon=78.7727332 HTTP/1.1" 200 -
+[2026-09-30 00:46:56,262] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=2.496306600049138)
+[2026-09-30 00:46:56,277] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=2.497711499920115)
+127.0.0.1 - - [30/Sep/2026 00:46:57] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -
+[2026-09-30 00:46:57,100] INFO in location_service: Overpass outage breaker OPEN - skipping query (119s left)
+127.0.0.1 - - [30/Sep/2026 00:46:57] "GET /api/v1/locations/context?lat=12.9797037&lon=77.594695 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:46:58] "GET /api/v1/locations/pincode?q=999999 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:46:58] "GET /api/v1/locations/pincode?q=000000 HTTP/1.1" 422 -
+[2026-09-30 00:46:58,987] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=2.498583300039172)
+127.0.0.1 - - [30/Sep/2026 00:46:59] "GET /api/v1/locations/pincode?q=12345 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:47:00] "GET /api/v1/locations/pincode?q=012345 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:47:00] "GET /api/v1/locations/pincode?q=12345678 HTTP/1.1" 422 -
+127.0.0.1 - - [30/Sep/2026 00:47:01] "GET /api/v1/locations/resolve?q=999999 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:47:02] "GET /api/v1/locations/resolve?q=12345 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:47:02] "GET /api/v1/locations/resolve?q=000000 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:47:03] "GET /api/v1/locations/resolve?q=012345 HTTP/1.1" 404 -
+127.0.0.1 - - [30/Sep/2026 00:47:03] "GET /api/v1/locations/resolve?q=Kothanallur HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:47:05] "GET /api/v1/locations/pincode?q=630001 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Sep/2026 00:47:06] "GET /api/v1/locations/pincode?q=560001 HTTP/1.1" 200 -

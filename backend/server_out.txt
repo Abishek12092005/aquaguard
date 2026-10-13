@@ -1,0 +1,10 @@
+  AquaGuard AI API
+  -> http://127.0.0.1:5000/
+  -> http://127.0.0.1:5000/api/v1/health
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+  AquaGuard AI API
+  -> http://127.0.0.1:5000/
+  -> http://127.0.0.1:5000/api/v1/health
+

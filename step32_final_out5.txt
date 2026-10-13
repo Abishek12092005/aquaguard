@@ -1,0 +1,26 @@
+register note: HTTP Error 409: CONFLICT
+PASS  AUTH register + login + JWT  -> token_len=331
+PASS  TEST1 country overview  -> states=0
+PASS  TEST1 state risk dots
+PASS  TEST2 state overview  -> districts=0 ordered=True
+PASS  TEST2 districts alphabetical + rank
+PASS  TEST2 district risk dots
+FAIL  TEST3 district places  -> places=0: []
+PASS  TEST3 no Safe/Moderate/Unsafe labels on cards
+PASS  TEST4 place + hierarchy  -> place=Karaikudi district=Sivaganga state=Tamil Nadu country=India pincode=None
+FAIL  TEST4 water source + nearby + distances  -> primary=None nearby=0 nearest=None distance=Nonekm
+PASS  TEST4 rain (real weather API)  -> status=expected_soon current_mm=0.0
+PASS  TEST4 risk level + factors  -> level=unknown factors=[]
+PASS  TEST4 default prediction parameters  -> keys=['dissolved_oxygen', 'ph', 'tds', 'temperature', 'turbidity']
+PASS  TEST4 'Enter Water Prediction' available  -> place=Karaikudi -> /predict
+PASS  TEST6 Random Forest verdict + confidence + risk  -> prediction=safe confidence=0.773 is_safe=True id=5222
+PASS  TEST5 location echoed on prediction  -> district=Sivaganga pincode=630001
+PASS  TEST7 famous place found  -> name=Meenakshi Temple kind=place label=Meenakshi Temple, Bengaluru, Bangalore East, Karnataka, India
+PASS  TEST8 reverse geocode -> place  -> name=Karaikudi label=Karaikudi, Karaikkudi, Sivagangai, Tamil Nadu, 623001, India pincode=623001
+PASS  TEST9 manual pin -> water info  -> available=False primary=None nearby=0
+PASS  TEST10 history location + pincode  -> name=Karaikudi pincode=630001
+PASS  TEST11 admin reports location + pincode + source + verdict  -> name=Karaikudi pincode=630001 source=ground water prediction=safe
+PASS  ALERTS endpoint  -> True
+
+SUMMARY: 20/22 passed
+FAILED: TEST3 district places, TEST4 water source + nearby + distances

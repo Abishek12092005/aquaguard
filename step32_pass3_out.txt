@@ -1,0 +1,9 @@
+FAIL  TEST1 country overview  -> TimeoutError('timed out')
+FAIL  TEST2 state overview  -> KeyError('districts')
+FAIL  TEST3 district places (up to 9)  -> places=0: []
+PASS  TEST3 no Safe/Moderate/Unsafe labels on place cards
+FAIL  TEST7 famous place exact  -> name=None kind=None label=None
+FAIL  TEST10 history  -> TypeError('list indices must be integers or slices, not str')
+
+SUMMARY: 1 / 6 passed
+FAILED: TEST1 country overview, TEST2 state overview, TEST3 district places (up to 9), TEST7 famous place exact, TEST10 history

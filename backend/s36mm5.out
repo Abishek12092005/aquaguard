@@ -1,0 +1,29 @@
+built a sandbox ml/ tree at: C:\Users\abishek\AppData\Local\Temp\aquaguard_no_model_drgz58av\ml
+  3-class forest present? False (real one exists: True)
+  legacy forest present? False
+
+waiting for the model-less server to boot...
+  PASS  the model-less server boots and answers /health   -> port=65403
+
+------------------------------------------------------------------------------
+WITH NO MODEL INSTALLED
+------------------------------------------------------------------------------
+  PASS  the sandbox really has no 3-class forest artifact   -> C:\Users\abishek\AppData\Local\Temp\aquaguard_no_model_drgz58av\ml\model\water_quality_rf.joblib
+  PASS  the sandbox really has no legacy binary forest either   -> C:\Users\abishek\AppData\Local\Temp\aquaguard_no_model_drgz58av\no_legacy_model\aquaguard_random_forest.pkl
+  response: code=503 body={"errors": {"expected_path": "C:\\Users\\abishek\\AppData\\Local\\Temp\\aquaguard_no_model_drgz58av\\no_legacy_model\\aquaguard_random_forest.pkl"}, "message": "Prediction model artifact was not found. Train the model first (python -m app.ml.train).", "success": false}
+  PASS  a prediction request FAILS rather than answering   -> code=503
+  PASS  no verdict is invented   -> prediction=None
+  PASS  no confidence is invented   -> confidence=None
+  PASS  the failure is reported as a model error (503), not a server crash   -> code=503
+  PASS  the message says the model is unavailable, not a verdict   -> {"errors": {"expected_path": "C:\\Users\\abishek\\AppData\\Local\\Temp\\aquaguard_no_model_drgz58av\\no_legacy_model\\aquaguard_random_forest.pkl"}, "message": 
+  PASS  it failed FAST rather than hanging   -> 0.75s
+
+------------------------------------------------------------------------------
+THE ASSISTANT'S PREDICTION TOOL FAILS THE SAME WAY
+------------------------------------------------------------------------------
+  PASS  Aqua AI does not state a verdict without a model   -> code=200
+
+==============================================================================
+10/10 checks passed
+ALL CHECKS PASSED
+==============================================================================

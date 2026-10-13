@@ -1,0 +1,94 @@
+# ---------- Environment / secrets ----------
+# Real environment files are NEVER committed: they hold database passwords,
+# the JWT signing key and the Aqua AI API key.
+.env
+.env.*
+
+# Templates ARE committed - they hold no secrets and document what a deploy
+# needs. frontend/.env.production is included deliberately: unlike a real
+# .env it contains only the public API URL, because every VITE_-prefixed
+# value is compiled into the browser bundle. It is a build template, not a
+# secret.
+!.env.example
+!*.env.example
+!frontend/.env.production
+# Certificates and private keys, under any extension.
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+# Belt-and-braces: a secret file renamed to slip past the .env.* pattern.
+secrets.json
+credentials.json
+service-account*.json
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+instance/
+
+# ---------- Node ----------
+node_modules/
+.npm
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- Frontend build ----------
+frontend/dist/
+frontend/.vite/
+frontend/.cache/
+
+# ---------- ML artifacts (large binaries) ----------
+ml/models/*.pkl
+ml/models/*.joblib
+ml/datasets/*.csv
+!ml/datasets/.gitkeep
+
+# Feature-subset estimators: 31 files of ~35 MB each (~1.1 GB total). They are
+# OUTPUT of the offline experiment `ml/train_subset_models.py` and are read by
+# nothing at runtime -- the API loads only ml/model/water_quality_rf.joblib and
+# ml/preprocessing/*.joblib. Committing them made every push upload a gigabyte
+# and fail with "RPC failed; HTTP 408". Regenerate locally when needed.
+ml/model/subsets/
+
+# ---------- Editors / OS ----------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Logs / temp ----------
+*.log
+logs/
+tmp/
+temp/
+
+backend/.env
+token.txt
+*.log
+*_out.txt
+*_err.txt

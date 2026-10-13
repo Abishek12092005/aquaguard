@@ -1,0 +1,28 @@
+﻿HTTP 429 - waiting
+  Q12443800  state of India                                 19
+  Q125907346 division of Uttar Pradesh                      18
+  Q124669069 division of Madhya Pradesh                     10
+  Q125907353 division of Bihar                              9
+  Q125907350 division of Rajasthan                          9
+  Q467745    union territory of India                       7
+  Q125907357 division of Maharashtra                        6
+  Q125907351 division of Haryana                            6
+  Q15646712  province of British Raj                        6
+  Q125907354 division of Assam                              5
+  Q5284624   division of West Bengal                        5
+  Q125907347 division of Jharkhand                          5
+  Q125907349 division of Chhattisgarh                       5
+  Q125907365 division of Punjab                             5
+  Q125907360 division of Karnataka                          4
+  Q125907355 division of Odisha                             3
+  Q125907368 division of Uttarakhand                        2
+  Q125907352 division of Jammu And Kashmir                  2
+  Q164142    protectorate                                   1
+  Q3024240   historical country                             1
+  Q15284     municipality                                   1
+  Q174844    megacity                                       1
+  Q200250    metropolis                                     1
+  Q51929311  largest city                                   1
+  Q125907356 division of Delhi                              1
+  Q3502482   cultural region                                1
+  Q17319258  presidency of British India                    1

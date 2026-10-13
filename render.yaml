@@ -1,0 +1,73 @@
+# ===========================================================================
+# AquaGuard AI — Render Blueprint
+# ===========================================================================
+# Declares the backend web service so a deploy is reproducible from the
+# repository rather than clicked together in a dashboard.
+#
+#   * The service runs the Flask API only. The React frontend is built and
+#     served by Netlify, not Render, so nothing here references it.
+#   * Values under `envVars` with `sync: false` are SECRETS: Render prompts for
+#     them on first deploy and stores them encrypted. They are deliberately NOT
+#     committed here.
+#   * DATABASE_URL is set in the dashboard (sync: false) and should be the
+#     Aiven connection string exactly as the console gives it, e.g.
+#       mysql://avnadmin:PASSWORD@mysql-XXXX.aivencloud.com:22266/defaultdb?ssl-mode=REQUIRED
+#     The backend normalises the scheme and the ssl-mode parameter itself.
+#
+# Docs: https://render.com/docs/blueprint-spec
+# ===========================================================================
+
+services:
+  - type: web
+    name: aquaguard-api
+    runtime: python
+    plan: free
+    # The Flask app lives in backend/, so Render installs and runs from there.
+    rootDir: backend
+    # Linux, so gunicorn (already pinned in requirements.txt) is the server.
+    # `-c gunicorn.conf.py` loads workers/timeouts; --bind uses Render's $PORT.
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -c gunicorn.conf.py --bind 0.0.0.0:$PORT wsgi:app
+    healthCheckPath: /api/v1/health
+    autoDeploy: true
+    envVars:
+      # --- Runtime ----------------------------------------------------------
+      - key: FLASK_ENV
+        value: production
+      - key: PYTHON_VERSION
+        value: "3.13.5"
+      # Render terminates TLS in front of the service; keep this to Render's
+      # internal addresses so X-Forwarded-* cannot be spoofed by a direct client.
+      - key: FORWARDED_ALLOW_IPS
+        value: "*"
+      - key: LOG_LEVEL
+        value: INFO
+      # --- Database (Aiven MySQL) -------------------------------------------
+      # Full provider connection string. Paste it UNCHANGED; the app rewrites
+      # `mysql://` to `mysql+pymysql://` and `ssl-mode=REQUIRED` to PyMySQL TLS.
+      - key: DATABASE_URL
+        sync: false
+      # --- Secrets ----------------------------------------------------------
+      # At least 32 chars each and DIFFERENT from one another. Generate with:
+      #   python -c "import secrets; print(secrets.token_hex(32))"
+      - key: SECRET_KEY
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      # --- CORS -------------------------------------------------------------
+      # Exact browser origins allowed to call the API. No trailing slash, no
+      # wildcard. The Netlify site origin belongs here (NOT the API URL).
+      - key: CORS_ORIGINS
+        value: https://aquaguard-water-ai.netlify.app
+      # --- Aqua AI (optional) -----------------------------------------------
+      # Leave unset and the assistant reports itself unavailable rather than
+      # fabricating an answer. Set in the dashboard when you want it live.
+      - key: AQUA_AI_API_KEY
+        sync: false
+      - key: AQUA_AI_PROVIDER
+        value: openai
+      - key: AQUA_AI_MODEL
+        value: gpt-4o-mini
+      # --- Admin console ----------------------------------------------------
+      - key: ADMIN_ACCESS_PASSWORD
+        sync: false

@@ -1,0 +1,9 @@
+﻿Ariyalur        2.47s -> Ariyalūr                 d=Ariyalur District s=Tamil Nadu   lat=11.138 lon=79.076
+Chengalpattu    1.29s -> Chengalpattu             d=Chengalpattu district s=Tamil Nadu   lat=12.692 lon=79.977
+Chennai         1.92s -> Chennai                  d=Chennai district s=Tamil Nadu   lat=13.088 lon=80.278
+Coimbatore      2.06s -> Coimbatore               d=Coimbatore district s=Tamil Nadu   lat=11.006 lon=76.966
+Madurai         2.79s -> Madurai                  d=Madurai        s=Tamil Nadu   lat=9.919 lon=78.120
+Kallakurichi    1.80s -> Kallakurichi             d=Kallakurichi district s=Tamil Nadu   lat=11.734 lon=78.959
+Virudhunagar    4.14s -> Virudhunagar             d=None           s=Tamil Nadu   lat=9.493 lon=77.863
+Tenkasi         1.86s -> Tenkasi                  d=None           s=Tamil Nadu   lat=9.093 lon=77.476
+Mayiladuthurai  1.32s -> Mayiladuthurai           d=Mayiladuthurai district s=Tamil Nadu   lat=11.104 lon=79.655

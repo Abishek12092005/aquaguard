@@ -1,0 +1,2 @@
+﻿overpass-api.de/api/interpreter               504 in 9.2s
+overpass.kumi.systems/api/interpreter         FAILED in 60.4s: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=60)

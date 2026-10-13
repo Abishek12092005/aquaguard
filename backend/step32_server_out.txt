@@ -1,0 +1,14 @@
+
+  AquaGuard AI backend
+  --------------------------------------------------------
+  Environment    development
+  Database       mysql+pymysql://aquaguard_ai:***@127.0.0.1:3306/aquaguard_db?charset=utf8mb4
+  CORS origins   http://localhost:5173, http://127.0.0.1:5173
+  JWT secret     set
+  Aqua AI key    set
+  --------------------------------------------------------
+  Health         http://127.0.0.1:5000/api/health
+  Database       http://127.0.0.1:5000/api/health/db
+
+ * Serving Flask app 'app'
+ * Debug mode: off

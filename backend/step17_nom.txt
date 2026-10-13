@@ -1,0 +1,32 @@
+﻿featureType=county + state   200 in 1.0s -> 1 rows / 1 districts
+      Tamil Nadu
+featureType=county + q       200 in 0.2s -> 1 rows / 1 districts
+      Tamil Nadu
+featureType=state_district   200 in 0.5s -> 1 rows / 1 districts
+      Tamil Nadu
+q=districts in state         200 in 0.9s -> 40 rows / 25 districts
+      Ambattur
+      Aravakurichi
+      Chengalpattu
+      Chennai
+      Cheyyur
+      Coimbatore North
+      Coimbatore South
+      Cuddalore
+      Daimler India Commercial Vehicles
+      Dindigul
+      Flex India
+      Hyoseong Electric India
+      Korea Fuel Tech India
+      Kumarapalayam
+      Luxshare Precision Industry India
+      Madhavaram
+      Myunghwa Automotive India
+      Palladam
+      Pallavaram
+      Pollachi
+      Poonamallee
+      Samsung India Electronics
+      Sankari
+      Sendurai
+      Sulur

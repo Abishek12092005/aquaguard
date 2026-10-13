@@ -1,0 +1,4 @@
+/auth/login -> 200 in 4.3 s
+/locations/country?q=India&limit=5 -> 200 in 269.9 s
+KEYS: ['available', 'country', 'legend', 'message', 'states']
+COUNTRY: {"country_code": "IN", "lat": 22.0, "lon": 79.0, "name": "India"}

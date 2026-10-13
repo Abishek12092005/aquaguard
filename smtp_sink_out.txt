@@ -1,0 +1,1 @@
+SMTP sink on 127.0.0.1:1025, writing to C:\Users\abishek\OneDrive\Desktop\aquagaurd\smtp_messages.log

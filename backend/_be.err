@@ -1,0 +1,62 @@
+[2026-10-01 01:00:57,304] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 01:00:57,311] INFO in __init__: AquaGuard AI backend initialised (env=development)
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+[2026-10-01 01:01:00,933] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 01:01:00,937] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 01:01:02,934] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-10-01 01:01:05,245] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\test_step36_integration.py', reloading
+ * Restarting with stat
+[2026-10-01 01:08:36,922] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 01:08:36,927] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 01:08:42,735] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\test_step36_integration.py', reloading
+ * Restarting with stat
+[2026-10-01 01:21:35,478] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 01:21:35,487] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 01:21:42,784] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\_mv.py', reloading
+ * Restarting with stat
+[2026-10-01 01:23:27,003] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 01:23:27,007] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 01:23:34,466] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\test_step36_integration.py', reloading
+ * Restarting with stat
+[2026-10-01 01:35:24,051] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 01:35:24,054] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 01:35:28,524] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\test_step36_integration.py', reloading
+ * Restarting with stat
+[2026-10-01 01:36:34,052] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 01:36:34,187] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 01:36:39,788] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\test_step36_integration.py', reloading
+Exception in thread Thread-1 (serve_forever):
+ * Restarting with stat
+[2026-10-01 01:37:37,973] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 01:37:37,980] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 01:37:43,512] INFO in water_quality: Water quality model pre-loaded and ready
+ * Detected change in 'C:\\Users\\abishek\\OneDrive\\Desktop\\aquagaurd\\backend\\tests\\test_country_overview.py', reloading
+ * Restarting with stat
+[2026-10-01 01:55:35,062] INFO in tools: Aqua AI default tool handlers registered
+[2026-10-01 01:55:35,065] INFO in __init__: AquaGuard AI backend initialised (env=development)
+ * Debugger is active!
+ * Debugger PIN: 681-400-674
+[2026-10-01 01:55:51,069] INFO in water_quality: Water quality model pre-loaded and ready

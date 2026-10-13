@@ -1,0 +1,74 @@
+﻿python.exe : [2026-09-29 18:24:40,942] INFO in tools: Aqua AI default tool handlers registered
+At line:1 char:194
++ ... NG="utf-8"; & ".\.venv\Scripts\python.exe" verify_step17_risk.py *>&1 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2026-09-29 18:...lers registered:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2026-09-29 18:24:40,950] INFO in __init__: AquaGuard AI backend initialised (env=development)
+[2026-09-29 18:24:44,755] INFO in location_service: Overpass 
+https://overpass.maps.mail.ru/osm/tools/overpass/api/interpreter failed: 
+HTTPSConnectionPool(host='overpass.maps.mail.ru', port=443): Max retries exceeded with url: 
+/osm/tools/overpass/api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass.maps.mail.ru', 
+port=443) at 0x19b2c571310>, 'Connection to overpass.maps.mail.ru timed out. (connect timeout=2.5)'))
+[2026-09-29 18:24:45,138] INFO in location_service: Overpass https://overpass-api.de/api/interpreter failed: 
+HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=2.5)
+[2026-09-29 18:24:45,150] INFO in location_service: Overpass https://overpass.kumi.systems/api/interpreter failed: 
+HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=2.5)
+[2026-09-29 18:24:45,151] INFO in location_service: Overpass https://overpass.private.coffee/api/interpreter failed: 
+HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=2.5)
+[2026-09-29 18:24:47,579] INFO in water_quality: Water quality model pre-loaded and ready
+[2026-09-29 18:24:50,474] INFO in location_service: Overpass outage breaker OPEN - skipping query (115s left)
+[2026-09-29 18:24:50,725] INFO in location_service: Overpass outage breaker OPEN - skipping query (114s left)
+[2026-09-29 18:24:50,976] INFO in location_service: Overpass outage breaker OPEN - skipping query (114s left)
+[2026-09-29 18:24:51,516] INFO in location_service: Overpass outage breaker OPEN - skipping query (114s left)
+[2026-09-29 18:24:51,717] INFO in location_service: Overpass outage breaker OPEN - skipping query (113s left)
+[2026-09-29 18:24:55,236] INFO in location_service: Overpass outage breaker OPEN - skipping query (110s left)
+[2026-09-29 18:24:56,501] INFO in location_service: Overpass outage breaker OPEN - skipping query (109s left)
+[2026-09-29 18:24:56,776] INFO in location_service: Overpass outage breaker OPEN - skipping query (108s left)
+[2026-09-29 18:24:56,845] INFO in location_service: Overpass outage breaker OPEN - skipping query (108s left)
+[2026-09-29 18:24:58,509] INFO in location_service: Overpass outage breaker OPEN - skipping query (107s left)
+[2026-09-29 18:24:58,570] INFO in location_service: Overpass outage breaker OPEN - skipping query (107s left)
+[2026-09-29 18:24:58,859] INFO in location_service: Overpass outage breaker OPEN - skipping query (106s left)
+[2026-09-29 18:24:59,715] INFO in location_service: Overpass outage breaker OPEN - skipping query (105s left)
+[2026-09-29 18:24:59,970] INFO in location_service: Overpass outage breaker OPEN - skipping query (105s left)
+[2026-09-29 18:25:03,536] INFO in location_service: Overpass outage breaker OPEN - skipping query (102s left)
+[2026-09-29 18:25:05,245] INFO in location_service: Overpass outage breaker OPEN - skipping query (100s left)
+[2026-09-29 18:25:05,722] INFO in location_service: Overpass outage breaker OPEN - skipping query (99s left)
+[2026-09-29 18:25:06,290] INFO in location_service: Overpass outage breaker OPEN - skipping query (99s left)
+[2026-09-29 18:25:07,125] INFO in location_service: Overpass outage breaker OPEN - skipping query (98s left)
+[2026-09-29 18:25:07,142] INFO in location_service: Overpass outage breaker OPEN - skipping query (98s left)
+[2026-09-29 18:25:08,538] INFO in location_service: Overpass outage breaker OPEN - skipping query (97s left)
+[2026-09-29 18:25:09,335] INFO in location_service: Overpass outage breaker OPEN - skipping query (96s left)
+[2026-09-29 18:25:11,463] INFO in location_service: Overpass outage breaker OPEN - skipping query (94s left)
+[2026-09-29 18:25:11,534] INFO in location_service: Overpass outage breaker OPEN - skipping query (94s left)
+[2026-09-29 18:25:12,142] INFO in location_service: Overpass outage breaker OPEN - skipping query (93s left)
+[2026-09-29 18:25:14,435] INFO in location_service: Overpass outage breaker OPEN - skipping query (91s left)
+[2026-09-29 18:25:15,125] INFO in location_service: Overpass outage breaker OPEN - skipping query (90s left)
+[2026-09-29 18:25:15,308] INFO in location_service: Overpass outage breaker OPEN - skipping query (90s left)
+[2026-09-29 18:25:17,647] INFO in location_service: Overpass outage breaker OPEN - skipping query (88s left)
+[2026-09-29 18:25:18,201] INFO in location_service: Overpass outage breaker OPEN - skipping query (87s left)
+[2026-09-29 18:25:18,490] INFO in location_service: Overpass outage breaker OPEN - skipping query (87s left)
+[2026-09-29 18:25:18,684] INFO in location_service: Overpass outage breaker OPEN - skipping query (86s left)
+[2026-09-29 18:25:18,936] INFO in location_service: Overpass outage breaker OPEN - skipping query (86s left)
+[2026-09-29 18:25:20,324] INFO in location_service: Overpass outage breaker OPEN - skipping query (85s left)
+[2026-09-29 18:25:21,337] INFO in location_service: Overpass outage breaker OPEN - skipping query (84s left)
+[2026-09-29 18:25:22,568] INFO in location_service: Overpass outage breaker OPEN - skipping query (83s left)
+[2026-09-29 18:25:23,488] INFO in location_service: Overpass outage breaker OPEN - skipping query (82s left)
+[2026-09-29 18:25:29,706] INFO in location_service: Overpass outage breaker OPEN - skipping query (75s left)
+[2026-09-29 18:25:31,185] INFO in location_service: Overpass outage breaker OPEN - skipping query (74s left)
+GET /locations/state (with risk) -> 200 in 50.4s
+  districts: 39
+  summary: {'moderate': 0, 'safe': 0, 'total_districts': 39, 'unknown': 39, 'unsafe': 0}
+    1 Ariyalur               | Tamil Nadu | India  | src=None pts=0
+    2 Chengalpattu           | Tamil Nadu | India  | src=None pts=0
+    3 Chennai                | Tamil Nadu | India  | src=None pts=0
+    4 Coimbatore             | Tamil Nadu | India  | src=None pts=0
+    5 Cuddalore              | Tamil Nadu | India  | src=None pts=0
+    6 Dharmapuri             | Tamil Nadu | India  | src=None pts=0
+    7 Dindigul               | Tamil Nadu | India  | src=None pts=0
+    8 Erode                  | Tamil Nadu | India  | src=None pts=0
+    9 Kallakurichi           | Tamil Nadu | India  | src=None pts=0
+   10 Kanchipuram            | Tamil Nadu | India  | src=None pts=0
+   11 Kanniyakumari          | Tamil Nadu | India  | src=None pts=0
+   12 Karur                  | Tamil Nadu | India  | src=None pts=0

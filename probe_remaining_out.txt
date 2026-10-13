@@ -1,0 +1,10 @@
+login ok
+=== TEST4-water: /locations/water?lat=10.0740&lon=78.7800 ===
+available=True primary=pond water nearby=10
+  Unnamed Pond | None | 1.34 km
+  Unnamed Pond | None | 1.56 km
+  Sri Koppudaiya Nayagi Amman Temple Pond | None | 1.77 km
+WATER_RESULT: PASS
+=== TEST3: /locations/district?q=Sivaganga ===
+places=0
+DISTRICT_RESULT: EMPTY_OR_LABELLED

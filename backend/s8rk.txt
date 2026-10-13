@@ -1,0 +1,25 @@
+final pool size: 40
+rows named 'Anna Nagar' in pool: 0
+
+  Anna                       strength=0.00 sim=0.42 poi=None     country=Spain
+  Annaba                     strength=0.00 sim=0.00 poi=None     country=Algeria
+  Anna küla                  strength=0.00 sim=0.00 poi=place    country=Eesti
+  Tiruvannamalai             strength=0.00 sim=0.00 poi=None     country=India
+  Nnak                       strength=0.00 sim=0.00 poi=None     country=Pakistan
+  Nnabi                      strength=0.00 sim=0.00 poi=None     country=Nigeria
+  Nnamg                      strength=0.00 sim=0.00 poi=None     country=Nigeria
+  Nnage                      strength=0.00 sim=0.00 poi=None     country=Nigeria
+  Nnadi                      strength=0.00 sim=0.00 poi=None     country=Nigeria
+  Nnama                      strength=0.00 sim=0.00 poi=None     country=Uganda
+  Nnawoye                    strength=0.00 sim=0.00 poi=None     country=Nigeria
+  NNA                        strength=0.00 sim=0.28 poi=landmark country=Việt Nam
+  Boschi Sant'Anna           strength=0.00 sim=0.00 poi=place    country=Italia
+  Nama                       strength=0.00 sim=0.00 poi=None     country=Ghana
+
+final output order:
+  Anna | Valencia/Spain
+  Annaba | Annaba/Algeria
+  Anna küla | /Eesti
+  Tiruvannamalai | Tamil Nadu/India
+  Nnak | Balochistan/Pakistan
+  Nnabi | Anambra/Nigeria
