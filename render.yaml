@@ -59,15 +59,56 @@ services:
       # wildcard. The Netlify site origin belongs here (NOT the API URL).
       - key: CORS_ORIGINS
         value: https://aquaguard-water-ai.netlify.app
-      # --- Aqua AI (optional) -----------------------------------------------
-      # Leave unset and the assistant reports itself unavailable rather than
-      # fabricating an answer. Set in the dashboard when you want it live.
+      # --- Aqua AI (providers) ----------------------------------------------
+      # The assistant walks AQUA_AI_PROVIDER_ORDER and answers through the first
+      # provider that is configured and reachable, falling through on a miss.
+      # Gemini is first; Meta (served by Groq) is the fallback when Gemini's
+      # quota is spent. Both need a KEY (sync: false, below) plus the MODEL and
+      # URL declared here, because a provider with a key but no URL is skipped.
+      - key: AQUA_AI_PROVIDER_ORDER
+        value: gemini,meta
+      - key: AQUA_AI_GEMINI_MODEL
+        value: gemini-3.5-flash-lite
+      # Meta publishes weights, not a hosted endpoint, so a BASE URL is REQUIRED.
+      # This account is a Groq key, so it points at Groq's OpenAI-compatible API.
+      - key: AQUA_AI_META_MODEL
+        value: openai/gpt-oss-120b
+      - key: AQUA_AI_META_BASE_URL
+        value: https://api.groq.com/openai/v1
+      # Keys are SECRETS: Render prompts for them on first deploy.
       - key: AQUA_AI_API_KEY
+        sync: false
+      - key: AQUA_AI_GEMINI_API_KEY
+        sync: false
+      - key: AQUA_AI_META_API_KEY
         sync: false
       - key: AQUA_AI_PROVIDER
         value: openai
       - key: AQUA_AI_MODEL
         value: gpt-4o-mini
+      # --- Email (SMTP) -----------------------------------------------------
+      # Non-secret transport settings live here; the credential does not.
+      # MAIL_SUPPRESS_SEND=false is what actually turns sending on — with it
+      # left true nothing leaves the server.
+      - key: MAIL_ENABLED
+        value: "true"
+      - key: MAIL_SUPPRESS_SEND
+        value: "false"
+      - key: MAIL_HOST
+        value: "smtp.gmail.com"
+      - key: MAIL_PORT
+        value: "587"
+      - key: MAIL_USE_TLS
+        value: "true"
+      - key: MAIL_FROM_NAME
+        value: AquaGuard
+      - key: MAIL_DEFAULT_SENDER
+        value: shekabi2005@gmail.com
+      # The Gmail address and its APP PASSWORD are secrets.
+      - key: MAIL_USERNAME
+        sync: false
+      - key: MAIL_PASSWORD
+        sync: false
       # --- Admin console ----------------------------------------------------
       - key: ADMIN_ACCESS_PASSWORD
         sync: false
