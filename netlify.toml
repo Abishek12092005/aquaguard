@@ -1,0 +1,38 @@
+# ===========================================================================
+# AquaGuard AI — Netlify build configuration
+# ===========================================================================
+# Committed so the frontend deploy is reproducible from the repository instead
+# of clicked together in the dashboard. Netlify reads this file at the repo
+# root; `base` below points it at the React app, which lives in frontend/.
+#
+#   * Only the FRONTEND is built here. The Flask API is served by Render and is
+#     declared in render.yaml — nothing in this file references it except the
+#     API URL baked into the bundle at build time.
+#   * The SPA fallback (`/* -> /index.html 200`) also lives in
+#     frontend/public/_redirects. Both are present on purpose: the toml rule
+#     documents intent beside the build settings, and the _redirects file is
+#     what actually ships with the bundle. They say the same thing, so they
+#     cannot disagree.
+# ===========================================================================
+
+[build]
+  # The app is not at the repo root, so tell Netlify where to build from.
+  base = "frontend"
+  command = "npm run build"
+  publish = "dist"
+
+# --- Node version ----------------------------------------------------------
+# Vite 6 needs Node 18+. Pinning it stops Netlify's default from drifting to a
+# version this build has never been tested against.
+[build.environment]
+  NODE_VERSION = "20"
+
+# --- SPA fallback ----------------------------------------------------------
+# React Router owns every path after the first load. Without this a deep link
+# or a refresh on /dashboard, /history or /admin hits Netlify's 404 because no
+# such file exists on disk. 200 = rewrite (URL unchanged); 301 would move the
+# address and break the link.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

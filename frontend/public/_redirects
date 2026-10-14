@@ -1,0 +1,16 @@
+# AquaGuard AI — Netlify SPA fallback.
+#
+# The client is a React Router single-page app: the server only ever serves one
+# HTML file and the router owns every path after the first load. Netlify is a
+# static host, so without this rule a visitor who opens or refreshes a deep link
+# (e.g. /dashboard, /history, /admin) gets Netlify's own 404 — the file for that
+# path does not exist on disk. That failure looks like "the deploy is broken"
+# even though the bundle is fine.
+#
+# `200` (rewrite) rather than `301` (redirect) is deliberate: the browser URL
+# stays as typed and index.html boots the router, which then renders the right
+# page. A redirect would change the address and break deep links.
+#
+# Real files still win — Netlify serves an existing asset before applying this
+# rule, so /assets/*.js and /favicon.ico are untouched.
+/*  /index.html  200
