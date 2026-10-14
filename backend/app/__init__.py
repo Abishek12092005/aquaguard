@@ -54,6 +54,12 @@ def create_app(config_name: str | None = None) -> Flask:
     _register_shell_context(app)
     _register_ai_tools()
 
+    # --- Frontend bundle (single-service deploy) ----------------------------
+    # Registered LAST on purpose. The catch-all route below must not shadow any
+    # API route, and Flask matches rules in registration order - so every
+    # blueprint above is already in the map by the time this runs.
+    _register_frontend(app)
+
     # --- Production pre-flight ---------------------------------------------
     # Run after configuration but BEFORE the app is handed out, so a production
     # deployment with a placeholder secret, debug left on or a wildcard CORS
@@ -455,3 +461,96 @@ def _register_shell_context(app: Flask) -> None:
         from app.extensions import db as _db
 
         return {"db": _db, "models": models_module}
+
+# ---------------------------------------------------------------------------
+# Frontend bundle serving
+# ---------------------------------------------------------------------------
+# AquaGuard AI ships as a React SPA built by Vite. It can be served two ways:
+#
+#   1. SPLIT (the original layout): Netlify serves `frontend/dist` and Render
+#      serves this API. Two origins, so CORS is load-bearing and the API URL is
+#      baked into the bundle at build time.
+#
+#   2. SINGLE SERVICE (what this block enables): Render runs ONE web service
+#      that serves BOTH. `frontend/dist` is copied to `backend/static` during
+#      the build, and this module serves it from the same origin as `/api/*`.
+#
+# The single-service mode is strictly simpler to operate: there is one deploy,
+# one URL and no CORS at all, because the browser only ever talks to one origin.
+# It is also the ONLY way to get "click the link, get the UI" on the free tier -
+# with two origins the visitor waits for a cold Netlify edge AND a cold Render
+# dyno, and any failure in either looks like "the backend is broken".
+#
+# The split layout is NOT removed. If `backend/static` does not exist - which is
+# exactly the case for a Netlify-served frontend, for local development and for
+# the test suite - this function registers NOTHING and the app behaves exactly
+# as it did before. So enabling the single-service deploy cannot break the other
+# two, and reverting is a matter of deleting a directory.
+#
+# Docs: https://flask.palletsprojects.com/en/stable/patterns/favicon/
+# ---------------------------------------------------------------------------
+
+
+def _register_frontend(app: Flask) -> None:
+    """Serve the built React bundle, when one has been placed beside the app.
+
+    Registers three things, in this order:
+
+      * a real static route for `/assets/<path>` and friends, so hashed bundle
+        files are served by Flask's static handler with correct caching headers
+        rather than by the catch-all below;
+      * the SPA fallback: any GET that matches no API route and no static file
+        returns `index.html` with a 200. Without it a refresh on `/dashboard`
+        would 404, because no such file exists on disk - React Router owns that
+        path only after the first load;
+      * nothing at all when there is no bundle, which keeps dev and tests as
+        they were.
+    """
+    static_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
+    index_file = os.path.join(static_dir, "index.html")
+
+    if not os.path.isfile(index_file):
+        # No bundle beside the app: this is the Netlify-served or local-dev
+        # layout. Registering a catch-all here would swallow 404s that the
+        # client contract relies on, so we deliberately register nothing.
+        app.logger.info(
+            "No frontend bundle at %s - API-only mode (frontend served elsewhere)",
+            static_dir,
+        )
+        return
+
+    from flask import send_from_directory
+
+    # `static_folder` was set to None-ish behaviour by using a distinct path, so
+    # this explicit route is what serves the hashed asset files. It is registered
+    # BEFORE the catch-all so a missing asset 404s honestly instead of returning
+    # index.html with a 200, which would make a broken bundle look like a
+    # working page whose stylesheet silently failed.
+    @app.get("/assets/<path:filename>")
+    def frontend_assets(filename):
+        return send_from_directory(os.path.join(static_dir, "assets"), filename)
+
+    # Root-level static files Vite emits beside index.html (favicon, _redirects,
+    # manifest, service worker). Served explicitly for the same reason.
+    #
+    # NOTE the guard: this route is a GET-only catch-all registered AFTER every
+    # API rule, so Flask only reaches it when no API route matched. An unknown
+    # path under `/api/` must still 404 - if it returned index.html with a 200,
+    # a genuinely broken API call would look like a working page whose data
+    # silently never arrives, which is precisely the failure this whole deploy
+    # exercise exists to eliminate. So anything under the API prefixes is
+    # re-raised as a real 404 instead of falling through to the SPA.
+    @app.get("/<path:filename>")
+    def frontend_static(filename):
+        if filename == "api" or filename.startswith(("api/", "api\\")):
+            from werkzeug.exceptions import NotFound
+
+            raise NotFound()
+
+        candidate = os.path.join(static_dir, filename)
+        if os.path.isfile(candidate):
+            return send_from_directory(static_dir, filename)
+        # Not a file on disk - hand it to React Router.
+        return send_from_directory(static_dir, "index.html")
+
+    app.logger.info("Serving frontend bundle from %s (single-service mode)", static_dir)

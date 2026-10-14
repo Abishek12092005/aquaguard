@@ -58,6 +58,10 @@ pnpm-debug.log*
 frontend/dist/
 frontend/.vite/
 frontend/.cache/
+# The compiled bundle is COPIED here during the Render build, where Flask serves
+# it from. It is a build artifact of the same kind as frontend/dist, so it is not
+# committed either - Render regenerates it on every deploy.
+backend/app/static/
 
 # ---------- ML artifacts (large binaries) ----------
 ml/models/*.pkl

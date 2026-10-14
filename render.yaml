@@ -4,8 +4,19 @@
 # Declares the backend web service so a deploy is reproducible from the
 # repository rather than clicked together in a dashboard.
 #
-#   * The service runs the Flask API only. The React frontend is built and
-#     served by Netlify, not Render, so nothing here references it.
+#   * SINGLE-SERVICE MODE. This one service serves BOTH the Flask API and the
+#     built React bundle: the build below compiles `frontend/dist` and copies it
+#     to `backend/app/static`, and `app/__init__.py::_register_frontend` serves
+#     it. One deploy, one URL, and NO CORS — the browser only ever talks to this
+#     origin. The React app talks to `/api` relatively, which is why
+#     `frontend/.env.production` must NOT carry an absolute onrender.com URL in
+#     this mode.
+#
+#   * The split layout still works. If `backend/app/static` is absent — which is
+#     what a Netlify-served frontend, local development and the test suite all
+#     look like — the frontend routes are simply not registered and the API
+#     behaves exactly as before. Reverting to Netlify needs no code change.
+#
 #   * Values under `envVars` with `sync: false` are SECRETS: Render prompts for
 #     them on first deploy and stores them encrypted. They are deliberately NOT
 #     committed here.
@@ -22,13 +33,22 @@ services:
     name: aquaguard-api
     runtime: python
     plan: free
-    # The Flask app lives in backend/, so Render installs and runs from there.
-    rootDir: backend
-    # Linux, so gunicorn (already pinned in requirements.txt) is the server.
-    # `-c gunicorn.conf.py` loads workers/timeouts; --bind uses Render's $PORT.
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn -c gunicorn.conf.py --bind 0.0.0.0:$PORT wsgi:app
-    healthCheckPath: /api/v1/health
+    # Build from the REPO ROOT, not backend/: the build needs to reach
+    # frontend/ to compile the bundle. rootDir was `backend` when this service
+    # was API-only; it cannot be, now that one service serves both.
+    rootDir: .
+    # 1. Backend deps.
+    # 2. Frontend deps and the production build. `npm ci` needs the lockfile
+    #    that `npm install` would rewrite, and NODE_VERSION is pinned below.
+    # 3. Copy the compiled bundle where Flask serves it from. `rm -rf` first so
+    #    a redeploy cannot serve a stale asset from the previous build.
+    buildCommand: >-
+      pip install -r backend/requirements.txt &&
+      cd frontend && npm ci && npm run build &&
+      rm -rf ../backend/app/static && cp -r dist ../backend/app/static
+    # `cd backend` because wsgi.py and gunicorn.conf.py both live there.
+    startCommand: cd backend && gunicorn -c gunicorn.conf.py --bind 0.0.0.0:$PORT wsgi:app
+    healthCheckPath: /api/health
     autoDeploy: true
     envVars:
       # --- Runtime ----------------------------------------------------------
@@ -36,6 +56,8 @@ services:
         value: production
       - key: PYTHON_VERSION
         value: "3.13.5"
+      - key: NODE_VERSION
+        value: "20"
       # Render terminates TLS in front of the service; keep this to Render's
       # internal addresses so X-Forwarded-* cannot be spoofed by a direct client.
       - key: FORWARDED_ALLOW_IPS
